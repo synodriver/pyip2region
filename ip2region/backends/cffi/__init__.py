@@ -1,6 +1,7 @@
 """
 Copyright (c) 2008-2022 synodriver <synodriver@gmail.com>
 """
+# todo port cython to cffi
 from pathlib import Path
 
 from ip2region.backends.cffi._xdb import ffi, lib

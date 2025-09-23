@@ -2,12 +2,12 @@
 import os
 import re
 import sys
+import sysconfig
 from collections import defaultdict
 
-try:
-    from Cython.Build import cythonize
-except ImportError:
-    Cython = None
+from Cython.Build import cythonize
+from Cython.Compiler.Version import version as cython_version
+from packaging.version import Version
 from setuptools import Extension, find_packages, setup
 from setuptools.command.build_ext import build_ext
 
@@ -25,19 +25,39 @@ class build_ext_compiler_check(build_ext):
         compiler = self.compiler.compiler_type
         args = BUILD_ARGS[compiler]
         for ext in self.extensions:
-            ext.extra_compile_args = args
+            ext.extra_compile_args.extend(args)
         super().build_extensions()
 
+
+def has_option(name: str) -> bool:
+    if name in sys.argv[1:]:
+        sys.argv.remove(name)
+        return True
+    name = name.strip("-").upper()
+    if os.environ.get(name, None) is not None:
+        return True
+    return False
+
+
+macro_base = [("WIN32_LEAN_AND_MEAN", None)]
+
+if sysconfig.get_config_var("Py_GIL_DISABLED"):
+    print("build nogil")
+    macro_base.append(
+        ("Py_GIL_DISABLED", "1"),
+    )
 
 extensions = [
     Extension(
         "ip2region.backends.cython._xdb",
         [
             "ip2region/backends/cython/_xdb.pyx",
-            "./dep/binding/c/xdb_searcher.c"
+            "./dep/binding/c/xdb_searcher.c",
+            "./dep/binding/c/xdb_util.c",
         ],
         include_dirs=[f"./dep/binding/c"],
         library_dirs=[f"./dep/binding/c"],
+        define_macros=macro_base,
     ),
 ]
 cffi_modules = ["ip2region/backends/cffi/build.py:ffibuilder"]
@@ -58,15 +78,17 @@ def get_version() -> str:
     return result[0]
 
 
+compiler_directives = {
+    "cdivision": True,
+    "embedsignature": True,
+    "boundscheck": False,
+    "wraparound": False,
+}
+
+if Version(cython_version) >= Version("3.1.0a0"):
+    compiler_directives["freethreading_compatible"] = True
+
 packages = find_packages(exclude=("test", "tests.*", "test*"))
-
-
-def has_option(name: str) -> bool:
-    if name in sys.argv[1:]:
-        sys.argv.remove(name)
-        return True
-    return False
-
 
 setup_requires = []
 install_requires = []
@@ -76,12 +98,7 @@ if has_option("--use-cython"):
     setup_requires.append("cython")
     setup_kw["ext_modules"] = cythonize(
         extensions,
-        compiler_directives={
-            "cdivision": True,
-            "embedsignature": True,
-            "boundscheck": False,
-            "wraparound": False,
-        },
+        compiler_directives=compiler_directives,
     )
 if has_option("--use-cffi"):
     print("building cffi")
@@ -121,6 +138,9 @@ def main():
             "Programming Language :: Python :: 3.8",
             "Programming Language :: Python :: 3.9",
             "Programming Language :: Python :: 3.10",
+            "Programming Language :: Python :: 3.11",
+            "Programming Language :: Python :: 3.12",
+            "Programming Language :: Python :: 3.13",
             "Programming Language :: Python :: Implementation :: CPython",
             "Programming Language :: Python :: Implementation :: PyPy",
         ],
