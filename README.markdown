@@ -16,31 +16,36 @@
 ### 完全基于文件的查询
 
 ```python
-from ip2region import Searcher, VectorIndex
+from ip2region import Searcher, VectorIndex, Header, Version
+header = Header.from_file(r".\ip2region_v6.xdb")
+version = Version.from_header(header)
 # 备注：并发使用，每一个线程需要单独定义并且初始化一个 searcher 查询对象，或者加锁
-searcher = Searcher.from_file("F:\pyproject\ip2region\dep\data\ip2region.xdb")
-result = searcher.search_by_string("1.1.1.1")
-print(result.decode)
+searcher = Searcher.from_file(version, r"E:\pyproject\pyip2region\tests\ip2region_v6.xdb")
+result = searcher.search_by_string("2001:0:2851:b9f0:3866:13a2:846f:c23b")
+print(result)
 ```
 
 ### 缓存 `VectorIndex` 索引
 ```python
-from ip2region import Searcher, VectorIndex
-
-index = VectorIndex.from_file("F:\pyproject\ip2region\dep\data\ip2region.xdb")
-searcher = Searcher.from_index("F:\pyproject\ip2region\dep\data\ip2region.xdb", index)
+from ip2region import Searcher, VectorIndex, Header, Version
+header = Header.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
+version = Version.from_header(header)
+index = VectorIndex.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
+searcher = Searcher.from_index(version, r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb", index)
 result = searcher.search_by_string("1.1.1.1")
-print(result.decode)
+print(result)
 ```
 
 ### 缓存整个 `xdb` 数据
 
 ```python
-from ip2region import Searcher, VectorIndex
+from ip2region import Searcher, VectorIndex, Header, Version
 
-with open("F:\pyproject\ip2region\dep\data\ip2region.xdb", "rb") as f:
+header = Header.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
+version = Version.from_header(header)
+with open(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb", "rb") as f:
     data = f.read()
-searcher = Searcher.from_buffer(data)
+searcher = Searcher.from_buffer(version, data)
 result = searcher.search_by_string("1.1.1.1")
-print(result.decode)
+print(result)
 ```
