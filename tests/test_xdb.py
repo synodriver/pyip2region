@@ -2,6 +2,7 @@
 Copyright (c) 2008-2022 synodriver <synodriver@gmail.com>
 """
 from unittest import TestCase
+from concurrent.futures import ThreadPoolExecutor, wait
 # import os
 # os.environ["IP_USE_CFFI"] = "1"
 
@@ -68,6 +69,22 @@ class TestXdb(TestCase):
         searcher = Searcher.from_buffer(version, data)
         result = searcher.search_by_string("1.1.1.1")
         self.assertEqual(result, '澳大利亚|0|0|0')
+        
+    def test_thread(self):
+        header = Header.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
+        version = Version.from_header(header)
+        with open(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb", "rb") as f:
+            data = f.read()
+        searcher = Searcher.from_buffer(version, data)
+        def worker():
+            result = searcher.search_by_string("1.1.1.1")
+            self.assertEqual(result, '澳大利亚|0|0|0')
+        futs = []
+        with ThreadPoolExecutor(max_workers=32) as executor:
+            for i in range(1000000):
+                futs.append(executor.submit(worker))
+            wait(futs)
+            
 
 
 if __name__ == "__main__":

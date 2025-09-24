@@ -28,10 +28,10 @@ print(result)
 ### 缓存 `VectorIndex` 索引
 ```python
 from ip2region import Searcher, VectorIndex, Header, Version
-header = Header.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
+header = Header.from_file(r".\ip2region_v4.xdb")
 version = Version.from_header(header)
-index = VectorIndex.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
-searcher = Searcher.from_index(version, r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb", index)
+index = VectorIndex.from_file(r".\ip2region_v4.xdb")
+searcher = Searcher.from_index(version, r".\ip2region_v4.xdb", index)
 result = searcher.search_by_string("1.1.1.1")
 print(result)
 ```
@@ -41,11 +41,14 @@ print(result)
 ```python
 from ip2region import Searcher, VectorIndex, Header, Version
 
-header = Header.from_file(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb")
+header = Header.from_file(r".\ip2region_v4.xdb")
 version = Version.from_header(header)
-with open(r"E:\pyproject\pyip2region\tests\ip2region_v4.xdb", "rb") as f:
+with open(r".\ip2region_v4.xdb", "rb") as f:
     data = f.read()
 searcher = Searcher.from_buffer(version, data)
 result = searcher.search_by_string("1.1.1.1")
 print(result)
 ```
+
+### 注意：
+多线程模式下，只有纯内存的才是线程安全的，其他都需要用户自己加锁加锁，程序中没有任何机制保证线程安全
