@@ -1603,7 +1603,7 @@ struct __pyx_memoryviewslice_obj;
 struct __pyx_opt_args_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_string;
 struct __pyx_opt_args_9ip2region_8backends_6cython_4_xdb_8Searcher_search;
 
-/* "ip2region/backends/cython/_xdb.pyx":413
+/* "ip2region/backends/cython/_xdb.pyx":414
  *         return self
  * 
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
@@ -1615,7 +1615,7 @@ struct __pyx_opt_args_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_str
   Py_ssize_t size;
 };
 
-/* "ip2region/backends/cython/_xdb.pyx":436
+/* "ip2region/backends/cython/_xdb.pyx":437
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline str search(self, const uint8_t[::1] ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
@@ -1627,7 +1627,7 @@ struct __pyx_opt_args_9ip2region_8backends_6cython_4_xdb_8Searcher_search {
   Py_ssize_t size;
 };
 
-/* "ip2region/backends/cython/_xdb.pyx":40
+/* "ip2region/backends/cython/_xdb.pyx":41
  *         return bytes(inp)
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1642,7 +1642,7 @@ struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header {
 };
 
 
-/* "ip2region/backends/cython/_xdb.pyx":131
+/* "ip2region/backends/cython/_xdb.pyx":132
  *             xdb.xdb_free_header(self.header)
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1657,7 +1657,7 @@ struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_VectorIndex {
 };
 
 
-/* "ip2region/backends/cython/_xdb.pyx":170
+/* "ip2region/backends/cython/_xdb.pyx":171
  *             xdb.xdb_free_vector_index(self.index)
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1672,7 +1672,7 @@ struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Content {
 };
 
 
-/* "ip2region/backends/cython/_xdb.pyx":237
+/* "ip2region/backends/cython/_xdb.pyx":238
  *     return ret
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1686,7 +1686,7 @@ struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version {
 };
 
 
-/* "ip2region/backends/cython/_xdb.pyx":341
+/* "ip2region/backends/cython/_xdb.pyx":342
  *     return ret
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1700,7 +1700,7 @@ struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_RegionBuffer {
 };
 
 
-/* "ip2region/backends/cython/_xdb.pyx":366
+/* "ip2region/backends/cython/_xdb.pyx":367
  * 
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1794,7 +1794,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "ip2region/backends/cython/_xdb.pyx":237
+/* "ip2region/backends/cython/_xdb.pyx":238
  *     return ret
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -1813,7 +1813,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
 static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv6(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *, int __pyx_skip_dispatch);
 
 
-/* "ip2region/backends/cython/_xdb.pyx":366
+/* "ip2region/backends/cython/_xdb.pyx":367
  * 
  * 
  * @cython.final             # <<<<<<<<<<<<<<
@@ -3246,6 +3246,8 @@ static const char __pyx_k_xdb_structure_20[] = "xdb_structure_20";
 static const char __pyx_k_xdb_structure_30[] = "xdb_structure_30";
 static const char __pyx_k_Content_from_file[] = "Content.from_file";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
+static const char __pyx_k_xdb_v4_index_size[] = "xdb_v4_index_size";
+static const char __pyx_k_xdb_v6_index_size[] = "xdb_v6_index_size";
 static const char __pyx_k_Searcher_from_file[] = "Searcher.from_file";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
@@ -3273,7 +3275,6 @@ static const char __pyx_k_Cannot_index_with_type[] = "Cannot index with type '";
 static const char __pyx_k_Header___reduce_cython[] = "Header.__reduce_cython__";
 static const char __pyx_k_xdb_header_info_length[] = "xdb_header_info_length";
 static const char __pyx_k_xdb_region_buffer_auto[] = "xdb_region_buffer_auto";
-static const char __pyx_k_xdb_segment_index_size[] = "xdb_segment_index_size";
 static const char __pyx_k_Content___reduce_cython[] = "Content.__reduce_cython__";
 static const char __pyx_k_Version___reduce_cython[] = "Version.__reduce_cython__";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
@@ -3520,7 +3521,7 @@ typedef struct {
   PyObject *__pyx_slice[1];
   PyObject *__pyx_tuple[3];
   PyObject *__pyx_codeobj_tab[38];
-  PyObject *__pyx_string_tab[232];
+  PyObject *__pyx_string_tab[233];
   PyObject *__pyx_int_0;
   PyObject *__pyx_int_1;
   PyObject *__pyx_int_1000;
@@ -3820,13 +3821,14 @@ static __pyx_mstatetype * const __pyx_mstate_global = &__pyx_mstate_global_stati
 #define __pyx_n_u_xdb_ipv6_id __pyx_string_tab[222]
 #define __pyx_n_u_xdb_region_buffer_auto __pyx_string_tab[223]
 #define __pyx_n_u_xdb_region_buffer_wrapper __pyx_string_tab[224]
-#define __pyx_n_u_xdb_segment_index_size __pyx_string_tab[225]
-#define __pyx_n_u_xdb_structure_20 __pyx_string_tab[226]
-#define __pyx_n_u_xdb_structure_30 __pyx_string_tab[227]
-#define __pyx_n_u_xdb_vector_index_cols __pyx_string_tab[228]
-#define __pyx_n_u_xdb_vector_index_length __pyx_string_tab[229]
-#define __pyx_n_u_xdb_vector_index_rows __pyx_string_tab[230]
-#define __pyx_n_u_xdb_vector_index_size __pyx_string_tab[231]
+#define __pyx_n_u_xdb_structure_20 __pyx_string_tab[225]
+#define __pyx_n_u_xdb_structure_30 __pyx_string_tab[226]
+#define __pyx_n_u_xdb_v4_index_size __pyx_string_tab[227]
+#define __pyx_n_u_xdb_v6_index_size __pyx_string_tab[228]
+#define __pyx_n_u_xdb_vector_index_cols __pyx_string_tab[229]
+#define __pyx_n_u_xdb_vector_index_length __pyx_string_tab[230]
+#define __pyx_n_u_xdb_vector_index_rows __pyx_string_tab[231]
+#define __pyx_n_u_xdb_vector_index_size __pyx_string_tab[232]
 /* #### Code section: module_state_clear ### */
 #if CYTHON_USE_MODULE_STATE
 static CYTHON_SMALL_CODE int __pyx_m_clear(PyObject *m) {
@@ -3871,7 +3873,7 @@ static CYTHON_SMALL_CODE int __pyx_m_clear(PyObject *m) {
   for (int i=0; i<1; ++i) { Py_CLEAR(clear_module_state->__pyx_slice[i]); }
   for (int i=0; i<3; ++i) { Py_CLEAR(clear_module_state->__pyx_tuple[i]); }
   for (int i=0; i<38; ++i) { Py_CLEAR(clear_module_state->__pyx_codeobj_tab[i]); }
-  for (int i=0; i<232; ++i) { Py_CLEAR(clear_module_state->__pyx_string_tab[i]); }
+  for (int i=0; i<233; ++i) { Py_CLEAR(clear_module_state->__pyx_string_tab[i]); }
   Py_CLEAR(clear_module_state->__pyx_int_0);
   Py_CLEAR(clear_module_state->__pyx_int_1);
   Py_CLEAR(clear_module_state->__pyx_int_1000);
@@ -3923,7 +3925,7 @@ static CYTHON_SMALL_CODE int __pyx_m_traverse(PyObject *m, visitproc visit, void
   for (int i=0; i<1; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_slice[i]); }
   for (int i=0; i<3; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_tuple[i]); }
   for (int i=0; i<38; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_codeobj_tab[i]); }
-  for (int i=0; i<232; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_string_tab[i]); }
+  for (int i=0; i<233; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_string_tab[i]); }
   __Pyx_VISIT_CONST(traverse_module_state->__pyx_int_0);
   __Pyx_VISIT_CONST(traverse_module_state->__pyx_int_1);
   __Pyx_VISIT_CONST(traverse_module_state->__pyx_int_1000);
@@ -17298,7 +17300,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":30
+/* "ip2region/backends/cython/_xdb.pyx":31
  * from pathlib import Path
  * 
  * cdef inline bytes ensure_bytes(object inp):             # <<<<<<<<<<<<<<
@@ -17319,7 +17321,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ensure_bytes", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":31
+  /* "ip2region/backends/cython/_xdb.pyx":32
  * 
  * cdef inline bytes ensure_bytes(object inp):
  *     if isinstance(inp, unicode):             # <<<<<<<<<<<<<<
@@ -17329,7 +17331,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
   __pyx_t_1 = PyUnicode_Check(__pyx_v_inp); 
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":32
+    /* "ip2region/backends/cython/_xdb.pyx":33
  * cdef inline bytes ensure_bytes(object inp):
  *     if isinstance(inp, unicode):
  *         return inp.encode()             # <<<<<<<<<<<<<<
@@ -17344,15 +17346,15 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
       PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
       __pyx_t_2 = __Pyx_PyObject_FastCallMethod(__pyx_mstate_global->__pyx_n_u_encode, __pyx_callargs+__pyx_t_4, (1-__pyx_t_4) | (1*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
     }
-    if (!(likely(PyBytes_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None) || __Pyx_RaiseUnexpectedTypeError("bytes", __pyx_t_2))) __PYX_ERR(0, 32, __pyx_L1_error)
+    if (!(likely(PyBytes_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None) || __Pyx_RaiseUnexpectedTypeError("bytes", __pyx_t_2))) __PYX_ERR(0, 33, __pyx_L1_error)
     __pyx_r = ((PyObject*)__pyx_t_2);
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "ip2region/backends/cython/_xdb.pyx":31
+    /* "ip2region/backends/cython/_xdb.pyx":32
  * 
  * cdef inline bytes ensure_bytes(object inp):
  *     if isinstance(inp, unicode):             # <<<<<<<<<<<<<<
@@ -17361,7 +17363,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":33
+  /* "ip2region/backends/cython/_xdb.pyx":34
  *     if isinstance(inp, unicode):
  *         return inp.encode()
  *     elif isinstance(inp, bytes):             # <<<<<<<<<<<<<<
@@ -17371,7 +17373,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
   __pyx_t_1 = PyBytes_Check(__pyx_v_inp); 
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":34
+    /* "ip2region/backends/cython/_xdb.pyx":35
  *         return inp.encode()
  *     elif isinstance(inp, bytes):
  *         return inp             # <<<<<<<<<<<<<<
@@ -17379,12 +17381,12 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
  *         return str(inp).encode()
 */
     __Pyx_XDECREF(__pyx_r);
-    if (!(likely(PyBytes_CheckExact(__pyx_v_inp))||((__pyx_v_inp) == Py_None) || __Pyx_RaiseUnexpectedTypeError("bytes", __pyx_v_inp))) __PYX_ERR(0, 34, __pyx_L1_error)
+    if (!(likely(PyBytes_CheckExact(__pyx_v_inp))||((__pyx_v_inp) == Py_None) || __Pyx_RaiseUnexpectedTypeError("bytes", __pyx_v_inp))) __PYX_ERR(0, 35, __pyx_L1_error)
     __Pyx_INCREF(__pyx_v_inp);
     __pyx_r = ((PyObject*)__pyx_v_inp);
     goto __pyx_L0;
 
-    /* "ip2region/backends/cython/_xdb.pyx":33
+    /* "ip2region/backends/cython/_xdb.pyx":34
  *     if isinstance(inp, unicode):
  *         return inp.encode()
  *     elif isinstance(inp, bytes):             # <<<<<<<<<<<<<<
@@ -17393,20 +17395,20 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":35
+  /* "ip2region/backends/cython/_xdb.pyx":36
  *     elif isinstance(inp, bytes):
  *         return inp
  *     elif isinstance(inp, Path):             # <<<<<<<<<<<<<<
  *         return str(inp).encode()
  *     else:
 */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_mstate_global->__pyx_n_u_Path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_mstate_global->__pyx_n_u_Path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyObject_IsInstance(__pyx_v_inp, __pyx_t_2); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_1 = PyObject_IsInstance(__pyx_v_inp, __pyx_t_2); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":36
+    /* "ip2region/backends/cython/_xdb.pyx":37
  *         return inp
  *     elif isinstance(inp, Path):
  *         return str(inp).encode()             # <<<<<<<<<<<<<<
@@ -17414,16 +17416,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
  *         return bytes(inp)
 */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyObject_Unicode(__pyx_v_inp); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Unicode(__pyx_v_inp); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyUnicode_AsEncodedString(((PyObject*)__pyx_t_2), NULL, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
+    __pyx_t_3 = PyUnicode_AsEncodedString(((PyObject*)__pyx_t_2), NULL, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 37, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = ((PyObject*)__pyx_t_3);
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "ip2region/backends/cython/_xdb.pyx":35
+    /* "ip2region/backends/cython/_xdb.pyx":36
  *     elif isinstance(inp, bytes):
  *         return inp
  *     elif isinstance(inp, Path):             # <<<<<<<<<<<<<<
@@ -17432,7 +17434,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":38
+  /* "ip2region/backends/cython/_xdb.pyx":39
  *         return str(inp).encode()
  *     else:
  *         return bytes(inp)             # <<<<<<<<<<<<<<
@@ -17450,7 +17452,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
       __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+__pyx_t_4, (2-__pyx_t_4) | (__pyx_t_4*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
     }
     __pyx_r = ((PyObject*)__pyx_t_3);
@@ -17458,7 +17460,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
     goto __pyx_L0;
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":30
+  /* "ip2region/backends/cython/_xdb.pyx":31
  * from pathlib import Path
  * 
  * cdef inline bytes ensure_bytes(object inp):             # <<<<<<<<<<<<<<
@@ -17479,7 +17481,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ensure
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":49
+/* "ip2region/backends/cython/_xdb.pyx":50
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -17527,32 +17529,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_db_path,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 49, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 50, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 49, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 50, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 49, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 50, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, i); __PYX_ERR(0, 49, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, i); __PYX_ERR(0, 50, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 49, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 50, __pyx_L3_error)
     }
     __pyx_v_db_path = values[0];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 49, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 50, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -17591,31 +17593,31 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_file", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":51
+  /* "ip2region/backends/cython/_xdb.pyx":52
  *     @staticmethod
  *     def from_file(object db_path):
  *         cdef Header self = Header.__new__(Header)             # <<<<<<<<<<<<<<
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.header = xdb.xdb_load_header_from_file(<const char*>db_path_b)
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Header(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Header(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":52
+  /* "ip2region/backends/cython/_xdb.pyx":53
  *     def from_file(object db_path):
  *         cdef Header self = Header.__new__(Header)
  *         cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *         self.header = xdb.xdb_load_header_from_file(<const char*>db_path_b)
  *         if not self.header:
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":53
+  /* "ip2region/backends/cython/_xdb.pyx":54
  *         cdef Header self = Header.__new__(Header)
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.header = xdb.xdb_load_header_from_file(<const char*>db_path_b)             # <<<<<<<<<<<<<<
@@ -17624,12 +17626,12 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 53, __pyx_L1_error)
+    __PYX_ERR(0, 54, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L1_error)
   __pyx_v_self->header = xdb_load_header_from_file(((char const *)__pyx_t_2));
 
-  /* "ip2region/backends/cython/_xdb.pyx":54
+  /* "ip2region/backends/cython/_xdb.pyx":55
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.header = xdb.xdb_load_header_from_file(<const char*>db_path_b)
  *         if not self.header:             # <<<<<<<<<<<<<<
@@ -17639,7 +17641,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
   __pyx_t_3 = (!(__pyx_v_self->header != 0));
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":55
+    /* "ip2region/backends/cython/_xdb.pyx":56
  *         self.header = xdb.xdb_load_header_from_file(<const char*>db_path_b)
  *         if not self.header:
  *             raise RuntimeError(f"failed to load header from {db_path}")             # <<<<<<<<<<<<<<
@@ -17649,9 +17651,9 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 56, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_load_header_from, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_load_header_from, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 56, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_8 = 1;
@@ -17661,14 +17663,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 55, __pyx_L1_error)
+    __PYX_ERR(0, 56, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":54
+    /* "ip2region/backends/cython/_xdb.pyx":55
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.header = xdb.xdb_load_header_from_file(<const char*>db_path_b)
  *         if not self.header:             # <<<<<<<<<<<<<<
@@ -17677,7 +17679,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":56
+  /* "ip2region/backends/cython/_xdb.pyx":57
  *         if not self.header:
  *             raise RuntimeError(f"failed to load header from {db_path}")
  *         return self             # <<<<<<<<<<<<<<
@@ -17689,7 +17691,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":49
+  /* "ip2region/backends/cython/_xdb.pyx":50
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -17714,7 +17716,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_from_file(P
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":58
+/* "ip2region/backends/cython/_xdb.pyx":59
  *         return self
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -17746,7 +17748,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_7version___
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":60
+  /* "ip2region/backends/cython/_xdb.pyx":61
  *     @property
  *     def version(self):
  *         return self.header.version             # <<<<<<<<<<<<<<
@@ -17754,13 +17756,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_7version___
  *     def version(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":58
+  /* "ip2region/backends/cython/_xdb.pyx":59
  *         return self
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -17779,7 +17781,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_7version___
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":61
+/* "ip2region/backends/cython/_xdb.pyx":62
  *     def version(self):
  *         return self.header.version
  *     @version.setter             # <<<<<<<<<<<<<<
@@ -17800,7 +17802,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_7version_3__set__
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 62, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 63, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -17818,7 +17820,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_7version_3__set__
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_7version_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":63
+  /* "ip2region/backends/cython/_xdb.pyx":64
  *     @version.setter
  *     def version(self, unsigned short value):
  *         self.header.version = value             # <<<<<<<<<<<<<<
@@ -17827,7 +17829,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_7version_2__set__
 */
   __pyx_v_self->header->version = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":61
+  /* "ip2region/backends/cython/_xdb.pyx":62
  *     def version(self):
  *         return self.header.version
  *     @version.setter             # <<<<<<<<<<<<<<
@@ -17840,7 +17842,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_7version_2__set__
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":65
+/* "ip2region/backends/cython/_xdb.pyx":66
  *         self.header.version = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -17872,7 +17874,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_12index_pol
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":67
+  /* "ip2region/backends/cython/_xdb.pyx":68
  *     @property
  *     def index_policy(self):
  *         return self.header.index_policy             # <<<<<<<<<<<<<<
@@ -17880,13 +17882,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_12index_pol
  *     def index_policy(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->index_policy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->index_policy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":65
+  /* "ip2region/backends/cython/_xdb.pyx":66
  *         self.header.version = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -17905,7 +17907,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_12index_pol
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":68
+/* "ip2region/backends/cython/_xdb.pyx":69
  *     def index_policy(self):
  *         return self.header.index_policy
  *     @index_policy.setter             # <<<<<<<<<<<<<<
@@ -17926,7 +17928,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_12index_policy_3_
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 69, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 70, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -17944,7 +17946,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_12index_policy_3_
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_12index_policy_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":70
+  /* "ip2region/backends/cython/_xdb.pyx":71
  *     @index_policy.setter
  *     def index_policy(self, unsigned short value):
  *         self.header.index_policy = value             # <<<<<<<<<<<<<<
@@ -17953,7 +17955,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_12index_policy_2_
 */
   __pyx_v_self->header->index_policy = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":68
+  /* "ip2region/backends/cython/_xdb.pyx":69
  *     def index_policy(self):
  *         return self.header.index_policy
  *     @index_policy.setter             # <<<<<<<<<<<<<<
@@ -17966,7 +17968,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_12index_policy_2_
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":72
+/* "ip2region/backends/cython/_xdb.pyx":73
  *         self.header.index_policy = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -17998,7 +18000,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10created_a
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":74
+  /* "ip2region/backends/cython/_xdb.pyx":75
  *     @property
  *     def created_at(self):
  *         return self.header.created_at             # <<<<<<<<<<<<<<
@@ -18006,13 +18008,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10created_a
  *     def created_at(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_int(__pyx_v_self->header->created_at); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_int(__pyx_v_self->header->created_at); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":72
+  /* "ip2region/backends/cython/_xdb.pyx":73
  *         self.header.index_policy = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18031,7 +18033,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10created_a
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":75
+/* "ip2region/backends/cython/_xdb.pyx":76
  *     def created_at(self):
  *         return self.header.created_at
  *     @created_at.setter             # <<<<<<<<<<<<<<
@@ -18052,7 +18054,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_10created_at_3__s
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 76, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -18070,7 +18072,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_10created_at_3__s
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10created_at_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":77
+  /* "ip2region/backends/cython/_xdb.pyx":78
  *     @created_at.setter
  *     def created_at(self, unsigned short value):
  *         self.header.created_at = value             # <<<<<<<<<<<<<<
@@ -18079,7 +18081,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10created_at_2__s
 */
   __pyx_v_self->header->created_at = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":75
+  /* "ip2region/backends/cython/_xdb.pyx":76
  *     def created_at(self):
  *         return self.header.created_at
  *     @created_at.setter             # <<<<<<<<<<<<<<
@@ -18092,7 +18094,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10created_at_2__s
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":79
+/* "ip2region/backends/cython/_xdb.pyx":80
  *         self.header.created_at = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18124,7 +18126,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_15start_ind
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":81
+  /* "ip2region/backends/cython/_xdb.pyx":82
  *     @property
  *     def start_index_ptr(self):
  *         return self.header.start_index_ptr             # <<<<<<<<<<<<<<
@@ -18132,13 +18134,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_15start_ind
  *     def start_index_ptr(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_int(__pyx_v_self->header->start_index_ptr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_int(__pyx_v_self->header->start_index_ptr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":79
+  /* "ip2region/backends/cython/_xdb.pyx":80
  *         self.header.created_at = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18157,7 +18159,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_15start_ind
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":82
+/* "ip2region/backends/cython/_xdb.pyx":83
  *     def start_index_ptr(self):
  *         return self.header.start_index_ptr
  *     @start_index_ptr.setter             # <<<<<<<<<<<<<<
@@ -18178,7 +18180,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_15start_index_ptr
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 83, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 84, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -18196,7 +18198,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_15start_index_ptr
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_15start_index_ptr_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":84
+  /* "ip2region/backends/cython/_xdb.pyx":85
  *     @start_index_ptr.setter
  *     def start_index_ptr(self, unsigned short value):
  *         self.header.start_index_ptr = value             # <<<<<<<<<<<<<<
@@ -18205,7 +18207,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_15start_index_ptr
 */
   __pyx_v_self->header->start_index_ptr = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":82
+  /* "ip2region/backends/cython/_xdb.pyx":83
  *     def start_index_ptr(self):
  *         return self.header.start_index_ptr
  *     @start_index_ptr.setter             # <<<<<<<<<<<<<<
@@ -18218,7 +18220,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_15start_index_ptr
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":86
+/* "ip2region/backends/cython/_xdb.pyx":87
  *         self.header.start_index_ptr = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18250,7 +18252,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_13end_index
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":88
+  /* "ip2region/backends/cython/_xdb.pyx":89
  *     @property
  *     def end_index_ptr(self):
  *         return self.header.end_index_ptr             # <<<<<<<<<<<<<<
@@ -18258,13 +18260,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_13end_index
  *     def end_index_ptr(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_int(__pyx_v_self->header->end_index_ptr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_int(__pyx_v_self->header->end_index_ptr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":86
+  /* "ip2region/backends/cython/_xdb.pyx":87
  *         self.header.start_index_ptr = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18283,7 +18285,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_13end_index
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":89
+/* "ip2region/backends/cython/_xdb.pyx":90
  *     def end_index_ptr(self):
  *         return self.header.end_index_ptr
  *     @end_index_ptr.setter             # <<<<<<<<<<<<<<
@@ -18304,7 +18306,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_13end_index_ptr_3
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 90, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 91, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -18322,7 +18324,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_13end_index_ptr_3
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_13end_index_ptr_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":91
+  /* "ip2region/backends/cython/_xdb.pyx":92
  *     @end_index_ptr.setter
  *     def end_index_ptr(self, unsigned short value):
  *         self.header.end_index_ptr = value             # <<<<<<<<<<<<<<
@@ -18331,7 +18333,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_13end_index_ptr_2
 */
   __pyx_v_self->header->end_index_ptr = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":89
+  /* "ip2region/backends/cython/_xdb.pyx":90
  *     def end_index_ptr(self):
  *         return self.header.end_index_ptr
  *     @end_index_ptr.setter             # <<<<<<<<<<<<<<
@@ -18344,7 +18346,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_13end_index_ptr_2
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":93
+/* "ip2region/backends/cython/_xdb.pyx":94
  *         self.header.end_index_ptr = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18376,7 +18378,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10ip_versio
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":95
+  /* "ip2region/backends/cython/_xdb.pyx":96
  *     @property
  *     def ip_version(self):
  *         return self.header.ip_version             # <<<<<<<<<<<<<<
@@ -18384,13 +18386,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10ip_versio
  *     def ip_version(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->ip_version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->ip_version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":93
+  /* "ip2region/backends/cython/_xdb.pyx":94
  *         self.header.end_index_ptr = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18409,7 +18411,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10ip_versio
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":96
+/* "ip2region/backends/cython/_xdb.pyx":97
  *     def ip_version(self):
  *         return self.header.ip_version
  *     @ip_version.setter             # <<<<<<<<<<<<<<
@@ -18430,7 +18432,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_10ip_version_3__s
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 97, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 98, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -18448,7 +18450,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_10ip_version_3__s
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10ip_version_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":98
+  /* "ip2region/backends/cython/_xdb.pyx":99
  *     @ip_version.setter
  *     def ip_version(self, unsigned short value):
  *         self.header.ip_version = value             # <<<<<<<<<<<<<<
@@ -18457,7 +18459,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10ip_version_2__s
 */
   __pyx_v_self->header->ip_version = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":96
+  /* "ip2region/backends/cython/_xdb.pyx":97
  *     def ip_version(self):
  *         return self.header.ip_version
  *     @ip_version.setter             # <<<<<<<<<<<<<<
@@ -18470,7 +18472,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_10ip_version_2__s
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":100
+/* "ip2region/backends/cython/_xdb.pyx":101
  *         self.header.ip_version = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18502,7 +18504,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":102
+  /* "ip2region/backends/cython/_xdb.pyx":103
  *     @property
  *     def runtime_ptr_bytes(self):
  *         return self.header.runtime_ptr_bytes             # <<<<<<<<<<<<<<
@@ -18510,13 +18512,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_p
  *     def runtime_ptr_bytes(self, unsigned short value):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->runtime_ptr_bytes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_unsigned_short(__pyx_v_self->header->runtime_ptr_bytes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":100
+  /* "ip2region/backends/cython/_xdb.pyx":101
  *         self.header.ip_version = value
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -18535,7 +18537,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_p
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":103
+/* "ip2region/backends/cython/_xdb.pyx":104
  *     def runtime_ptr_bytes(self):
  *         return self.header.runtime_ptr_bytes
  *     @runtime_ptr_bytes.setter             # <<<<<<<<<<<<<<
@@ -18556,7 +18558,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_ptr_byt
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 104, __pyx_L3_error)
+    __pyx_v_value = __Pyx_PyLong_As_unsigned_short(__pyx_arg_value); if (unlikely((__pyx_v_value == (unsigned short)-1) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -18574,7 +18576,7 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_ptr_byt
 static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_ptr_bytes_2__set__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self, unsigned short __pyx_v_value) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":105
+  /* "ip2region/backends/cython/_xdb.pyx":106
  *     @runtime_ptr_bytes.setter
  *     def runtime_ptr_bytes(self, unsigned short value):
  *         self.header.runtime_ptr_bytes = value             # <<<<<<<<<<<<<<
@@ -18583,7 +18585,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_ptr_byt
 */
   __pyx_v_self->header->runtime_ptr_bytes = __pyx_v_value;
 
-  /* "ip2region/backends/cython/_xdb.pyx":103
+  /* "ip2region/backends/cython/_xdb.pyx":104
  *     def runtime_ptr_bytes(self):
  *         return self.header.runtime_ptr_bytes
  *     @runtime_ptr_bytes.setter             # <<<<<<<<<<<<<<
@@ -18596,7 +18598,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_17runtime_ptr_byt
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":107
+/* "ip2region/backends/cython/_xdb.pyx":108
  *         self.header.runtime_ptr_bytes = value
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):             # <<<<<<<<<<<<<<
@@ -18633,7 +18635,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
   __pyx_v_buffer->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_buffer->obj);
 
-  /* "ip2region/backends/cython/_xdb.pyx":108
+  /* "ip2region/backends/cython/_xdb.pyx":109
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):
  *         cdef Py_ssize_t itemsize = sizeof(char)             # <<<<<<<<<<<<<<
@@ -18642,7 +18644,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_itemsize = (sizeof(char));
 
-  /* "ip2region/backends/cython/_xdb.pyx":109
+  /* "ip2region/backends/cython/_xdb.pyx":110
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):
  *         cdef Py_ssize_t itemsize = sizeof(char)
  *         self.strides[0] = itemsize             # <<<<<<<<<<<<<<
@@ -18651,7 +18653,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   (__pyx_v_self->strides[0]) = __pyx_v_itemsize;
 
-  /* "ip2region/backends/cython/_xdb.pyx":110
+  /* "ip2region/backends/cython/_xdb.pyx":111
  *         cdef Py_ssize_t itemsize = sizeof(char)
  *         self.strides[0] = itemsize
  *         self.shape[0] = self.header.length             # <<<<<<<<<<<<<<
@@ -18661,7 +18663,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
   __pyx_t_1 = __pyx_v_self->header->length;
   (__pyx_v_self->shape[0]) = __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":112
+  /* "ip2region/backends/cython/_xdb.pyx":113
  *         self.shape[0] = self.header.length
  * 
  *         buffer.buf = <char *>self.header.buffer             # <<<<<<<<<<<<<<
@@ -18670,7 +18672,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->buf = ((char *)__pyx_v_self->header->buffer);
 
-  /* "ip2region/backends/cython/_xdb.pyx":113
+  /* "ip2region/backends/cython/_xdb.pyx":114
  * 
  *         buffer.buf = <char *>self.header.buffer
  *         buffer.format = 'B'  # bytes             # <<<<<<<<<<<<<<
@@ -18679,7 +18681,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->format = ((char *)"B");
 
-  /* "ip2region/backends/cython/_xdb.pyx":114
+  /* "ip2region/backends/cython/_xdb.pyx":115
  *         buffer.buf = <char *>self.header.buffer
  *         buffer.format = 'B'  # bytes
  *         buffer.internal = NULL  # see References             # <<<<<<<<<<<<<<
@@ -18688,7 +18690,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->internal = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":115
+  /* "ip2region/backends/cython/_xdb.pyx":116
  *         buffer.format = 'B'  # bytes
  *         buffer.internal = NULL  # see References
  *         buffer.itemsize = itemsize             # <<<<<<<<<<<<<<
@@ -18697,7 +18699,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->itemsize = __pyx_v_itemsize;
 
-  /* "ip2region/backends/cython/_xdb.pyx":116
+  /* "ip2region/backends/cython/_xdb.pyx":117
  *         buffer.internal = NULL  # see References
  *         buffer.itemsize = itemsize
  *         buffer.len =  self.header.length * itemsize  # product(shape) * itemsize             # <<<<<<<<<<<<<<
@@ -18706,7 +18708,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->len = (__pyx_v_self->header->length * __pyx_v_itemsize);
 
-  /* "ip2region/backends/cython/_xdb.pyx":117
+  /* "ip2region/backends/cython/_xdb.pyx":118
  *         buffer.itemsize = itemsize
  *         buffer.len =  self.header.length * itemsize  # product(shape) * itemsize
  *         buffer.ndim = 1             # <<<<<<<<<<<<<<
@@ -18715,7 +18717,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->ndim = 1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":118
+  /* "ip2region/backends/cython/_xdb.pyx":119
  *         buffer.len =  self.header.length * itemsize  # product(shape) * itemsize
  *         buffer.ndim = 1
  *         buffer.obj = self             # <<<<<<<<<<<<<<
@@ -18728,7 +18730,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
   __Pyx_DECREF(__pyx_v_buffer->obj);
   __pyx_v_buffer->obj = ((PyObject *)__pyx_v_self);
 
-  /* "ip2region/backends/cython/_xdb.pyx":119
+  /* "ip2region/backends/cython/_xdb.pyx":120
  *         buffer.ndim = 1
  *         buffer.obj = self
  *         buffer.readonly = 0             # <<<<<<<<<<<<<<
@@ -18737,7 +18739,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->readonly = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":120
+  /* "ip2region/backends/cython/_xdb.pyx":121
  *         buffer.obj = self
  *         buffer.readonly = 0
  *         buffer.shape = self.shape             # <<<<<<<<<<<<<<
@@ -18747,7 +18749,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
   __pyx_t_2 = __pyx_v_self->shape;
   __pyx_v_buffer->shape = __pyx_t_2;
 
-  /* "ip2region/backends/cython/_xdb.pyx":121
+  /* "ip2region/backends/cython/_xdb.pyx":122
  *         buffer.readonly = 0
  *         buffer.shape = self.shape
  *         buffer.strides = self.strides             # <<<<<<<<<<<<<<
@@ -18757,7 +18759,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
   __pyx_t_2 = __pyx_v_self->strides;
   __pyx_v_buffer->strides = __pyx_t_2;
 
-  /* "ip2region/backends/cython/_xdb.pyx":122
+  /* "ip2region/backends/cython/_xdb.pyx":123
  *         buffer.shape = self.shape
  *         buffer.strides = self.strides
  *         buffer.suboffsets = NULL  # for pointer arrays only             # <<<<<<<<<<<<<<
@@ -18766,7 +18768,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
 */
   __pyx_v_buffer->suboffsets = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":107
+  /* "ip2region/backends/cython/_xdb.pyx":108
  *         self.header.runtime_ptr_bytes = value
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):             # <<<<<<<<<<<<<<
@@ -18784,7 +18786,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_2__getbuffer__(st
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":127
+/* "ip2region/backends/cython/_xdb.pyx":128
  *     #     ...
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -18808,7 +18810,7 @@ static void __pyx_pw_9ip2region_8backends_6cython_4_xdb_6Header_5__dealloc__(PyO
 static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_4__dealloc__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *__pyx_v_self) {
   int __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":128
+  /* "ip2region/backends/cython/_xdb.pyx":129
  * 
  *     def __dealloc__(self):
  *         if self.header:             # <<<<<<<<<<<<<<
@@ -18818,7 +18820,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_4__dealloc__(str
   __pyx_t_1 = (__pyx_v_self->header != 0);
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":129
+    /* "ip2region/backends/cython/_xdb.pyx":130
  *     def __dealloc__(self):
  *         if self.header:
  *             xdb.xdb_free_header(self.header)             # <<<<<<<<<<<<<<
@@ -18827,7 +18829,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_4__dealloc__(str
 */
     xdb_free_header(__pyx_v_self->header);
 
-    /* "ip2region/backends/cython/_xdb.pyx":128
+    /* "ip2region/backends/cython/_xdb.pyx":129
  * 
  *     def __dealloc__(self):
  *         if self.header:             # <<<<<<<<<<<<<<
@@ -18836,7 +18838,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_4__dealloc__(str
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":127
+  /* "ip2region/backends/cython/_xdb.pyx":128
  *     #     ...
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -19053,7 +19055,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6Header_8__setstate
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":140
+/* "ip2region/backends/cython/_xdb.pyx":141
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -19101,32 +19103,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_db_path,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 140, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 141, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 140, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 141, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 140, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 141, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, i); __PYX_ERR(0, 140, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, i); __PYX_ERR(0, 141, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 140, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 141, __pyx_L3_error)
     }
     __pyx_v_db_path = values[0];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 140, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 141, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -19165,31 +19167,31 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_file", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":142
+  /* "ip2region/backends/cython/_xdb.pyx":143
  *     @staticmethod
  *     def from_file(object db_path):
  *         cdef VectorIndex  self = VectorIndex.__new__(VectorIndex)             # <<<<<<<<<<<<<<
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.index = xdb.xdb_load_vector_index_from_file(<const char*>db_path_b)
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_VectorIndex(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_VectorIndex(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_VectorIndex *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":143
+  /* "ip2region/backends/cython/_xdb.pyx":144
  *     def from_file(object db_path):
  *         cdef VectorIndex  self = VectorIndex.__new__(VectorIndex)
  *         cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *         self.index = xdb.xdb_load_vector_index_from_file(<const char*>db_path_b)
  *         if not self.index:
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":144
+  /* "ip2region/backends/cython/_xdb.pyx":145
  *         cdef VectorIndex  self = VectorIndex.__new__(VectorIndex)
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.index = xdb.xdb_load_vector_index_from_file(<const char*>db_path_b)             # <<<<<<<<<<<<<<
@@ -19198,12 +19200,12 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 144, __pyx_L1_error)
+    __PYX_ERR(0, 145, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 145, __pyx_L1_error)
   __pyx_v_self->index = xdb_load_vector_index_from_file(((char const *)__pyx_t_2));
 
-  /* "ip2region/backends/cython/_xdb.pyx":145
+  /* "ip2region/backends/cython/_xdb.pyx":146
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.index = xdb.xdb_load_vector_index_from_file(<const char*>db_path_b)
  *         if not self.index:             # <<<<<<<<<<<<<<
@@ -19213,7 +19215,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
   __pyx_t_3 = (!(__pyx_v_self->index != 0));
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":146
+    /* "ip2region/backends/cython/_xdb.pyx":147
  *         self.index = xdb.xdb_load_vector_index_from_file(<const char*>db_path_b)
  *         if not self.index:
  *             raise RuntimeError(f"failed to load vector index from {db_path}")             # <<<<<<<<<<<<<<
@@ -19223,9 +19225,9 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_load_vector_index_from, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_load_vector_index_from, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_8 = 1;
@@ -19235,14 +19237,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 146, __pyx_L1_error)
+    __PYX_ERR(0, 147, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":145
+    /* "ip2region/backends/cython/_xdb.pyx":146
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.index = xdb.xdb_load_vector_index_from_file(<const char*>db_path_b)
  *         if not self.index:             # <<<<<<<<<<<<<<
@@ -19251,7 +19253,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":147
+  /* "ip2region/backends/cython/_xdb.pyx":148
  *         if not self.index:
  *             raise RuntimeError(f"failed to load vector index from {db_path}")
  *         return self             # <<<<<<<<<<<<<<
@@ -19263,7 +19265,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":140
+  /* "ip2region/backends/cython/_xdb.pyx":141
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -19288,7 +19290,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_from_
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":149
+/* "ip2region/backends/cython/_xdb.pyx":150
  *         return self
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):             # <<<<<<<<<<<<<<
@@ -19325,7 +19327,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
   __pyx_v_buffer->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_buffer->obj);
 
-  /* "ip2region/backends/cython/_xdb.pyx":150
+  /* "ip2region/backends/cython/_xdb.pyx":151
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):
  *         cdef Py_ssize_t itemsize = sizeof(char)             # <<<<<<<<<<<<<<
@@ -19334,7 +19336,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_itemsize = (sizeof(char));
 
-  /* "ip2region/backends/cython/_xdb.pyx":151
+  /* "ip2region/backends/cython/_xdb.pyx":152
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):
  *         cdef Py_ssize_t itemsize = sizeof(char)
  *         self.strides[0] = itemsize             # <<<<<<<<<<<<<<
@@ -19343,7 +19345,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   (__pyx_v_self->strides[0]) = __pyx_v_itemsize;
 
-  /* "ip2region/backends/cython/_xdb.pyx":152
+  /* "ip2region/backends/cython/_xdb.pyx":153
  *         cdef Py_ssize_t itemsize = sizeof(char)
  *         self.strides[0] = itemsize
  *         self.shape[0] = self.index.length             # <<<<<<<<<<<<<<
@@ -19353,7 +19355,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
   __pyx_t_1 = __pyx_v_self->index->length;
   (__pyx_v_self->shape[0]) = __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":154
+  /* "ip2region/backends/cython/_xdb.pyx":155
  *         self.shape[0] = self.index.length
  * 
  *         buffer.buf = <char *>self.index.buffer             # <<<<<<<<<<<<<<
@@ -19362,7 +19364,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->buf = ((char *)__pyx_v_self->index->buffer);
 
-  /* "ip2region/backends/cython/_xdb.pyx":155
+  /* "ip2region/backends/cython/_xdb.pyx":156
  * 
  *         buffer.buf = <char *>self.index.buffer
  *         buffer.format = 'B'  # bytes             # <<<<<<<<<<<<<<
@@ -19371,7 +19373,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->format = ((char *)"B");
 
-  /* "ip2region/backends/cython/_xdb.pyx":156
+  /* "ip2region/backends/cython/_xdb.pyx":157
  *         buffer.buf = <char *>self.index.buffer
  *         buffer.format = 'B'  # bytes
  *         buffer.internal = NULL  # see References             # <<<<<<<<<<<<<<
@@ -19380,7 +19382,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->internal = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":157
+  /* "ip2region/backends/cython/_xdb.pyx":158
  *         buffer.format = 'B'  # bytes
  *         buffer.internal = NULL  # see References
  *         buffer.itemsize = itemsize             # <<<<<<<<<<<<<<
@@ -19389,7 +19391,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->itemsize = __pyx_v_itemsize;
 
-  /* "ip2region/backends/cython/_xdb.pyx":158
+  /* "ip2region/backends/cython/_xdb.pyx":159
  *         buffer.internal = NULL  # see References
  *         buffer.itemsize = itemsize
  *         buffer.len =  self.index.length * itemsize  # product(shape) * itemsize             # <<<<<<<<<<<<<<
@@ -19398,7 +19400,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->len = (__pyx_v_self->index->length * __pyx_v_itemsize);
 
-  /* "ip2region/backends/cython/_xdb.pyx":159
+  /* "ip2region/backends/cython/_xdb.pyx":160
  *         buffer.itemsize = itemsize
  *         buffer.len =  self.index.length * itemsize  # product(shape) * itemsize
  *         buffer.ndim = 1             # <<<<<<<<<<<<<<
@@ -19407,7 +19409,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->ndim = 1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":160
+  /* "ip2region/backends/cython/_xdb.pyx":161
  *         buffer.len =  self.index.length * itemsize  # product(shape) * itemsize
  *         buffer.ndim = 1
  *         buffer.obj = self             # <<<<<<<<<<<<<<
@@ -19420,7 +19422,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
   __Pyx_DECREF(__pyx_v_buffer->obj);
   __pyx_v_buffer->obj = ((PyObject *)__pyx_v_self);
 
-  /* "ip2region/backends/cython/_xdb.pyx":161
+  /* "ip2region/backends/cython/_xdb.pyx":162
  *         buffer.ndim = 1
  *         buffer.obj = self
  *         buffer.readonly = 0             # <<<<<<<<<<<<<<
@@ -19429,7 +19431,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->readonly = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":162
+  /* "ip2region/backends/cython/_xdb.pyx":163
  *         buffer.obj = self
  *         buffer.readonly = 0
  *         buffer.shape = self.shape             # <<<<<<<<<<<<<<
@@ -19439,7 +19441,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
   __pyx_t_2 = __pyx_v_self->shape;
   __pyx_v_buffer->shape = __pyx_t_2;
 
-  /* "ip2region/backends/cython/_xdb.pyx":163
+  /* "ip2region/backends/cython/_xdb.pyx":164
  *         buffer.readonly = 0
  *         buffer.shape = self.shape
  *         buffer.strides = self.strides             # <<<<<<<<<<<<<<
@@ -19449,7 +19451,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
   __pyx_t_2 = __pyx_v_self->strides;
   __pyx_v_buffer->strides = __pyx_t_2;
 
-  /* "ip2region/backends/cython/_xdb.pyx":164
+  /* "ip2region/backends/cython/_xdb.pyx":165
  *         buffer.shape = self.shape
  *         buffer.strides = self.strides
  *         buffer.suboffsets = NULL  # for pointer arrays only             # <<<<<<<<<<<<<<
@@ -19458,7 +19460,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
 */
   __pyx_v_buffer->suboffsets = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":149
+  /* "ip2region/backends/cython/_xdb.pyx":150
  *         return self
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):             # <<<<<<<<<<<<<<
@@ -19476,7 +19478,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_2__getbuffe
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":166
+/* "ip2region/backends/cython/_xdb.pyx":167
  *         buffer.suboffsets = NULL  # for pointer arrays only
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -19500,7 +19502,7 @@ static void __pyx_pw_9ip2region_8backends_6cython_4_xdb_11VectorIndex_5__dealloc
 static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_4__dealloc__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_VectorIndex *__pyx_v_self) {
   int __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":167
+  /* "ip2region/backends/cython/_xdb.pyx":168
  * 
  *     def __dealloc__(self):
  *         if self.index:             # <<<<<<<<<<<<<<
@@ -19510,7 +19512,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_4__dealloc
   __pyx_t_1 = (__pyx_v_self->index != 0);
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":168
+    /* "ip2region/backends/cython/_xdb.pyx":169
  *     def __dealloc__(self):
  *         if self.index:
  *             xdb.xdb_free_vector_index(self.index)             # <<<<<<<<<<<<<<
@@ -19519,7 +19521,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_4__dealloc
 */
     xdb_free_vector_index(__pyx_v_self->index);
 
-    /* "ip2region/backends/cython/_xdb.pyx":167
+    /* "ip2region/backends/cython/_xdb.pyx":168
  * 
  *     def __dealloc__(self):
  *         if self.index:             # <<<<<<<<<<<<<<
@@ -19528,7 +19530,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_4__dealloc
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":166
+  /* "ip2region/backends/cython/_xdb.pyx":167
  *         buffer.suboffsets = NULL  # for pointer arrays only
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -19745,7 +19747,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_11VectorIndex_8__se
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":179
+/* "ip2region/backends/cython/_xdb.pyx":180
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -19793,32 +19795,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_db_path,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 179, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 180, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 179, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 180, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 179, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 180, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, i); __PYX_ERR(0, 179, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, i); __PYX_ERR(0, 180, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 179, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 180, __pyx_L3_error)
     }
     __pyx_v_db_path = values[0];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 179, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_file", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 180, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -19857,31 +19859,31 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_file", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":181
+  /* "ip2region/backends/cython/_xdb.pyx":182
  *     @staticmethod
  *     def from_file(object db_path):
  *         cdef Content self = Content.__new__(Content)             # <<<<<<<<<<<<<<
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.content = xdb.xdb_load_content_from_file(<const char*>db_path_b)
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Content(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Content(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Content *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":182
+  /* "ip2region/backends/cython/_xdb.pyx":183
  *     def from_file(object db_path):
  *         cdef Content self = Content.__new__(Content)
  *         cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *         self.content = xdb.xdb_load_content_from_file(<const char*>db_path_b)
  *         if not self.content:
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":183
+  /* "ip2region/backends/cython/_xdb.pyx":184
  *         cdef Content self = Content.__new__(Content)
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.content = xdb.xdb_load_content_from_file(<const char*>db_path_b)             # <<<<<<<<<<<<<<
@@ -19890,12 +19892,12 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 183, __pyx_L1_error)
+    __PYX_ERR(0, 184, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 183, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 184, __pyx_L1_error)
   __pyx_v_self->content = xdb_load_content_from_file(((char const *)__pyx_t_2));
 
-  /* "ip2region/backends/cython/_xdb.pyx":184
+  /* "ip2region/backends/cython/_xdb.pyx":185
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.content = xdb.xdb_load_content_from_file(<const char*>db_path_b)
  *         if not self.content:             # <<<<<<<<<<<<<<
@@ -19905,7 +19907,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
   __pyx_t_3 = (!(__pyx_v_self->content != 0));
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":185
+    /* "ip2region/backends/cython/_xdb.pyx":186
  *         self.content = xdb.xdb_load_content_from_file(<const char*>db_path_b)
  *         if not self.content:
  *             raise RuntimeError(f"failed to load xdb content from {db_path}")             # <<<<<<<<<<<<<<
@@ -19915,9 +19917,9 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_load_xdb_content_from, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_load_xdb_content_from, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_8 = 1;
@@ -19927,14 +19929,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 185, __pyx_L1_error)
+    __PYX_ERR(0, 186, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":184
+    /* "ip2region/backends/cython/_xdb.pyx":185
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         self.content = xdb.xdb_load_content_from_file(<const char*>db_path_b)
  *         if not self.content:             # <<<<<<<<<<<<<<
@@ -19943,7 +19945,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":186
+  /* "ip2region/backends/cython/_xdb.pyx":187
  *         if not self.content:
  *             raise RuntimeError(f"failed to load xdb content from {db_path}")
  *         return self             # <<<<<<<<<<<<<<
@@ -19955,7 +19957,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":179
+  /* "ip2region/backends/cython/_xdb.pyx":180
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -19980,7 +19982,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_from_file(
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":188
+/* "ip2region/backends/cython/_xdb.pyx":189
  *         return self
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):             # <<<<<<<<<<<<<<
@@ -20018,7 +20020,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   __pyx_v_buffer->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_buffer->obj);
 
-  /* "ip2region/backends/cython/_xdb.pyx":189
+  /* "ip2region/backends/cython/_xdb.pyx":190
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):
  *         cdef Py_ssize_t itemsize = sizeof(char)             # <<<<<<<<<<<<<<
@@ -20027,7 +20029,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_itemsize = (sizeof(char));
 
-  /* "ip2region/backends/cython/_xdb.pyx":190
+  /* "ip2region/backends/cython/_xdb.pyx":191
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):
  *         cdef Py_ssize_t itemsize = sizeof(char)
  *         self.strides[0] = itemsize             # <<<<<<<<<<<<<<
@@ -20036,7 +20038,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   (__pyx_v_self->strides[0]) = __pyx_v_itemsize;
 
-  /* "ip2region/backends/cython/_xdb.pyx":191
+  /* "ip2region/backends/cython/_xdb.pyx":192
  *         cdef Py_ssize_t itemsize = sizeof(char)
  *         self.strides[0] = itemsize
  *         self.shape[0] = self.content.length             # <<<<<<<<<<<<<<
@@ -20046,7 +20048,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   __pyx_t_1 = __pyx_v_self->content->length;
   (__pyx_v_self->shape[0]) = __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":193
+  /* "ip2region/backends/cython/_xdb.pyx":194
  *         self.shape[0] = self.content.length
  * 
  *         buffer.buf = self.content.buffer             # <<<<<<<<<<<<<<
@@ -20056,7 +20058,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   __pyx_t_2 = __pyx_v_self->content->buffer;
   __pyx_v_buffer->buf = __pyx_t_2;
 
-  /* "ip2region/backends/cython/_xdb.pyx":194
+  /* "ip2region/backends/cython/_xdb.pyx":195
  * 
  *         buffer.buf = self.content.buffer
  *         buffer.format = 'B'  # bytes             # <<<<<<<<<<<<<<
@@ -20065,7 +20067,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->format = ((char *)"B");
 
-  /* "ip2region/backends/cython/_xdb.pyx":195
+  /* "ip2region/backends/cython/_xdb.pyx":196
  *         buffer.buf = self.content.buffer
  *         buffer.format = 'B'  # bytes
  *         buffer.internal = NULL  # see References             # <<<<<<<<<<<<<<
@@ -20074,7 +20076,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->internal = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":196
+  /* "ip2region/backends/cython/_xdb.pyx":197
  *         buffer.format = 'B'  # bytes
  *         buffer.internal = NULL  # see References
  *         buffer.itemsize = itemsize             # <<<<<<<<<<<<<<
@@ -20083,7 +20085,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->itemsize = __pyx_v_itemsize;
 
-  /* "ip2region/backends/cython/_xdb.pyx":197
+  /* "ip2region/backends/cython/_xdb.pyx":198
  *         buffer.internal = NULL  # see References
  *         buffer.itemsize = itemsize
  *         buffer.len =  self.content.length * itemsize  # product(shape) * itemsize             # <<<<<<<<<<<<<<
@@ -20092,7 +20094,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->len = (__pyx_v_self->content->length * __pyx_v_itemsize);
 
-  /* "ip2region/backends/cython/_xdb.pyx":198
+  /* "ip2region/backends/cython/_xdb.pyx":199
  *         buffer.itemsize = itemsize
  *         buffer.len =  self.content.length * itemsize  # product(shape) * itemsize
  *         buffer.ndim = 1             # <<<<<<<<<<<<<<
@@ -20101,7 +20103,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->ndim = 1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":199
+  /* "ip2region/backends/cython/_xdb.pyx":200
  *         buffer.len =  self.content.length * itemsize  # product(shape) * itemsize
  *         buffer.ndim = 1
  *         buffer.obj = self             # <<<<<<<<<<<<<<
@@ -20114,7 +20116,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   __Pyx_DECREF(__pyx_v_buffer->obj);
   __pyx_v_buffer->obj = ((PyObject *)__pyx_v_self);
 
-  /* "ip2region/backends/cython/_xdb.pyx":200
+  /* "ip2region/backends/cython/_xdb.pyx":201
  *         buffer.ndim = 1
  *         buffer.obj = self
  *         buffer.readonly = 0             # <<<<<<<<<<<<<<
@@ -20123,7 +20125,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->readonly = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":201
+  /* "ip2region/backends/cython/_xdb.pyx":202
  *         buffer.obj = self
  *         buffer.readonly = 0
  *         buffer.shape = self.shape             # <<<<<<<<<<<<<<
@@ -20133,7 +20135,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   __pyx_t_3 = __pyx_v_self->shape;
   __pyx_v_buffer->shape = __pyx_t_3;
 
-  /* "ip2region/backends/cython/_xdb.pyx":202
+  /* "ip2region/backends/cython/_xdb.pyx":203
  *         buffer.readonly = 0
  *         buffer.shape = self.shape
  *         buffer.strides = self.strides             # <<<<<<<<<<<<<<
@@ -20143,7 +20145,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   __pyx_t_3 = __pyx_v_self->strides;
   __pyx_v_buffer->strides = __pyx_t_3;
 
-  /* "ip2region/backends/cython/_xdb.pyx":203
+  /* "ip2region/backends/cython/_xdb.pyx":204
  *         buffer.shape = self.shape
  *         buffer.strides = self.strides
  *         buffer.suboffsets = NULL  # for pointer arrays only             # <<<<<<<<<<<<<<
@@ -20152,7 +20154,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
 */
   __pyx_v_buffer->suboffsets = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":188
+  /* "ip2region/backends/cython/_xdb.pyx":189
  *         return self
  * 
  *     def __getbuffer__(self, Py_buffer *buffer, int flags):             # <<<<<<<<<<<<<<
@@ -20170,7 +20172,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_2__getbuffer__(s
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":205
+/* "ip2region/backends/cython/_xdb.pyx":206
  *         buffer.suboffsets = NULL  # for pointer arrays only
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -20194,7 +20196,7 @@ static void __pyx_pw_9ip2region_8backends_6cython_4_xdb_7Content_5__dealloc__(Py
 static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_4__dealloc__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Content *__pyx_v_self) {
   int __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":206
+  /* "ip2region/backends/cython/_xdb.pyx":207
  * 
  *     def __dealloc__(self):
  *         if self.content:             # <<<<<<<<<<<<<<
@@ -20204,7 +20206,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_4__dealloc__(st
   __pyx_t_1 = (__pyx_v_self->content != 0);
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":207
+    /* "ip2region/backends/cython/_xdb.pyx":208
  *     def __dealloc__(self):
  *         if self.content:
  *             xdb.xdb_free_content(self.content)             # <<<<<<<<<<<<<<
@@ -20213,7 +20215,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_4__dealloc__(st
 */
     xdb_free_content(__pyx_v_self->content);
 
-    /* "ip2region/backends/cython/_xdb.pyx":206
+    /* "ip2region/backends/cython/_xdb.pyx":207
  * 
  *     def __dealloc__(self):
  *         if self.content:             # <<<<<<<<<<<<<<
@@ -20222,7 +20224,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_4__dealloc__(st
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":205
+  /* "ip2region/backends/cython/_xdb.pyx":206
  *         buffer.suboffsets = NULL  # for pointer arrays only
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -20439,7 +20441,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Content_8__setstat
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":210
+/* "ip2region/backends/cython/_xdb.pyx":211
  * 
  * 
  * cpdef inline int verify(object db_path) except -1:             # <<<<<<<<<<<<<<
@@ -20475,19 +20477,19 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("verify", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":211
+  /* "ip2region/backends/cython/_xdb.pyx":212
  * 
  * cpdef inline int verify(object db_path) except -1:
  *     cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *     cdef const char* db_path_ptr = <const char*>db_path_b
  *     cdef int ret
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":212
+  /* "ip2region/backends/cython/_xdb.pyx":213
  * cpdef inline int verify(object db_path) except -1:
  *     cdef bytes db_path_b = ensure_bytes(db_path)
  *     cdef const char* db_path_ptr = <const char*>db_path_b             # <<<<<<<<<<<<<<
@@ -20496,12 +20498,12 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 212, __pyx_L1_error)
+    __PYX_ERR(0, 213, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 213, __pyx_L1_error)
   __pyx_v_db_path_ptr = ((char const *)__pyx_t_2);
 
-  /* "ip2region/backends/cython/_xdb.pyx":214
+  /* "ip2region/backends/cython/_xdb.pyx":215
  *     cdef const char* db_path_ptr = <const char*>db_path_b
  *     cdef int ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -20515,7 +20517,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":215
+        /* "ip2region/backends/cython/_xdb.pyx":216
  *     cdef int ret
  *     with nogil:
  *         ret = xdb.xdb_verify_from_file(db_path_ptr)             # <<<<<<<<<<<<<<
@@ -20525,7 +20527,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
         __pyx_v_ret = xdb_verify_from_file(__pyx_v_db_path_ptr);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":214
+      /* "ip2region/backends/cython/_xdb.pyx":215
  *     cdef const char* db_path_ptr = <const char*>db_path_b
  *     cdef int ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -20542,7 +20544,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":216
+  /* "ip2region/backends/cython/_xdb.pyx":217
  *     with nogil:
  *         ret = xdb.xdb_verify_from_file(db_path_ptr)
  *     if ret != 0:             # <<<<<<<<<<<<<<
@@ -20552,7 +20554,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
   __pyx_t_3 = (__pyx_v_ret != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":217
+    /* "ip2region/backends/cython/_xdb.pyx":218
  *         ret = xdb.xdb_verify_from_file(db_path_ptr)
  *     if ret != 0:
  *         raise RuntimeError(f"failed to verify xdb file {db_path} with errno={ret}")             # <<<<<<<<<<<<<<
@@ -20562,16 +20564,16 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 218, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyUnicode_From_int(__pyx_v_ret, 0, ' ', 'd'); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyUnicode_From_int(__pyx_v_ret, 0, ' ', 'd'); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 218, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8[0] = __pyx_mstate_global->__pyx_kp_u_failed_to_verify_xdb_file;
     __pyx_t_8[1] = __pyx_t_6;
     __pyx_t_8[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_8[3] = __pyx_t_7;
     __pyx_t_9 = __Pyx_PyUnicode_Join(__pyx_t_8, 4, 26 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_6) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_7), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6));
-    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 217, __pyx_L1_error)
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 218, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -20582,14 +20584,14 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 217, __pyx_L1_error)
+    __PYX_ERR(0, 218, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":216
+    /* "ip2region/backends/cython/_xdb.pyx":217
  *     with nogil:
  *         ret = xdb.xdb_verify_from_file(db_path_ptr)
  *     if ret != 0:             # <<<<<<<<<<<<<<
@@ -20598,7 +20600,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":218
+  /* "ip2region/backends/cython/_xdb.pyx":219
  *     if ret != 0:
  *         raise RuntimeError(f"failed to verify xdb file {db_path} with errno={ret}")
  *     return ret             # <<<<<<<<<<<<<<
@@ -20608,7 +20610,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(PyObj
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":210
+  /* "ip2region/backends/cython/_xdb.pyx":211
  * 
  * 
  * cpdef inline int verify(object db_path) except -1:             # <<<<<<<<<<<<<<
@@ -20672,32 +20674,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_db_path,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 210, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 211, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 210, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 211, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "verify", 0) < 0) __PYX_ERR(0, 210, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "verify", 0) < 0) __PYX_ERR(0, 211, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("verify", 1, 1, 1, i); __PYX_ERR(0, 210, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("verify", 1, 1, 1, i); __PYX_ERR(0, 211, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 210, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 211, __pyx_L3_error)
     }
     __pyx_v_db_path = values[0];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("verify", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 210, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("verify", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 211, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -20728,8 +20730,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_verify(CYTHON_UNUSE
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("verify", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(__pyx_v_db_path, 1); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 210, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_verify(__pyx_v_db_path, 1); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -20746,7 +20748,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_verify(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":221
+/* "ip2region/backends/cython/_xdb.pyx":222
  * 
  * 
  * cpdef inline int verify_from_header(object db_path, Header header) except -1:             # <<<<<<<<<<<<<<
@@ -20783,19 +20785,19 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("verify_from_header", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":222
+  /* "ip2region/backends/cython/_xdb.pyx":223
  * 
  * cpdef inline int verify_from_header(object db_path, Header header) except -1:
  *     cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *     cdef const char * db_path_ptr = <const char *> db_path_b
  *     cdef int ret
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":223
+  /* "ip2region/backends/cython/_xdb.pyx":224
  * cpdef inline int verify_from_header(object db_path, Header header) except -1:
  *     cdef bytes db_path_b = ensure_bytes(db_path)
  *     cdef const char * db_path_ptr = <const char *> db_path_b             # <<<<<<<<<<<<<<
@@ -20804,12 +20806,12 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 223, __pyx_L1_error)
+    __PYX_ERR(0, 224, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 224, __pyx_L1_error)
   __pyx_v_db_path_ptr = ((char const *)__pyx_t_2);
 
-  /* "ip2region/backends/cython/_xdb.pyx":225
+  /* "ip2region/backends/cython/_xdb.pyx":226
  *     cdef const char * db_path_ptr = <const char *> db_path_b
  *     cdef int ret
  *     cdef FILE * handle = NULL             # <<<<<<<<<<<<<<
@@ -20818,7 +20820,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
 */
   __pyx_v_handle = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":226
+  /* "ip2region/backends/cython/_xdb.pyx":227
  *     cdef int ret
  *     cdef FILE * handle = NULL
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -20832,7 +20834,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":227
+        /* "ip2region/backends/cython/_xdb.pyx":228
  *     cdef FILE * handle = NULL
  *     with nogil:
  *         handle = fopen(db_path_ptr, "rb")             # <<<<<<<<<<<<<<
@@ -20841,7 +20843,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
 */
         __pyx_v_handle = fopen(__pyx_v_db_path_ptr, ((char const *)"rb"));
 
-        /* "ip2region/backends/cython/_xdb.pyx":228
+        /* "ip2region/backends/cython/_xdb.pyx":229
  *     with nogil:
  *         handle = fopen(db_path_ptr, "rb")
  *         if not handle:             # <<<<<<<<<<<<<<
@@ -20851,7 +20853,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
         __pyx_t_3 = (!(__pyx_v_handle != 0));
         if (unlikely(__pyx_t_3)) {
 
-          /* "ip2region/backends/cython/_xdb.pyx":229
+          /* "ip2region/backends/cython/_xdb.pyx":230
  *         handle = fopen(db_path_ptr, "rb")
  *         if not handle:
  *             with gil:             # <<<<<<<<<<<<<<
@@ -20862,7 +20864,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
               PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
               /*try:*/ {
 
-                /* "ip2region/backends/cython/_xdb.pyx":230
+                /* "ip2region/backends/cython/_xdb.pyx":231
  *         if not handle:
  *             with gil:
  *                 raise RuntimeError(f"failed to open {db_path}")             # <<<<<<<<<<<<<<
@@ -20872,9 +20874,9 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
                 __pyx_t_4 = NULL;
                 __Pyx_INCREF(__pyx_builtin_RuntimeError);
                 __pyx_t_5 = __pyx_builtin_RuntimeError; 
-                __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 230, __pyx_L8_error)
+                __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 231, __pyx_L8_error)
                 __Pyx_GOTREF(__pyx_t_6);
-                __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_open, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 230, __pyx_L8_error)
+                __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_open, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 231, __pyx_L8_error)
                 __Pyx_GOTREF(__pyx_t_7);
                 __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
                 __pyx_t_8 = 1;
@@ -20884,15 +20886,15 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
                   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
                   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
                   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L8_error)
+                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L8_error)
                   __Pyx_GOTREF(__pyx_t_1);
                 }
                 __Pyx_Raise(__pyx_t_1, 0, 0, 0);
                 __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                __PYX_ERR(0, 230, __pyx_L8_error)
+                __PYX_ERR(0, 231, __pyx_L8_error)
               }
 
-              /* "ip2region/backends/cython/_xdb.pyx":229
+              /* "ip2region/backends/cython/_xdb.pyx":230
  *         handle = fopen(db_path_ptr, "rb")
  *         if not handle:
  *             with gil:             # <<<<<<<<<<<<<<
@@ -20907,7 +20909,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
               }
           }
 
-          /* "ip2region/backends/cython/_xdb.pyx":228
+          /* "ip2region/backends/cython/_xdb.pyx":229
  *     with nogil:
  *         handle = fopen(db_path_ptr, "rb")
  *         if not handle:             # <<<<<<<<<<<<<<
@@ -20916,7 +20918,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
 */
         }
 
-        /* "ip2region/backends/cython/_xdb.pyx":231
+        /* "ip2region/backends/cython/_xdb.pyx":232
  *             with gil:
  *                 raise RuntimeError(f"failed to open {db_path}")
  *         ret = xdb.xdb_verify_from_header(handle, header.header)             # <<<<<<<<<<<<<<
@@ -20925,7 +20927,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
 */
         __pyx_v_ret = xdb_verify_from_header(__pyx_v_handle, __pyx_v_header->header);
 
-        /* "ip2region/backends/cython/_xdb.pyx":232
+        /* "ip2region/backends/cython/_xdb.pyx":233
  *                 raise RuntimeError(f"failed to open {db_path}")
  *         ret = xdb.xdb_verify_from_header(handle, header.header)
  *         fclose(handle)             # <<<<<<<<<<<<<<
@@ -20935,7 +20937,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
         (void)(fclose(__pyx_v_handle));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":226
+      /* "ip2region/backends/cython/_xdb.pyx":227
  *     cdef int ret
  *     cdef FILE * handle = NULL
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -20957,7 +20959,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":233
+  /* "ip2region/backends/cython/_xdb.pyx":234
  *         ret = xdb.xdb_verify_from_header(handle, header.header)
  *         fclose(handle)
  *     if ret != 0:             # <<<<<<<<<<<<<<
@@ -20967,7 +20969,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
   __pyx_t_3 = (__pyx_v_ret != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":234
+    /* "ip2region/backends/cython/_xdb.pyx":235
  *         fclose(handle)
  *     if ret != 0:
  *         raise RuntimeError(f"failed to verify xdb file {db_path} with errno={ret}")             # <<<<<<<<<<<<<<
@@ -20977,16 +20979,16 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
     __pyx_t_5 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_7 = __pyx_builtin_RuntimeError; 
-    __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 234, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 235, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PyUnicode_From_int(__pyx_v_ret, 0, ' ', 'd'); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 234, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyUnicode_From_int(__pyx_v_ret, 0, ' ', 'd'); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 235, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_9[0] = __pyx_mstate_global->__pyx_kp_u_failed_to_verify_xdb_file;
     __pyx_t_9[1] = __pyx_t_4;
     __pyx_t_9[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_9[3] = __pyx_t_6;
     __pyx_t_10 = __Pyx_PyUnicode_Join(__pyx_t_9, 4, 26 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_6), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4));
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 234, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 235, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -20997,14 +20999,14 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 234, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 234, __pyx_L1_error)
+    __PYX_ERR(0, 235, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":233
+    /* "ip2region/backends/cython/_xdb.pyx":234
  *         ret = xdb.xdb_verify_from_header(handle, header.header)
  *         fclose(handle)
  *     if ret != 0:             # <<<<<<<<<<<<<<
@@ -21013,7 +21015,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":235
+  /* "ip2region/backends/cython/_xdb.pyx":236
  *     if ret != 0:
  *         raise RuntimeError(f"failed to verify xdb file {db_path} with errno={ret}")
  *     return ret             # <<<<<<<<<<<<<<
@@ -21023,7 +21025,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":221
+  /* "ip2region/backends/cython/_xdb.pyx":222
  * 
  * 
  * cpdef inline int verify_from_header(object db_path, Header header) except -1:             # <<<<<<<<<<<<<<
@@ -21088,39 +21090,39 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_db_path,&__pyx_mstate_global->__pyx_n_u_header,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 221, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 222, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 221, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 222, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 221, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 222, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "verify_from_header", 0) < 0) __PYX_ERR(0, 221, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "verify_from_header", 0) < 0) __PYX_ERR(0, 222, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 2; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("verify_from_header", 1, 2, 2, i); __PYX_ERR(0, 221, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("verify_from_header", 1, 2, 2, i); __PYX_ERR(0, 222, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 221, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 222, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 221, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 222, __pyx_L3_error)
     }
     __pyx_v_db_path = values[0];
     __pyx_v_header = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("verify_from_header", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 221, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("verify_from_header", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 222, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -21131,7 +21133,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_header), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, 1, "header", 0))) __PYX_ERR(0, 221, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_header), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, 1, "header", 0))) __PYX_ERR(0, 222, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_2verify_from_header(__pyx_self, __pyx_v_db_path, __pyx_v_header);
 
   /* function exit code */
@@ -21161,8 +21163,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_2verify_from_header
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("verify_from_header", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_header(__pyx_v_db_path, __pyx_v_header, 1); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 221, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_verify_from_header(__pyx_v_db_path, __pyx_v_header, 1); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -21179,7 +21181,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_2verify_from_header
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":244
+/* "ip2region/backends/cython/_xdb.pyx":245
  *         xdb.xdb_version_t *version
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21197,19 +21199,19 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_ptr", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":246
+  /* "ip2region/backends/cython/_xdb.pyx":247
  *     @staticmethod
  *     cdef inline Version from_ptr(xdb.xdb_version_t* version):
  *         cdef Version self = Version.__new__(Version)             # <<<<<<<<<<<<<<
  *         self.version = version
  *         return self
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 247, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":247
+  /* "ip2region/backends/cython/_xdb.pyx":248
  *     cdef inline Version from_ptr(xdb.xdb_version_t* version):
  *         cdef Version self = Version.__new__(Version)
  *         self.version = version             # <<<<<<<<<<<<<<
@@ -21218,7 +21220,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
 */
   __pyx_v_self->version = __pyx_v_version;
 
-  /* "ip2region/backends/cython/_xdb.pyx":248
+  /* "ip2region/backends/cython/_xdb.pyx":249
  *         cdef Version self = Version.__new__(Version)
  *         self.version = version
  *         return self             # <<<<<<<<<<<<<<
@@ -21230,7 +21232,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   __pyx_r = __pyx_v_self;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":244
+  /* "ip2region/backends/cython/_xdb.pyx":245
  *         xdb.xdb_version_t *version
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21250,7 +21252,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":251
+/* "ip2region/backends/cython/_xdb.pyx":252
  * 
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21315,19 +21317,19 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ipv4", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":253
+  /* "ip2region/backends/cython/_xdb.pyx":254
  *     @staticmethod
  *     def ipv4():
  *         cdef Version self = Version.__new__(Version)             # <<<<<<<<<<<<<<
  *         self.version = xdb.xdb_version_v4()
  *         if not self.version:
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":254
+  /* "ip2region/backends/cython/_xdb.pyx":255
  *     def ipv4():
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_v4()             # <<<<<<<<<<<<<<
@@ -21336,7 +21338,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
 */
   __pyx_v_self->version = xdb_version_v4();
 
-  /* "ip2region/backends/cython/_xdb.pyx":255
+  /* "ip2region/backends/cython/_xdb.pyx":256
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_v4()
  *         if not self.version:             # <<<<<<<<<<<<<<
@@ -21346,7 +21348,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
   __pyx_t_2 = (!(__pyx_v_self->version != 0));
   if (unlikely(__pyx_t_2)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":256
+    /* "ip2region/backends/cython/_xdb.pyx":257
  *         self.version = xdb.xdb_version_v4()
  *         if not self.version:
  *             raise RuntimeError(f"failed to create version")             # <<<<<<<<<<<<<<
@@ -21362,14 +21364,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 256, __pyx_L1_error)
+    __PYX_ERR(0, 257, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":255
+    /* "ip2region/backends/cython/_xdb.pyx":256
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_v4()
  *         if not self.version:             # <<<<<<<<<<<<<<
@@ -21378,7 +21380,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":257
+  /* "ip2region/backends/cython/_xdb.pyx":258
  *         if not self.version:
  *             raise RuntimeError(f"failed to create version")
  *         return self             # <<<<<<<<<<<<<<
@@ -21390,7 +21392,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":251
+  /* "ip2region/backends/cython/_xdb.pyx":252
  * 
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21412,7 +21414,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_ipv4(void)
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":259
+/* "ip2region/backends/cython/_xdb.pyx":260
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21477,19 +21479,19 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ipv6", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":261
+  /* "ip2region/backends/cython/_xdb.pyx":262
  *     @staticmethod
  *     def ipv6():
  *         cdef Version self = Version.__new__(Version)             # <<<<<<<<<<<<<<
  *         self.version = xdb.xdb_version_v6()
  *         if not self.version:
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":262
+  /* "ip2region/backends/cython/_xdb.pyx":263
  *     def ipv6():
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_v6()             # <<<<<<<<<<<<<<
@@ -21498,7 +21500,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
 */
   __pyx_v_self->version = xdb_version_v6();
 
-  /* "ip2region/backends/cython/_xdb.pyx":263
+  /* "ip2region/backends/cython/_xdb.pyx":264
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_v6()
  *         if not self.version:             # <<<<<<<<<<<<<<
@@ -21508,7 +21510,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
   __pyx_t_2 = (!(__pyx_v_self->version != 0));
   if (unlikely(__pyx_t_2)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":264
+    /* "ip2region/backends/cython/_xdb.pyx":265
  *         self.version = xdb.xdb_version_v6()
  *         if not self.version:
  *             raise RuntimeError(f"failed to create version")             # <<<<<<<<<<<<<<
@@ -21524,14 +21526,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 264, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 265, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 264, __pyx_L1_error)
+    __PYX_ERR(0, 265, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":263
+    /* "ip2region/backends/cython/_xdb.pyx":264
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_v6()
  *         if not self.version:             # <<<<<<<<<<<<<<
@@ -21540,7 +21542,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":265
+  /* "ip2region/backends/cython/_xdb.pyx":266
  *         if not self.version:
  *             raise RuntimeError(f"failed to create version")
  *         return self             # <<<<<<<<<<<<<<
@@ -21552,7 +21554,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":259
+  /* "ip2region/backends/cython/_xdb.pyx":260
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21574,7 +21576,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_2ipv6(void
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":267
+/* "ip2region/backends/cython/_xdb.pyx":268
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21622,32 +21624,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_header,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 267, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 268, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 267, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 268, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_header", 0) < 0) __PYX_ERR(0, 267, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_header", 0) < 0) __PYX_ERR(0, 268, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_header", 1, 1, 1, i); __PYX_ERR(0, 267, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_header", 1, 1, 1, i); __PYX_ERR(0, 268, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 267, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 268, __pyx_L3_error)
     }
     __pyx_v_header = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Header *)values[0]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_header", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 267, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_header", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 268, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -21658,7 +21660,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_header), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, 1, "header", 0))) __PYX_ERR(0, 268, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_header), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, 1, "header", 0))) __PYX_ERR(0, 269, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_header(__pyx_v_header);
 
   /* function exit code */
@@ -21692,19 +21694,19 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_header", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":269
+  /* "ip2region/backends/cython/_xdb.pyx":270
  *     @staticmethod
  *     def from_header(Header header):
  *         cdef Version self = Version.__new__(Version)             # <<<<<<<<<<<<<<
  *         self.version = xdb.xdb_version_from_header(header.header)
  *         if not self.version:
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Version(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":270
+  /* "ip2region/backends/cython/_xdb.pyx":271
  *     def from_header(Header header):
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_from_header(header.header)             # <<<<<<<<<<<<<<
@@ -21713,7 +21715,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
 */
   __pyx_v_self->version = xdb_version_from_header(__pyx_v_header->header);
 
-  /* "ip2region/backends/cython/_xdb.pyx":271
+  /* "ip2region/backends/cython/_xdb.pyx":272
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_from_header(header.header)
  *         if not self.version:             # <<<<<<<<<<<<<<
@@ -21723,7 +21725,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
   __pyx_t_2 = (!(__pyx_v_self->version != 0));
   if (unlikely(__pyx_t_2)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":272
+    /* "ip2region/backends/cython/_xdb.pyx":273
  *         self.version = xdb.xdb_version_from_header(header.header)
  *         if not self.version:
  *             raise RuntimeError(f"failed to create version")             # <<<<<<<<<<<<<<
@@ -21739,14 +21741,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 272, __pyx_L1_error)
+    __PYX_ERR(0, 273, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":271
+    /* "ip2region/backends/cython/_xdb.pyx":272
  *         cdef Version self = Version.__new__(Version)
  *         self.version = xdb.xdb_version_from_header(header.header)
  *         if not self.version:             # <<<<<<<<<<<<<<
@@ -21755,7 +21757,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":273
+  /* "ip2region/backends/cython/_xdb.pyx":274
  *         if not self.version:
  *             raise RuntimeError(f"failed to create version")
  *         return self             # <<<<<<<<<<<<<<
@@ -21767,7 +21769,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":267
+  /* "ip2region/backends/cython/_xdb.pyx":268
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -21789,7 +21791,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_4from_head
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":275
+/* "ip2region/backends/cython/_xdb.pyx":276
  *         return self
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -21821,7 +21823,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_18segment_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":277
+  /* "ip2region/backends/cython/_xdb.pyx":278
  *     @property
  *     def segment_index_size(self):
  *         return self.version.segment_index_size             # <<<<<<<<<<<<<<
@@ -21829,13 +21831,13 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_18segment_
  *     cpdef inline bint is_ipv4(self):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_int(__pyx_v_self->version->segment_index_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_int(__pyx_v_self->version->segment_index_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 278, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":275
+  /* "ip2region/backends/cython/_xdb.pyx":276
  *         return self
  * 
  *     @property             # <<<<<<<<<<<<<<
@@ -21854,7 +21856,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_18segment_
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":279
+/* "ip2region/backends/cython/_xdb.pyx":280
  *         return self.version.segment_index_size
  * 
  *     cpdef inline bint is_ipv4(self):             # <<<<<<<<<<<<<<
@@ -21873,7 +21875,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
   int __pyx_v_ret;
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":281
+  /* "ip2region/backends/cython/_xdb.pyx":282
  *     cpdef inline bint is_ipv4(self):
  *         cdef bint ret
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -21887,7 +21889,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":282
+        /* "ip2region/backends/cython/_xdb.pyx":283
  *         cdef bint ret
  *         with nogil:
  *             ret = xdb.xdb_version_is_v4(self.version)             # <<<<<<<<<<<<<<
@@ -21897,7 +21899,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
         __pyx_v_ret = xdb_version_is_v4(__pyx_v_self->version);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":281
+      /* "ip2region/backends/cython/_xdb.pyx":282
  *     cpdef inline bint is_ipv4(self):
  *         cdef bint ret
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -21914,7 +21916,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":283
+  /* "ip2region/backends/cython/_xdb.pyx":284
  *         with nogil:
  *             ret = xdb.xdb_version_is_v4(self.version)
  *         return ret             # <<<<<<<<<<<<<<
@@ -21924,7 +21926,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":279
+  /* "ip2region/backends/cython/_xdb.pyx":280
  *         return self.version.segment_index_size
  * 
  *     cpdef inline bint is_ipv4(self):             # <<<<<<<<<<<<<<
@@ -21990,8 +21992,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_6is_ipv4(s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_ipv4", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv4(__pyx_v_self, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 279, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv4(__pyx_v_self, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 280, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -22008,7 +22010,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_6is_ipv4(s
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":285
+/* "ip2region/backends/cython/_xdb.pyx":286
  *         return ret
  * 
  *     cpdef inline bint is_ipv6(self):             # <<<<<<<<<<<<<<
@@ -22027,7 +22029,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
   int __pyx_v_ret;
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":287
+  /* "ip2region/backends/cython/_xdb.pyx":288
  *     cpdef inline bint is_ipv6(self):
  *         cdef bint ret
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -22041,7 +22043,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":288
+        /* "ip2region/backends/cython/_xdb.pyx":289
  *         cdef bint ret
  *         with nogil:
  *             ret = xdb.xdb_version_is_v6(self.version)             # <<<<<<<<<<<<<<
@@ -22051,7 +22053,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
         __pyx_v_ret = xdb_version_is_v6(__pyx_v_self->version);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":287
+      /* "ip2region/backends/cython/_xdb.pyx":288
  *     cpdef inline bint is_ipv6(self):
  *         cdef bint ret
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -22068,7 +22070,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":289
+  /* "ip2region/backends/cython/_xdb.pyx":290
  *         with nogil:
  *             ret = xdb.xdb_version_is_v6(self.version)
  *         return ret             # <<<<<<<<<<<<<<
@@ -22078,7 +22080,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":285
+  /* "ip2region/backends/cython/_xdb.pyx":286
  *         return ret
  * 
  *     cpdef inline bint is_ipv6(self):             # <<<<<<<<<<<<<<
@@ -22144,8 +22146,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_8is_ipv6(s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_ipv6", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv6(__pyx_v_self, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 285, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv6(__pyx_v_self, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -22368,7 +22370,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_7Version_12__setsta
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":291
+/* "ip2region/backends/cython/_xdb.pyx":292
  *         return ret
  * 
  * cpdef inline int init_winsock() noexcept:             # <<<<<<<<<<<<<<
@@ -22381,7 +22383,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock
   int __pyx_v_ret;
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":293
+  /* "ip2region/backends/cython/_xdb.pyx":294
  * cpdef inline int init_winsock() noexcept:
  *     cdef int ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22395,7 +22397,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":294
+        /* "ip2region/backends/cython/_xdb.pyx":295
  *     cdef int ret
  *     with nogil:
  *         ret = xdb.xdb_init_winsock()             # <<<<<<<<<<<<<<
@@ -22405,7 +22407,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock
         __pyx_v_ret = xdb_init_winsock();
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":293
+      /* "ip2region/backends/cython/_xdb.pyx":294
  * cpdef inline int init_winsock() noexcept:
  *     cdef int ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22422,7 +22424,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":295
+  /* "ip2region/backends/cython/_xdb.pyx":296
  *     with nogil:
  *         ret = xdb.xdb_init_winsock()
  *     return ret             # <<<<<<<<<<<<<<
@@ -22432,7 +22434,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":291
+  /* "ip2region/backends/cython/_xdb.pyx":292
  *         return ret
  * 
  * cpdef inline int init_winsock() noexcept:             # <<<<<<<<<<<<<<
@@ -22471,7 +22473,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_4init_winsock(CYTHO
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_winsock", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_int(__pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock(1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_int(__pyx_f_9ip2region_8backends_6cython_4_xdb_init_winsock(1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -22488,7 +22490,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_4init_winsock(CYTHO
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":298
+/* "ip2region/backends/cython/_xdb.pyx":299
  * 
  * 
  * cpdef inline clean_winsock() noexcept:             # <<<<<<<<<<<<<<
@@ -22502,7 +22504,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_clean_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("clean_winsock", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":299
+  /* "ip2region/backends/cython/_xdb.pyx":300
  * 
  * cpdef inline clean_winsock() noexcept:
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22516,7 +22518,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_clean_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":300
+        /* "ip2region/backends/cython/_xdb.pyx":301
  * cpdef inline clean_winsock() noexcept:
  *     with nogil:
  *         xdb.xdb_clean_winsock()             # <<<<<<<<<<<<<<
@@ -22526,7 +22528,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_clean_
         xdb_clean_winsock();
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":299
+      /* "ip2region/backends/cython/_xdb.pyx":300
  * 
  * cpdef inline clean_winsock() noexcept:
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22543,7 +22545,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_clean_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":298
+  /* "ip2region/backends/cython/_xdb.pyx":299
  * 
  * 
  * cpdef inline clean_winsock() noexcept:             # <<<<<<<<<<<<<<
@@ -22584,7 +22586,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6clean_winsock(CYTH
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("clean_winsock", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_clean_winsock(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 298, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_clean_winsock(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -22601,7 +22603,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_6clean_winsock(CYTH
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":302
+/* "ip2region/backends/cython/_xdb.pyx":303
  *         xdb.xdb_clean_winsock()
  * 
  * cpdef inline long now() noexcept:             # <<<<<<<<<<<<<<
@@ -22614,7 +22616,7 @@ static CYTHON_INLINE long __pyx_f_9ip2region_8backends_6cython_4_xdb_now(CYTHON_
   long __pyx_v_ret;
   long __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":304
+  /* "ip2region/backends/cython/_xdb.pyx":305
  * cpdef inline long now() noexcept:
  *     cdef long ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22628,7 +22630,7 @@ static CYTHON_INLINE long __pyx_f_9ip2region_8backends_6cython_4_xdb_now(CYTHON_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":305
+        /* "ip2region/backends/cython/_xdb.pyx":306
  *     cdef long ret
  *     with nogil:
  *         ret = xdb.xdb_now()             # <<<<<<<<<<<<<<
@@ -22638,7 +22640,7 @@ static CYTHON_INLINE long __pyx_f_9ip2region_8backends_6cython_4_xdb_now(CYTHON_
         __pyx_v_ret = xdb_now();
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":304
+      /* "ip2region/backends/cython/_xdb.pyx":305
  * cpdef inline long now() noexcept:
  *     cdef long ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22655,7 +22657,7 @@ static CYTHON_INLINE long __pyx_f_9ip2region_8backends_6cython_4_xdb_now(CYTHON_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":306
+  /* "ip2region/backends/cython/_xdb.pyx":307
  *     with nogil:
  *         ret = xdb.xdb_now()
  *     return ret             # <<<<<<<<<<<<<<
@@ -22665,7 +22667,7 @@ static CYTHON_INLINE long __pyx_f_9ip2region_8backends_6cython_4_xdb_now(CYTHON_
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":302
+  /* "ip2region/backends/cython/_xdb.pyx":303
  *         xdb.xdb_clean_winsock()
  * 
  * cpdef inline long now() noexcept:             # <<<<<<<<<<<<<<
@@ -22704,7 +22706,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8now(CYTHON_UNUSED 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("now", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyLong_From_long(__pyx_f_9ip2region_8backends_6cython_4_xdb_now(1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 302, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyLong_From_long(__pyx_f_9ip2region_8backends_6cython_4_xdb_now(1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -22721,7 +22723,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8now(CYTHON_UNUSED 
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":308
+/* "ip2region/backends/cython/_xdb.pyx":309
  *     return ret
  * 
  * cpdef inline tuple parse_ip(str ip_string):             # <<<<<<<<<<<<<<
@@ -22755,17 +22757,17 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse_ip", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":309
+  /* "ip2region/backends/cython/_xdb.pyx":310
  * 
  * cpdef inline tuple parse_ip(str ip_string):
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)             # <<<<<<<<<<<<<<
  *     cdef xdb.xdb_version_t *version = NULL
  *     cdef bytes buffer = PyBytes_FromStringAndSize(NULL, 16)
 */
-  __pyx_t_1 = PyUnicode_AsUTF8(__pyx_v_ip_string); if (unlikely(__pyx_t_1 == ((char const *)0))) __PYX_ERR(0, 309, __pyx_L1_error)
+  __pyx_t_1 = PyUnicode_AsUTF8(__pyx_v_ip_string); if (unlikely(__pyx_t_1 == ((char const *)0))) __PYX_ERR(0, 310, __pyx_L1_error)
   __pyx_v_str_p = __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":310
+  /* "ip2region/backends/cython/_xdb.pyx":311
  * cpdef inline tuple parse_ip(str ip_string):
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL             # <<<<<<<<<<<<<<
@@ -22774,19 +22776,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
 */
   __pyx_v_version = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":311
+  /* "ip2region/backends/cython/_xdb.pyx":312
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL
  *     cdef bytes buffer = PyBytes_FromStringAndSize(NULL, 16)             # <<<<<<<<<<<<<<
  *     cdef const char* buffer_ptr = <const char*>buffer
  *     with nogil:
 */
-  __pyx_t_2 = PyBytes_FromStringAndSize(NULL, 16); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 311, __pyx_L1_error)
+  __pyx_t_2 = PyBytes_FromStringAndSize(NULL, 16); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 312, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_buffer = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":312
+  /* "ip2region/backends/cython/_xdb.pyx":313
  *     cdef xdb.xdb_version_t *version = NULL
  *     cdef bytes buffer = PyBytes_FromStringAndSize(NULL, 16)
  *     cdef const char* buffer_ptr = <const char*>buffer             # <<<<<<<<<<<<<<
@@ -22795,12 +22797,12 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
 */
   if (unlikely(__pyx_v_buffer == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 312, __pyx_L1_error)
+    __PYX_ERR(0, 313, __pyx_L1_error)
   }
-  __pyx_t_3 = __Pyx_PyBytes_AsString(__pyx_v_buffer); if (unlikely((!__pyx_t_3) && PyErr_Occurred())) __PYX_ERR(0, 312, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyBytes_AsString(__pyx_v_buffer); if (unlikely((!__pyx_t_3) && PyErr_Occurred())) __PYX_ERR(0, 313, __pyx_L1_error)
   __pyx_v_buffer_ptr = ((char const *)__pyx_t_3);
 
-  /* "ip2region/backends/cython/_xdb.pyx":313
+  /* "ip2region/backends/cython/_xdb.pyx":314
  *     cdef bytes buffer = PyBytes_FromStringAndSize(NULL, 16)
  *     cdef const char* buffer_ptr = <const char*>buffer
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22814,7 +22816,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":314
+        /* "ip2region/backends/cython/_xdb.pyx":315
  *     cdef const char* buffer_ptr = <const char*>buffer
  *     with nogil:
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>buffer_ptr, 16)             # <<<<<<<<<<<<<<
@@ -22824,7 +22826,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
         __pyx_v_version = xdb_parse_ip(__pyx_v_str_p, ((unsigned char *)__pyx_v_buffer_ptr), 16);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":313
+      /* "ip2region/backends/cython/_xdb.pyx":314
  *     cdef bytes buffer = PyBytes_FromStringAndSize(NULL, 16)
  *     cdef const char* buffer_ptr = <const char*>buffer
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -22841,7 +22843,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":315
+  /* "ip2region/backends/cython/_xdb.pyx":316
  *     with nogil:
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>buffer_ptr, 16)
  *     if version == NULL:             # <<<<<<<<<<<<<<
@@ -22851,7 +22853,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
   __pyx_t_4 = (__pyx_v_version == NULL);
   if (unlikely(__pyx_t_4)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":316
+    /* "ip2region/backends/cython/_xdb.pyx":317
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>buffer_ptr, 16)
  *     if version == NULL:
  *         raise RuntimeError(f"failed to parse version")             # <<<<<<<<<<<<<<
@@ -22867,14 +22869,14 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
       __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_6, __pyx_callargs+__pyx_t_7, (2-__pyx_t_7) | (__pyx_t_7*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 316, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 317, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
     }
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 316, __pyx_L1_error)
+    __PYX_ERR(0, 317, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":315
+    /* "ip2region/backends/cython/_xdb.pyx":316
  *     with nogil:
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>buffer_ptr, 16)
  *     if version == NULL:             # <<<<<<<<<<<<<<
@@ -22883,7 +22885,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":317
+  /* "ip2region/backends/cython/_xdb.pyx":318
  *     if version == NULL:
  *         raise RuntimeError(f"failed to parse version")
  *     return Version.from_ptr(version), buffer[:version.bytes]             # <<<<<<<<<<<<<<
@@ -22891,27 +22893,27 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_
  * 
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr(__pyx_v_version)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 317, __pyx_L1_error)
+  __pyx_t_2 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr(__pyx_v_version)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (unlikely(__pyx_v_buffer == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 317, __pyx_L1_error)
+    __PYX_ERR(0, 318, __pyx_L1_error)
   }
-  __pyx_t_6 = PySequence_GetSlice(__pyx_v_buffer, 0, __pyx_v_version->bytes); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 317, __pyx_L1_error)
+  __pyx_t_6 = PySequence_GetSlice(__pyx_v_buffer, 0, __pyx_v_version->bytes); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 317, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2) != (0)) __PYX_ERR(0, 317, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2) != (0)) __PYX_ERR(0, 318, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_6);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_6) != (0)) __PYX_ERR(0, 317, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_6) != (0)) __PYX_ERR(0, 318, __pyx_L1_error);
   __pyx_t_2 = 0;
   __pyx_t_6 = 0;
   __pyx_r = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":308
+  /* "ip2region/backends/cython/_xdb.pyx":309
  *     return ret
  * 
  * cpdef inline tuple parse_ip(str ip_string):             # <<<<<<<<<<<<<<
@@ -22973,32 +22975,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip_string,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 308, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 309, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 308, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 309, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "parse_ip", 0) < 0) __PYX_ERR(0, 308, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "parse_ip", 0) < 0) __PYX_ERR(0, 309, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("parse_ip", 1, 1, 1, i); __PYX_ERR(0, 308, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("parse_ip", 1, 1, 1, i); __PYX_ERR(0, 309, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 308, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 309, __pyx_L3_error)
     }
     __pyx_v_ip_string = ((PyObject*)values[0]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("parse_ip", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 308, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("parse_ip", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 309, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23009,7 +23011,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip_string), (&PyUnicode_Type), 1, "ip_string", 1))) __PYX_ERR(0, 308, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip_string), (&PyUnicode_Type), 1, "ip_string", 1))) __PYX_ERR(0, 309, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_10parse_ip(__pyx_self, __pyx_v_ip_string);
 
   /* function exit code */
@@ -23038,7 +23040,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_10parse_ip(CYTHON_U
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse_ip", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_parse_ip(__pyx_v_ip_string, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_parse_ip(__pyx_v_ip_string, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -23055,7 +23057,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_10parse_ip(CYTHON_U
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":320
+/* "ip2region/backends/cython/_xdb.pyx":321
  * 
  * 
  * cpdef inline Version parse_ip_into(str ip_string, uint8_t[::1] buffer):             # <<<<<<<<<<<<<<
@@ -23087,17 +23089,17 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse_ip_into", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":321
+  /* "ip2region/backends/cython/_xdb.pyx":322
  * 
  * cpdef inline Version parse_ip_into(str ip_string, uint8_t[::1] buffer):
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)             # <<<<<<<<<<<<<<
  *     cdef xdb.xdb_version_t *version = NULL
  *     with nogil:
 */
-  __pyx_t_1 = PyUnicode_AsUTF8(__pyx_v_ip_string); if (unlikely(__pyx_t_1 == ((char const *)0))) __PYX_ERR(0, 321, __pyx_L1_error)
+  __pyx_t_1 = PyUnicode_AsUTF8(__pyx_v_ip_string); if (unlikely(__pyx_t_1 == ((char const *)0))) __PYX_ERR(0, 322, __pyx_L1_error)
   __pyx_v_str_p = __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":322
+  /* "ip2region/backends/cython/_xdb.pyx":323
  * cpdef inline Version parse_ip_into(str ip_string, uint8_t[::1] buffer):
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL             # <<<<<<<<<<<<<<
@@ -23106,7 +23108,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
 */
   __pyx_v_version = NULL;
 
-  /* "ip2region/backends/cython/_xdb.pyx":323
+  /* "ip2region/backends/cython/_xdb.pyx":324
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -23120,7 +23122,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":324
+        /* "ip2region/backends/cython/_xdb.pyx":325
  *     cdef xdb.xdb_version_t *version = NULL
  *     with nogil:
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>&buffer[0], <size_t>buffer.shape[0])             # <<<<<<<<<<<<<<
@@ -23131,7 +23133,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
         __pyx_v_version = xdb_parse_ip(__pyx_v_str_p, ((unsigned char *)(&(*((uint8_t *) ( /* dim=0 */ ((char *) (((uint8_t *) __pyx_v_buffer.data) + __pyx_t_2)) ))))), ((size_t)(__pyx_v_buffer.shape[0])));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":323
+      /* "ip2region/backends/cython/_xdb.pyx":324
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -23148,7 +23150,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":325
+  /* "ip2region/backends/cython/_xdb.pyx":326
  *     with nogil:
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>&buffer[0], <size_t>buffer.shape[0])
  *     if version == NULL:             # <<<<<<<<<<<<<<
@@ -23158,7 +23160,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   __pyx_t_3 = (__pyx_v_version == NULL);
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":326
+    /* "ip2region/backends/cython/_xdb.pyx":327
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>&buffer[0], <size_t>buffer.shape[0])
  *     if version == NULL:
  *         raise RuntimeError(f"failed to parse version")             # <<<<<<<<<<<<<<
@@ -23174,14 +23176,14 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
       __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_6, __pyx_callargs+__pyx_t_7, (2-__pyx_t_7) | (__pyx_t_7*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 326, __pyx_L1_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 327, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
     }
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 326, __pyx_L1_error)
+    __PYX_ERR(0, 327, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":325
+    /* "ip2region/backends/cython/_xdb.pyx":326
  *     with nogil:
  *         version = xdb.xdb_parse_ip(str_p, <unsigned char *>&buffer[0], <size_t>buffer.shape[0])
  *     if version == NULL:             # <<<<<<<<<<<<<<
@@ -23190,7 +23192,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":327
+  /* "ip2region/backends/cython/_xdb.pyx":328
  *     if version == NULL:
  *         raise RuntimeError(f"failed to parse version")
  *     return Version.from_ptr(version)             # <<<<<<<<<<<<<<
@@ -23198,13 +23200,13 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
  * cpdef inline str ip_to_string(const uint8_t[::1] buffer):
 */
   __Pyx_XDECREF((PyObject *)__pyx_r);
-  __pyx_t_4 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr(__pyx_v_version)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 327, __pyx_L1_error)
+  __pyx_t_4 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr(__pyx_v_version)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 328, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)__pyx_t_4);
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":320
+  /* "ip2region/backends/cython/_xdb.pyx":321
  * 
  * 
  * cpdef inline Version parse_ip_into(str ip_string, uint8_t[::1] buffer):             # <<<<<<<<<<<<<<
@@ -23266,39 +23268,39 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip_string,&__pyx_mstate_global->__pyx_n_u_buffer,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 320, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 321, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 320, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 321, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 320, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 321, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "parse_ip_into", 0) < 0) __PYX_ERR(0, 320, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "parse_ip_into", 0) < 0) __PYX_ERR(0, 321, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 2; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("parse_ip_into", 1, 2, 2, i); __PYX_ERR(0, 320, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("parse_ip_into", 1, 2, 2, i); __PYX_ERR(0, 321, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 320, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 321, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 320, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 321, __pyx_L3_error)
     }
     __pyx_v_ip_string = ((PyObject*)values[0]);
-    __pyx_v_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_buffer.memview)) __PYX_ERR(0, 320, __pyx_L3_error)
+    __pyx_v_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_buffer.memview)) __PYX_ERR(0, 321, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("parse_ip_into", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 320, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("parse_ip_into", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 321, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23310,7 +23312,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip_string), (&PyUnicode_Type), 1, "ip_string", 1))) __PYX_ERR(0, 320, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip_string), (&PyUnicode_Type), 1, "ip_string", 1))) __PYX_ERR(0, 321, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_12parse_ip_into(__pyx_self, __pyx_v_ip_string, __pyx_v_buffer);
 
   /* function exit code */
@@ -23340,8 +23342,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_12parse_ip_into(CYT
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse_ip_into", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_buffer.memview)) { __Pyx_RaiseUnboundLocalError("buffer"); __PYX_ERR(0, 320, __pyx_L1_error) }
-  __pyx_t_1 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_ip_into(__pyx_v_ip_string, __pyx_v_buffer, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 320, __pyx_L1_error)
+  if (unlikely(!__pyx_v_buffer.memview)) { __Pyx_RaiseUnboundLocalError("buffer"); __PYX_ERR(0, 321, __pyx_L1_error) }
+  __pyx_t_1 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_parse_ip_into(__pyx_v_ip_string, __pyx_v_buffer, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -23358,7 +23360,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_12parse_ip_into(CYT
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":329
+/* "ip2region/backends/cython/_xdb.pyx":330
  *     return Version.from_ptr(version)
  * 
  * cpdef inline str ip_to_string(const uint8_t[::1] buffer):             # <<<<<<<<<<<<<<
@@ -23384,7 +23386,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ip_to_string", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":331
+  /* "ip2region/backends/cython/_xdb.pyx":332
  * cpdef inline str ip_to_string(const uint8_t[::1] buffer):
  *     cdef char ret[100]
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -23398,7 +23400,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":332
+        /* "ip2region/backends/cython/_xdb.pyx":333
  *     cdef char ret[100]
  *     with nogil:
  *         xdb.xdb_ip_to_string(<const unsigned char *>&buffer[0], <int>buffer.shape[0], ret, 100)             # <<<<<<<<<<<<<<
@@ -23409,7 +23411,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_
         (void)(xdb_ip_to_string(((unsigned char const *)(&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_buffer.data) + __pyx_t_1)) ))))), ((int)(__pyx_v_buffer.shape[0])), __pyx_v_ret, 0x64));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":331
+      /* "ip2region/backends/cython/_xdb.pyx":332
  * cpdef inline str ip_to_string(const uint8_t[::1] buffer):
  *     cdef char ret[100]
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -23426,7 +23428,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":333
+  /* "ip2region/backends/cython/_xdb.pyx":334
  *     with nogil:
  *         xdb.xdb_ip_to_string(<const unsigned char *>&buffer[0], <int>buffer.shape[0], ret, 100)
  *     return PyUnicode_FromString(<const char*>ret)             # <<<<<<<<<<<<<<
@@ -23434,13 +23436,13 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_
  * cpdef inline int ip_sub_compare(const uint8_t[::1] ip1, const uint8_t[::1] ip2, int offset):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = PyUnicode_FromString(((char const *)__pyx_v_ret)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 333, __pyx_L1_error)
+  __pyx_t_2 = PyUnicode_FromString(((char const *)__pyx_v_ret)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":329
+  /* "ip2region/backends/cython/_xdb.pyx":330
  *     return Version.from_ptr(version)
  * 
  * cpdef inline str ip_to_string(const uint8_t[::1] buffer):             # <<<<<<<<<<<<<<
@@ -23499,32 +23501,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_buffer,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 329, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 330, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 329, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 330, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "ip_to_string", 0) < 0) __PYX_ERR(0, 329, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "ip_to_string", 0) < 0) __PYX_ERR(0, 330, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("ip_to_string", 1, 1, 1, i); __PYX_ERR(0, 329, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("ip_to_string", 1, 1, 1, i); __PYX_ERR(0, 330, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 329, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 330, __pyx_L3_error)
     }
-    __pyx_v_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_buffer.memview)) __PYX_ERR(0, 329, __pyx_L3_error)
+    __pyx_v_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_buffer.memview)) __PYX_ERR(0, 330, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("ip_to_string", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 329, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("ip_to_string", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 330, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23556,8 +23558,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_14ip_to_string(CYTH
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ip_to_string", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_buffer.memview)) { __Pyx_RaiseUnboundLocalError("buffer"); __PYX_ERR(0, 329, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_string(__pyx_v_buffer, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
+  if (unlikely(!__pyx_v_buffer.memview)) { __Pyx_RaiseUnboundLocalError("buffer"); __PYX_ERR(0, 330, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_to_string(__pyx_v_buffer, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 330, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -23574,7 +23576,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_14ip_to_string(CYTH
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":335
+/* "ip2region/backends/cython/_xdb.pyx":336
  *     return PyUnicode_FromString(<const char*>ret)
  * 
  * cpdef inline int ip_sub_compare(const uint8_t[::1] ip1, const uint8_t[::1] ip2, int offset):             # <<<<<<<<<<<<<<
@@ -23595,7 +23597,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compa
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "ip2region/backends/cython/_xdb.pyx":337
+  /* "ip2region/backends/cython/_xdb.pyx":338
  * cpdef inline int ip_sub_compare(const uint8_t[::1] ip1, const uint8_t[::1] ip2, int offset):
  *     cdef int ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -23609,7 +23611,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compa
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":338
+        /* "ip2region/backends/cython/_xdb.pyx":339
  *     cdef int ret
  *     with nogil:
  *         ret = xdb.xdb_ip_sub_compare(<const unsigned char *>&ip1[0], <int>ip1.shape[0], <const char *>&ip2[0], offset)             # <<<<<<<<<<<<<<
@@ -23621,7 +23623,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compa
         __pyx_v_ret = xdb_ip_sub_compare(((unsigned char const *)(&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_ip1.data) + __pyx_t_1)) ))))), ((int)(__pyx_v_ip1.shape[0])), ((char const *)(&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_ip2.data) + __pyx_t_2)) ))))), __pyx_v_offset);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":337
+      /* "ip2region/backends/cython/_xdb.pyx":338
  * cpdef inline int ip_sub_compare(const uint8_t[::1] ip1, const uint8_t[::1] ip2, int offset):
  *     cdef int ret
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -23638,7 +23640,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compa
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":339
+  /* "ip2region/backends/cython/_xdb.pyx":340
  *     with nogil:
  *         ret = xdb.xdb_ip_sub_compare(<const unsigned char *>&ip1[0], <int>ip1.shape[0], <const char *>&ip2[0], offset)
  *     return ret             # <<<<<<<<<<<<<<
@@ -23648,7 +23650,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compa
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":335
+  /* "ip2region/backends/cython/_xdb.pyx":336
  *     return PyUnicode_FromString(<const char*>ret)
  * 
  * cpdef inline int ip_sub_compare(const uint8_t[::1] ip1, const uint8_t[::1] ip2, int offset):             # <<<<<<<<<<<<<<
@@ -23703,46 +23705,46 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip1,&__pyx_mstate_global->__pyx_n_u_ip2,&__pyx_mstate_global->__pyx_n_u_offset,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 335, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 336, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  3:
         values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 335, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 336, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 335, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 336, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 335, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 336, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "ip_sub_compare", 0) < 0) __PYX_ERR(0, 335, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "ip_sub_compare", 0) < 0) __PYX_ERR(0, 336, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 3; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("ip_sub_compare", 1, 3, 3, i); __PYX_ERR(0, 335, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("ip_sub_compare", 1, 3, 3, i); __PYX_ERR(0, 336, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 335, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 336, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 335, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 336, __pyx_L3_error)
       values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 335, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 336, __pyx_L3_error)
     }
-    __pyx_v_ip1 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_ip1.memview)) __PYX_ERR(0, 335, __pyx_L3_error)
-    __pyx_v_ip2 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[1], 0); if (unlikely(!__pyx_v_ip2.memview)) __PYX_ERR(0, 335, __pyx_L3_error)
-    __pyx_v_offset = __Pyx_PyLong_As_int(values[2]); if (unlikely((__pyx_v_offset == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 335, __pyx_L3_error)
+    __pyx_v_ip1 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_ip1.memview)) __PYX_ERR(0, 336, __pyx_L3_error)
+    __pyx_v_ip2 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[1], 0); if (unlikely(!__pyx_v_ip2.memview)) __PYX_ERR(0, 336, __pyx_L3_error)
+    __pyx_v_offset = __Pyx_PyLong_As_int(values[2]); if (unlikely((__pyx_v_offset == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 336, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("ip_sub_compare", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 335, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("ip_sub_compare", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 336, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23777,10 +23779,10 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_16ip_sub_compare(CY
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ip_sub_compare", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_ip1.memview)) { __Pyx_RaiseUnboundLocalError("ip1"); __PYX_ERR(0, 335, __pyx_L1_error) }
-  if (unlikely(!__pyx_v_ip2.memview)) { __Pyx_RaiseUnboundLocalError("ip2"); __PYX_ERR(0, 335, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compare(__pyx_v_ip1, __pyx_v_ip2, __pyx_v_offset, 1); if (unlikely(__pyx_t_1 == ((int)-1) && PyErr_Occurred())) __PYX_ERR(0, 335, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 335, __pyx_L1_error)
+  if (unlikely(!__pyx_v_ip1.memview)) { __Pyx_RaiseUnboundLocalError("ip1"); __PYX_ERR(0, 336, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_ip2.memview)) { __Pyx_RaiseUnboundLocalError("ip2"); __PYX_ERR(0, 336, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ip_sub_compare(__pyx_v_ip1, __pyx_v_ip2, __pyx_v_offset, 1); if (unlikely(__pyx_t_1 == ((int)-1) && PyErr_Occurred())) __PYX_ERR(0, 336, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -23797,7 +23799,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_16ip_sub_compare(CY
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":349
+/* "ip2region/backends/cython/_xdb.pyx":350
  *         char* region_buffer
  * 
  *     def __cinit__(self, Py_ssize_t size):             # <<<<<<<<<<<<<<
@@ -23827,32 +23829,32 @@ static int __pyx_pw_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_1__cinit__
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_size,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_VARARGS(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 349, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 350, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_VARARGS(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 349, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 350, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "__cinit__", 0) < 0) __PYX_ERR(0, 349, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "__cinit__", 0) < 0) __PYX_ERR(0, 350, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, i); __PYX_ERR(0, 349, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, i); __PYX_ERR(0, 350, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_VARARGS(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 349, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 350, __pyx_L3_error)
     }
-    __pyx_v_size = __Pyx_PyIndex_AsSsize_t(values[0]); if (unlikely((__pyx_v_size == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 349, __pyx_L3_error)
+    __pyx_v_size = __Pyx_PyIndex_AsSsize_t(values[0]); if (unlikely((__pyx_v_size == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 350, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 349, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 350, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23889,7 +23891,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":350
+  /* "ip2region/backends/cython/_xdb.pyx":351
  * 
  *     def __cinit__(self, Py_ssize_t size):
  *         self.region_buffer = <char*>PyMem_Malloc(size+1)  # +1 for NULL-end             # <<<<<<<<<<<<<<
@@ -23898,7 +23900,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
   __pyx_v_self->region_buffer = ((char *)PyMem_Malloc((__pyx_v_size + 1)));
 
-  /* "ip2region/backends/cython/_xdb.pyx":351
+  /* "ip2region/backends/cython/_xdb.pyx":352
  *     def __cinit__(self, Py_ssize_t size):
  *         self.region_buffer = <char*>PyMem_Malloc(size+1)  # +1 for NULL-end
  *         if not self.region_buffer:             # <<<<<<<<<<<<<<
@@ -23908,16 +23910,16 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
   __pyx_t_1 = (!(__pyx_v_self->region_buffer != 0));
   if (unlikely(__pyx_t_1)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":352
+    /* "ip2region/backends/cython/_xdb.pyx":353
  *         self.region_buffer = <char*>PyMem_Malloc(size+1)  # +1 for NULL-end
  *         if not self.region_buffer:
  *             raise MemoryError             # <<<<<<<<<<<<<<
  *         self.region_buffer[size] = '\0'  # NULL-end
  *         cdef int err = xdb.xdb_region_buffer_init(&self.buffer, self.region_buffer, size)
 */
-    PyErr_NoMemory(); __PYX_ERR(0, 352, __pyx_L1_error)
+    PyErr_NoMemory(); __PYX_ERR(0, 353, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":351
+    /* "ip2region/backends/cython/_xdb.pyx":352
  *     def __cinit__(self, Py_ssize_t size):
  *         self.region_buffer = <char*>PyMem_Malloc(size+1)  # +1 for NULL-end
  *         if not self.region_buffer:             # <<<<<<<<<<<<<<
@@ -23926,7 +23928,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":353
+  /* "ip2region/backends/cython/_xdb.pyx":354
  *         if not self.region_buffer:
  *             raise MemoryError
  *         self.region_buffer[size] = '\0'  # NULL-end             # <<<<<<<<<<<<<<
@@ -23935,7 +23937,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
   (__pyx_v_self->region_buffer[__pyx_v_size]) = '\x00';
 
-  /* "ip2region/backends/cython/_xdb.pyx":354
+  /* "ip2region/backends/cython/_xdb.pyx":355
  *             raise MemoryError
  *         self.region_buffer[size] = '\0'  # NULL-end
  *         cdef int err = xdb.xdb_region_buffer_init(&self.buffer, self.region_buffer, size)             # <<<<<<<<<<<<<<
@@ -23944,7 +23946,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
   __pyx_v_err = xdb_region_buffer_init((&__pyx_v_self->buffer), __pyx_v_self->region_buffer, __pyx_v_size);
 
-  /* "ip2region/backends/cython/_xdb.pyx":355
+  /* "ip2region/backends/cython/_xdb.pyx":356
  *         self.region_buffer[size] = '\0'  # NULL-end
  *         cdef int err = xdb.xdb_region_buffer_init(&self.buffer, self.region_buffer, size)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -23954,7 +23956,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
   __pyx_t_1 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":356
+    /* "ip2region/backends/cython/_xdb.pyx":357
  *         cdef int err = xdb.xdb_region_buffer_init(&self.buffer, self.region_buffer, size)
  *         if err != 0:
  *             PyMem_Free(self.region_buffer)             # <<<<<<<<<<<<<<
@@ -23963,7 +23965,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
     PyMem_Free(__pyx_v_self->region_buffer);
 
-    /* "ip2region/backends/cython/_xdb.pyx":357
+    /* "ip2region/backends/cython/_xdb.pyx":358
  *         if err != 0:
  *             PyMem_Free(self.region_buffer)
  *             self.region_buffer = NULL             # <<<<<<<<<<<<<<
@@ -23972,7 +23974,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
     __pyx_v_self->region_buffer = NULL;
 
-    /* "ip2region/backends/cython/_xdb.pyx":358
+    /* "ip2region/backends/cython/_xdb.pyx":359
  *             PyMem_Free(self.region_buffer)
  *             self.region_buffer = NULL
  *             raise RuntimeError(f"failed to init the region buffer with err={err}")             # <<<<<<<<<<<<<<
@@ -23982,9 +23984,9 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
     __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_4 = __pyx_builtin_RuntimeError; 
-    __pyx_t_5 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 359, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_init_the_region_buffer, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_mstate_global->__pyx_kp_u_failed_to_init_the_region_buffer, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 359, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_7 = 1;
@@ -23994,14 +23996,14 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 358, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 359, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
     }
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 358, __pyx_L1_error)
+    __PYX_ERR(0, 359, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":355
+    /* "ip2region/backends/cython/_xdb.pyx":356
  *         self.region_buffer[size] = '\0'  # NULL-end
  *         cdef int err = xdb.xdb_region_buffer_init(&self.buffer, self.region_buffer, size)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -24010,7 +24012,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":349
+  /* "ip2region/backends/cython/_xdb.pyx":350
  *         char* region_buffer
  * 
  *     def __cinit__(self, Py_ssize_t size):             # <<<<<<<<<<<<<<
@@ -24034,7 +24036,7 @@ static int __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer___cinit__(
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":360
+/* "ip2region/backends/cython/_xdb.pyx":361
  *             raise RuntimeError(f"failed to init the region buffer with err={err}")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -24058,7 +24060,7 @@ static void __pyx_pw_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_3__deallo
 static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_2__dealloc__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_RegionBuffer *__pyx_v_self) {
   int __pyx_t_1;
 
-  /* "ip2region/backends/cython/_xdb.pyx":361
+  /* "ip2region/backends/cython/_xdb.pyx":362
  * 
  *     def __dealloc__(self):
  *         if self.region_buffer:             # <<<<<<<<<<<<<<
@@ -24068,7 +24070,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_2__deallo
   __pyx_t_1 = (__pyx_v_self->region_buffer != 0);
   if (__pyx_t_1) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":362
+    /* "ip2region/backends/cython/_xdb.pyx":363
  *     def __dealloc__(self):
  *         if self.region_buffer:
  *             PyMem_Free(self.region_buffer)             # <<<<<<<<<<<<<<
@@ -24077,7 +24079,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_2__deallo
 */
     PyMem_Free(__pyx_v_self->region_buffer);
 
-    /* "ip2region/backends/cython/_xdb.pyx":363
+    /* "ip2region/backends/cython/_xdb.pyx":364
  *         if self.region_buffer:
  *             PyMem_Free(self.region_buffer)
  *             self.region_buffer = NULL             # <<<<<<<<<<<<<<
@@ -24086,7 +24088,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_2__deallo
 */
     __pyx_v_self->region_buffer = NULL;
 
-    /* "ip2region/backends/cython/_xdb.pyx":361
+    /* "ip2region/backends/cython/_xdb.pyx":362
  * 
  *     def __dealloc__(self):
  *         if self.region_buffer:             # <<<<<<<<<<<<<<
@@ -24095,7 +24097,7 @@ static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_2__deallo
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":360
+  /* "ip2region/backends/cython/_xdb.pyx":361
  *             raise RuntimeError(f"failed to init the region buffer with err={err}")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -24312,7 +24314,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_12RegionBuffer_6__s
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":375
+/* "ip2region/backends/cython/_xdb.pyx":376
  *         VectorIndex index
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -24361,39 +24363,39 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_version,&__pyx_mstate_global->__pyx_n_u_db_path,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 375, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 376, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 375, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 376, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 375, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 376, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 375, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_file", 0) < 0) __PYX_ERR(0, 376, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 2; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 2, 2, i); __PYX_ERR(0, 375, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_file", 1, 2, 2, i); __PYX_ERR(0, 376, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 375, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 376, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 375, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 376, __pyx_L3_error)
     }
     __pyx_v_version = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)values[0]);
     __pyx_v_db_path = values[1];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_file", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 375, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_file", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 376, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -24404,7 +24406,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_version), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, 1, "version", 0))) __PYX_ERR(0, 376, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_version), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, 1, "version", 0))) __PYX_ERR(0, 377, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file(__pyx_v_version, __pyx_v_db_path);
 
   /* function exit code */
@@ -24446,31 +24448,31 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_file", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":377
+  /* "ip2region/backends/cython/_xdb.pyx":378
  *     @staticmethod
  *     def from_file(Version version, object db_path):
  *         cdef Searcher self = Searcher.__new__(Searcher)             # <<<<<<<<<<<<<<
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         cdef int err
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Searcher(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 377, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Searcher(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 378, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":378
+  /* "ip2region/backends/cython/_xdb.pyx":379
  *     def from_file(Version version, object db_path):
  *         cdef Searcher self = Searcher.__new__(Searcher)
  *         cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 378, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 379, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":380
+  /* "ip2region/backends/cython/_xdb.pyx":381
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b             # <<<<<<<<<<<<<<
@@ -24479,12 +24481,12 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 380, __pyx_L1_error)
+    __PYX_ERR(0, 381, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 380, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 381, __pyx_L1_error)
   __pyx_v_db_path_ptr = ((char const *)__pyx_t_2);
 
-  /* "ip2region/backends/cython/_xdb.pyx":381
+  /* "ip2region/backends/cython/_xdb.pyx":382
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -24498,7 +24500,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":382
+        /* "ip2region/backends/cython/_xdb.pyx":383
  *         cdef const char *db_path_ptr = <const char *> db_path_b
  *         with nogil:
  *             err = xdb.xdb_new_with_file_only(version.version, &self.searcher, db_path_ptr)             # <<<<<<<<<<<<<<
@@ -24508,7 +24510,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
         __pyx_v_err = xdb_new_with_file_only(__pyx_v_version->version, (&__pyx_v_self->searcher), __pyx_v_db_path_ptr);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":381
+      /* "ip2region/backends/cython/_xdb.pyx":382
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -24525,7 +24527,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":383
+  /* "ip2region/backends/cython/_xdb.pyx":384
  *         with nogil:
  *             err = xdb.xdb_new_with_file_only(version.version, &self.searcher, db_path_ptr)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -24535,7 +24537,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
   __pyx_t_3 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":384
+    /* "ip2region/backends/cython/_xdb.pyx":385
  *             err = xdb.xdb_new_with_file_only(version.version, &self.searcher, db_path_ptr)
  *         if err != 0:
  *             raise RuntimeError(f"failed to create xdb searcher from {db_path} with errno={err}")             # <<<<<<<<<<<<<<
@@ -24545,16 +24547,16 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 384, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_db_path, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 385, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 384, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 385, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8[0] = __pyx_mstate_global->__pyx_kp_u_failed_to_create_xdb_searcher_fr;
     __pyx_t_8[1] = __pyx_t_6;
     __pyx_t_8[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_8[3] = __pyx_t_7;
     __pyx_t_9 = __Pyx_PyUnicode_Join(__pyx_t_8, 4, 35 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_6) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_7), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6));
-    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 384, __pyx_L1_error)
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 385, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -24565,14 +24567,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 384, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 385, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 384, __pyx_L1_error)
+    __PYX_ERR(0, 385, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":383
+    /* "ip2region/backends/cython/_xdb.pyx":384
  *         with nogil:
  *             err = xdb.xdb_new_with_file_only(version.version, &self.searcher, db_path_ptr)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -24581,7 +24583,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":385
+  /* "ip2region/backends/cython/_xdb.pyx":386
  *         if err != 0:
  *             raise RuntimeError(f"failed to create xdb searcher from {db_path} with errno={err}")
  *         return self             # <<<<<<<<<<<<<<
@@ -24593,7 +24595,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":375
+  /* "ip2region/backends/cython/_xdb.pyx":376
  *         VectorIndex index
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -24619,7 +24621,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_from_file
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":387
+/* "ip2region/backends/cython/_xdb.pyx":388
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -24669,38 +24671,38 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_version,&__pyx_mstate_global->__pyx_n_u_db_path,&__pyx_mstate_global->__pyx_n_u_index,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 387, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 388, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  3:
         values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 387, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 388, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 387, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 388, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 387, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 388, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_index", 0) < 0) __PYX_ERR(0, 387, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_index", 0) < 0) __PYX_ERR(0, 388, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 3; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_index", 1, 3, 3, i); __PYX_ERR(0, 387, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_index", 1, 3, 3, i); __PYX_ERR(0, 388, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 387, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 388, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 387, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 388, __pyx_L3_error)
       values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 387, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 388, __pyx_L3_error)
     }
     __pyx_v_version = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)values[0]);
     __pyx_v_db_path = values[1];
@@ -24708,7 +24710,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_index", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 387, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_index", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 388, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -24719,8 +24721,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_version), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, 1, "version", 0))) __PYX_ERR(0, 388, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_index), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, 1, "index", 0))) __PYX_ERR(0, 388, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_version), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, 1, "version", 0))) __PYX_ERR(0, 389, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_index), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, 1, "index", 0))) __PYX_ERR(0, 389, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_index(__pyx_v_version, __pyx_v_db_path, __pyx_v_index);
 
   /* function exit code */
@@ -24762,31 +24764,31 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_index", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":389
+  /* "ip2region/backends/cython/_xdb.pyx":390
  *     @staticmethod
  *     def from_index(Version version, object db_path, VectorIndex index):
  *         cdef Searcher self = Searcher.__new__(Searcher)             # <<<<<<<<<<<<<<
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         cdef int err
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Searcher(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 389, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Searcher(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":390
+  /* "ip2region/backends/cython/_xdb.pyx":391
  *     def from_index(Version version, object db_path, VectorIndex index):
  *         cdef Searcher self = Searcher.__new__(Searcher)
  *         cdef bytes db_path_b = ensure_bytes(db_path)             # <<<<<<<<<<<<<<
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_db_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 391, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_db_path_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":392
+  /* "ip2region/backends/cython/_xdb.pyx":393
  *         cdef bytes db_path_b = ensure_bytes(db_path)
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b             # <<<<<<<<<<<<<<
@@ -24795,12 +24797,12 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
 */
   if (unlikely(__pyx_v_db_path_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 392, __pyx_L1_error)
+    __PYX_ERR(0, 393, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 392, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_AsString(__pyx_v_db_path_b); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 393, __pyx_L1_error)
   __pyx_v_db_path_ptr = ((char const *)__pyx_t_2);
 
-  /* "ip2region/backends/cython/_xdb.pyx":393
+  /* "ip2region/backends/cython/_xdb.pyx":394
  *         cdef int err
  *         cdef const char *db_path_ptr = <const char *> db_path_b
  *         self.index = index # hold a ref             # <<<<<<<<<<<<<<
@@ -24813,7 +24815,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
   __Pyx_DECREF((PyObject *)__pyx_v_self->index);
   __pyx_v_self->index = __pyx_v_index;
 
-  /* "ip2region/backends/cython/_xdb.pyx":394
+  /* "ip2region/backends/cython/_xdb.pyx":395
  *         cdef const char *db_path_ptr = <const char *> db_path_b
  *         self.index = index # hold a ref
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -24827,7 +24829,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":395
+        /* "ip2region/backends/cython/_xdb.pyx":396
  *         self.index = index # hold a ref
  *         with nogil:
  *             err = xdb.xdb_new_with_vector_index(version.version, &self.searcher, db_path_ptr, index.index)             # <<<<<<<<<<<<<<
@@ -24837,7 +24839,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
         __pyx_v_err = xdb_new_with_vector_index(__pyx_v_version->version, (&__pyx_v_self->searcher), __pyx_v_db_path_ptr, __pyx_v_index->index);
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":394
+      /* "ip2region/backends/cython/_xdb.pyx":395
  *         cdef const char *db_path_ptr = <const char *> db_path_b
  *         self.index = index # hold a ref
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -24854,7 +24856,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":396
+  /* "ip2region/backends/cython/_xdb.pyx":397
  *         with nogil:
  *             err = xdb.xdb_new_with_vector_index(version.version, &self.searcher, db_path_ptr, index.index)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -24864,7 +24866,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
   __pyx_t_3 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":397
+    /* "ip2region/backends/cython/_xdb.pyx":398
  *             err = xdb.xdb_new_with_vector_index(version.version, &self.searcher, db_path_ptr, index.index)
  *         if err != 0:
  *             raise RuntimeError("failed to create vector index cached searcher with path=%s, errcode=%d" % (db_path, err))             # <<<<<<<<<<<<<<
@@ -24874,16 +24876,16 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Str(__pyx_v_db_path), __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 397, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Str(__pyx_v_db_path), __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 398, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 397, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 398, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8[0] = __pyx_mstate_global->__pyx_kp_u_failed_to_create_vector_index_ca;
     __pyx_t_8[1] = __pyx_t_6;
     __pyx_t_8[2] = __pyx_mstate_global->__pyx_kp_u_errcode;
     __pyx_t_8[3] = __pyx_t_7;
     __pyx_t_9 = __Pyx_PyUnicode_Join(__pyx_t_8, 4, 56 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_6) + 10 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_7), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6));
-    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 397, __pyx_L1_error)
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 398, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -24894,14 +24896,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 397, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 398, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 397, __pyx_L1_error)
+    __PYX_ERR(0, 398, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":396
+    /* "ip2region/backends/cython/_xdb.pyx":397
  *         with nogil:
  *             err = xdb.xdb_new_with_vector_index(version.version, &self.searcher, db_path_ptr, index.index)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -24910,7 +24912,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":398
+  /* "ip2region/backends/cython/_xdb.pyx":399
  *         if err != 0:
  *             raise RuntimeError("failed to create vector index cached searcher with path=%s, errcode=%d" % (db_path, err))
  *         return self             # <<<<<<<<<<<<<<
@@ -24922,7 +24924,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":387
+  /* "ip2region/backends/cython/_xdb.pyx":388
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -24948,7 +24950,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_2from_ind
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":400
+/* "ip2region/backends/cython/_xdb.pyx":401
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -24997,39 +24999,39 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_version,&__pyx_mstate_global->__pyx_n_u_buffer,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 400, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 401, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 400, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 401, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 400, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 401, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_buffer", 0) < 0) __PYX_ERR(0, 400, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "from_buffer", 0) < 0) __PYX_ERR(0, 401, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 2; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_buffer", 1, 2, 2, i); __PYX_ERR(0, 400, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("from_buffer", 1, 2, 2, i); __PYX_ERR(0, 401, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 400, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 401, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 400, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 401, __pyx_L3_error)
     }
     __pyx_v_version = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)values[0]);
-    __pyx_v_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[1], 0); if (unlikely(!__pyx_v_buffer.memview)) __PYX_ERR(0, 401, __pyx_L3_error)
+    __pyx_v_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[1], 0); if (unlikely(!__pyx_v_buffer.memview)) __PYX_ERR(0, 402, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_buffer", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 400, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_buffer", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 401, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -25041,7 +25043,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_version), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, 1, "version", 0))) __PYX_ERR(0, 401, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_version), __pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, 1, "version", 0))) __PYX_ERR(0, 402, __pyx_L1_error)
   __pyx_r = __pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buffer(__pyx_v_version, __pyx_v_buffer);
 
   /* function exit code */
@@ -25078,19 +25080,19 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_buffer", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":402
+  /* "ip2region/backends/cython/_xdb.pyx":403
  *     @staticmethod
  *     def from_buffer(Version version, const uint8_t[::1] buffer):
  *         cdef Searcher self = Searcher.__new__(Searcher)             # <<<<<<<<<<<<<<
  *         self.pybuffer = buffer # hold a ref
  *         self.buf.length = <unsigned int >buffer.shape[0]
 */
-  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Searcher(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 402, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_tp_new_9ip2region_8backends_6cython_4_xdb_Searcher(((PyTypeObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher), __pyx_mstate_global->__pyx_empty_tuple, NULL)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 403, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_1);
   __pyx_v_self = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":403
+  /* "ip2region/backends/cython/_xdb.pyx":404
  *     def from_buffer(Version version, const uint8_t[::1] buffer):
  *         cdef Searcher self = Searcher.__new__(Searcher)
  *         self.pybuffer = buffer # hold a ref             # <<<<<<<<<<<<<<
@@ -25101,7 +25103,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
   __PYX_INC_MEMVIEW(&__pyx_v_buffer, 1);
   __pyx_v_self->pybuffer = __pyx_v_buffer;
 
-  /* "ip2region/backends/cython/_xdb.pyx":404
+  /* "ip2region/backends/cython/_xdb.pyx":405
  *         cdef Searcher self = Searcher.__new__(Searcher)
  *         self.pybuffer = buffer # hold a ref
  *         self.buf.length = <unsigned int >buffer.shape[0]             # <<<<<<<<<<<<<<
@@ -25110,7 +25112,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
 */
   __pyx_v_self->buf.length = ((unsigned int)(__pyx_v_buffer.shape[0]));
 
-  /* "ip2region/backends/cython/_xdb.pyx":405
+  /* "ip2region/backends/cython/_xdb.pyx":406
  *         self.pybuffer = buffer # hold a ref
  *         self.buf.length = <unsigned int >buffer.shape[0]
  *         self.buf.buffer = <char*>&buffer[0]             # <<<<<<<<<<<<<<
@@ -25120,7 +25122,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
   __pyx_t_2 = 0;
   __pyx_v_self->buf.buffer = ((char *)(&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_buffer.data) + __pyx_t_2)) )))));
 
-  /* "ip2region/backends/cython/_xdb.pyx":407
+  /* "ip2region/backends/cython/_xdb.pyx":408
  *         self.buf.buffer = <char*>&buffer[0]
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -25134,7 +25136,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":408
+        /* "ip2region/backends/cython/_xdb.pyx":409
  *         cdef int err
  *         with nogil:
  *             err =  xdb.xdb_new_with_buffer(version.version, &self.searcher, &self.buf)             # <<<<<<<<<<<<<<
@@ -25144,7 +25146,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
         __pyx_v_err = xdb_new_with_buffer(__pyx_v_version->version, (&__pyx_v_self->searcher), (&__pyx_v_self->buf));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":407
+      /* "ip2region/backends/cython/_xdb.pyx":408
  *         self.buf.buffer = <char*>&buffer[0]
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -25161,7 +25163,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":409
+  /* "ip2region/backends/cython/_xdb.pyx":410
  *         with nogil:
  *             err =  xdb.xdb_new_with_buffer(version.version, &self.searcher, &self.buf)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -25171,7 +25173,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
   __pyx_t_3 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":410
+    /* "ip2region/backends/cython/_xdb.pyx":411
  *             err =  xdb.xdb_new_with_buffer(version.version, &self.searcher, &self.buf)
  *         if err != 0:
  *             raise RuntimeError("failed to create xdb searcher from buffer")             # <<<<<<<<<<<<<<
@@ -25187,14 +25189,14 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+__pyx_t_6, (2-__pyx_t_6) | (__pyx_t_6*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 410, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 411, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 410, __pyx_L1_error)
+    __PYX_ERR(0, 411, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":409
+    /* "ip2region/backends/cython/_xdb.pyx":410
  *         with nogil:
  *             err =  xdb.xdb_new_with_buffer(version.version, &self.searcher, &self.buf)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -25203,7 +25205,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":411
+  /* "ip2region/backends/cython/_xdb.pyx":412
  *         if err != 0:
  *             raise RuntimeError("failed to create xdb searcher from buffer")
  *         return self             # <<<<<<<<<<<<<<
@@ -25215,7 +25217,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":400
+  /* "ip2region/backends/cython/_xdb.pyx":401
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
@@ -25237,7 +25239,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_4from_buf
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":413
+/* "ip2region/backends/cython/_xdb.pyx":414
  *         return self
  * 
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
@@ -25280,7 +25282,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":414
+  /* "ip2region/backends/cython/_xdb.pyx":415
  * 
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)             # <<<<<<<<<<<<<<
@@ -25290,7 +25292,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_2 = NULL;
   __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer);
   __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer); 
-  __pyx_t_4 = PyLong_FromSsize_t(__pyx_v_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 414, __pyx_L1_error)
+  __pyx_t_4 = PyLong_FromSsize_t(__pyx_v_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 415, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = 1;
   {
@@ -25299,25 +25301,25 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 414, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 415, __pyx_L1_error)
     __Pyx_GOTREF((PyObject *)__pyx_t_1);
   }
   __pyx_v_region_buffer = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_RegionBuffer *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":415
+  /* "ip2region/backends/cython/_xdb.pyx":416
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)
  *         cdef bytes ip_b = ensure_bytes(ip)             # <<<<<<<<<<<<<<
  *         cdef int err
  *         cdef const char *ip_ptr = <const char*>ip_b
 */
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_ip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 415, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_ip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 416, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ip_b = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":417
+  /* "ip2region/backends/cython/_xdb.pyx":418
  *         cdef bytes ip_b = ensure_bytes(ip)
  *         cdef int err
  *         cdef const char *ip_ptr = <const char*>ip_b             # <<<<<<<<<<<<<<
@@ -25326,12 +25328,12 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
 */
   if (unlikely(__pyx_v_ip_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 417, __pyx_L1_error)
+    __PYX_ERR(0, 418, __pyx_L1_error)
   }
-  __pyx_t_6 = __Pyx_PyBytes_AsString(__pyx_v_ip_b); if (unlikely((!__pyx_t_6) && PyErr_Occurred())) __PYX_ERR(0, 417, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyBytes_AsString(__pyx_v_ip_b); if (unlikely((!__pyx_t_6) && PyErr_Occurred())) __PYX_ERR(0, 418, __pyx_L1_error)
   __pyx_v_ip_ptr = ((char const *)__pyx_t_6);
 
-  /* "ip2region/backends/cython/_xdb.pyx":418
+  /* "ip2region/backends/cython/_xdb.pyx":419
  *         cdef int err
  *         cdef const char *ip_ptr = <const char*>ip_b
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -25345,7 +25347,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":419
+        /* "ip2region/backends/cython/_xdb.pyx":420
  *         cdef const char *ip_ptr = <const char*>ip_b
  *         with nogil:
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr,  &region_buffer.buffer)             # <<<<<<<<<<<<<<
@@ -25355,7 +25357,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
         __pyx_v_err = xdb_search_by_string((&__pyx_v_self->searcher), __pyx_v_ip_ptr, (&__pyx_v_region_buffer->buffer));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":418
+      /* "ip2region/backends/cython/_xdb.pyx":419
  *         cdef int err
  *         cdef const char *ip_ptr = <const char*>ip_b
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -25372,7 +25374,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":420
+  /* "ip2region/backends/cython/_xdb.pyx":421
  *         with nogil:
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr,  &region_buffer.buffer)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -25382,7 +25384,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_7 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_7)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":421
+    /* "ip2region/backends/cython/_xdb.pyx":422
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr,  &region_buffer.buffer)
  *         if err != 0:
  *             raise RuntimeError(f"failed search {ip} with errno={err}")             # <<<<<<<<<<<<<<
@@ -25392,16 +25394,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_4 = __pyx_builtin_RuntimeError; 
-    __pyx_t_2 = __Pyx_PyObject_FormatSimple(__pyx_v_ip, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 421, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_FormatSimple(__pyx_v_ip, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 422, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 421, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 422, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_9[0] = __pyx_mstate_global->__pyx_kp_u_failed_search;
     __pyx_t_9[1] = __pyx_t_2;
     __pyx_t_9[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_9[3] = __pyx_t_8;
     __pyx_t_10 = __Pyx_PyUnicode_Join(__pyx_t_9, 4, 14 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_8), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2));
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 421, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -25412,14 +25414,14 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 421, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 422, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 421, __pyx_L1_error)
+    __PYX_ERR(0, 422, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":420
+    /* "ip2region/backends/cython/_xdb.pyx":421
  *         with nogil:
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr,  &region_buffer.buffer)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -25428,7 +25430,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":422
+  /* "ip2region/backends/cython/_xdb.pyx":423
  *         if err != 0:
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)             # <<<<<<<<<<<<<<
@@ -25436,13 +25438,13 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
  *     cpdef inline search_by_string_into(self, object ip, uint8_t[::1] region_buffer):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyUnicode_FromString(((char const *)__pyx_v_region_buffer->buffer.value)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __pyx_t_1 = PyUnicode_FromString(((char const *)__pyx_v_region_buffer->buffer.value)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 423, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":413
+  /* "ip2region/backends/cython/_xdb.pyx":414
  *         return self
  * 
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
@@ -25509,48 +25511,48 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip,&__pyx_mstate_global->__pyx_n_u_size,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 413, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 414, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 413, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 414, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 413, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 414, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search_by_string", 0) < 0) __PYX_ERR(0, 413, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search_by_string", 0) < 0) __PYX_ERR(0, 414, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search_by_string", 0, 1, 2, i); __PYX_ERR(0, 413, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search_by_string", 0, 1, 2, i); __PYX_ERR(0, 414, __pyx_L3_error) }
       }
     } else {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 413, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 414, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 413, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 414, __pyx_L3_error)
         break;
         default: goto __pyx_L5_argtuple_error;
       }
     }
     __pyx_v_ip = values[0];
     if (values[1]) {
-      __pyx_v_size = __Pyx_PyIndex_AsSsize_t(values[1]); if (unlikely((__pyx_v_size == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 413, __pyx_L3_error)
+      __pyx_v_size = __Pyx_PyIndex_AsSsize_t(values[1]); if (unlikely((__pyx_v_size == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 414, __pyx_L3_error)
     } else {
       __pyx_v_size = ((Py_ssize_t)0x3E8);
     }
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("search_by_string", 0, 1, 2, __pyx_nargs); __PYX_ERR(0, 413, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("search_by_string", 0, 1, 2, __pyx_nargs); __PYX_ERR(0, 414, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -25583,7 +25585,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_6search_b
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.size = __pyx_v_size;
-  __pyx_t_1 = __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher->search_by_string(__pyx_v_self, __pyx_v_ip, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 413, __pyx_L1_error)
+  __pyx_t_1 = __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher->search_by_string(__pyx_v_self, __pyx_v_ip, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -25600,7 +25602,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_6search_b
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":424
+/* "ip2region/backends/cython/_xdb.pyx":425
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)
  * 
  *     cpdef inline search_by_string_into(self, object ip, uint8_t[::1] region_buffer):             # <<<<<<<<<<<<<<
@@ -25638,7 +25640,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("search_by_string_into", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":426
+  /* "ip2region/backends/cython/_xdb.pyx":427
  *     cpdef inline search_by_string_into(self, object ip, uint8_t[::1] region_buffer):
  *         cdef xdb.xdb_region_buffer_t region
  *         xdb.xdb_region_buffer_init(&region, <char*>&region_buffer[0], <size_t>region_buffer.shape[0])             # <<<<<<<<<<<<<<
@@ -25648,19 +25650,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_1 = 0;
   (void)(xdb_region_buffer_init((&__pyx_v_region), ((char *)(&(*((uint8_t *) ( /* dim=0 */ ((char *) (((uint8_t *) __pyx_v_region_buffer.data) + __pyx_t_1)) ))))), ((size_t)(__pyx_v_region_buffer.shape[0]))));
 
-  /* "ip2region/backends/cython/_xdb.pyx":428
+  /* "ip2region/backends/cython/_xdb.pyx":429
  *         xdb.xdb_region_buffer_init(&region, <char*>&region_buffer[0], <size_t>region_buffer.shape[0])
  * 
  *         cdef bytes ip_b = ensure_bytes(ip)             # <<<<<<<<<<<<<<
  *         cdef const char *ip_ptr = <const char *> ip_b
  *         cdef int err
 */
-  __pyx_t_2 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_ip); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_9ip2region_8backends_6cython_4_xdb_ensure_bytes(__pyx_v_ip); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_ip_b = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":429
+  /* "ip2region/backends/cython/_xdb.pyx":430
  * 
  *         cdef bytes ip_b = ensure_bytes(ip)
  *         cdef const char *ip_ptr = <const char *> ip_b             # <<<<<<<<<<<<<<
@@ -25669,12 +25671,12 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
 */
   if (unlikely(__pyx_v_ip_b == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 429, __pyx_L1_error)
+    __PYX_ERR(0, 430, __pyx_L1_error)
   }
-  __pyx_t_3 = __Pyx_PyBytes_AsString(__pyx_v_ip_b); if (unlikely((!__pyx_t_3) && PyErr_Occurred())) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyBytes_AsString(__pyx_v_ip_b); if (unlikely((!__pyx_t_3) && PyErr_Occurred())) __PYX_ERR(0, 430, __pyx_L1_error)
   __pyx_v_ip_ptr = ((char const *)__pyx_t_3);
 
-  /* "ip2region/backends/cython/_xdb.pyx":431
+  /* "ip2region/backends/cython/_xdb.pyx":432
  *         cdef const char *ip_ptr = <const char *> ip_b
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -25688,7 +25690,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":432
+        /* "ip2region/backends/cython/_xdb.pyx":433
  *         cdef int err
  *         with nogil:
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr, &region)             # <<<<<<<<<<<<<<
@@ -25698,7 +25700,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
         __pyx_v_err = xdb_search_by_string((&__pyx_v_self->searcher), __pyx_v_ip_ptr, (&__pyx_v_region));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":431
+      /* "ip2region/backends/cython/_xdb.pyx":432
  *         cdef const char *ip_ptr = <const char *> ip_b
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -25715,7 +25717,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":433
+  /* "ip2region/backends/cython/_xdb.pyx":434
  *         with nogil:
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr, &region)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -25725,7 +25727,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_4 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":434
+    /* "ip2region/backends/cython/_xdb.pyx":435
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr, &region)
  *         if err != 0:
  *             raise RuntimeError(f"failed search {ip} with errno={err}")             # <<<<<<<<<<<<<<
@@ -25735,16 +25737,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     __pyx_t_5 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_6 = __pyx_builtin_RuntimeError; 
-    __pyx_t_7 = __Pyx_PyObject_FormatSimple(__pyx_v_ip, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 434, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_FormatSimple(__pyx_v_ip, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 435, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 434, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 435, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_9[0] = __pyx_mstate_global->__pyx_kp_u_failed_search;
     __pyx_t_9[1] = __pyx_t_7;
     __pyx_t_9[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_9[3] = __pyx_t_8;
     __pyx_t_10 = __Pyx_PyUnicode_Join(__pyx_t_9, 4, 14 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_7) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_8), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_7));
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 434, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 435, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -25755,14 +25757,14 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 434, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 435, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
     }
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 434, __pyx_L1_error)
+    __PYX_ERR(0, 435, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":433
+    /* "ip2region/backends/cython/_xdb.pyx":434
  *         with nogil:
  *             err = xdb.xdb_search_by_string(&self.searcher, ip_ptr, &region)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -25771,7 +25773,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":424
+  /* "ip2region/backends/cython/_xdb.pyx":425
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)
  * 
  *     cpdef inline search_by_string_into(self, object ip, uint8_t[::1] region_buffer):             # <<<<<<<<<<<<<<
@@ -25839,39 +25841,39 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip,&__pyx_mstate_global->__pyx_n_u_region_buffer,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 424, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 425, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 424, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 425, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 424, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 425, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search_by_string_into", 0) < 0) __PYX_ERR(0, 424, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search_by_string_into", 0) < 0) __PYX_ERR(0, 425, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 2; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search_by_string_into", 1, 2, 2, i); __PYX_ERR(0, 424, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search_by_string_into", 1, 2, 2, i); __PYX_ERR(0, 425, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 424, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 425, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 424, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 425, __pyx_L3_error)
     }
     __pyx_v_ip = values[0];
-    __pyx_v_region_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_region_buffer.memview)) __PYX_ERR(0, 424, __pyx_L3_error)
+    __pyx_v_region_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_region_buffer.memview)) __PYX_ERR(0, 425, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("search_by_string_into", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 424, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("search_by_string_into", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 425, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -25903,8 +25905,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_8search_b
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("search_by_string_into", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_region_buffer.memview)) { __Pyx_RaiseUnboundLocalError("region_buffer"); __PYX_ERR(0, 424, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_string_into(__pyx_v_self, __pyx_v_ip, __pyx_v_region_buffer, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 424, __pyx_L1_error)
+  if (unlikely(!__pyx_v_region_buffer.memview)) { __Pyx_RaiseUnboundLocalError("region_buffer"); __PYX_ERR(0, 425, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_string_into(__pyx_v_self, __pyx_v_ip, __pyx_v_region_buffer, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 425, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -25921,7 +25923,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_8search_b
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":436
+/* "ip2region/backends/cython/_xdb.pyx":437
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline str search(self, const uint8_t[::1] ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
@@ -25962,7 +25964,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":437
+  /* "ip2region/backends/cython/_xdb.pyx":438
  * 
  *     cpdef inline str search(self, const uint8_t[::1] ip, Py_ssize_t size = 1000):
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)             # <<<<<<<<<<<<<<
@@ -25972,7 +25974,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_2 = NULL;
   __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer);
   __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer); 
-  __pyx_t_4 = PyLong_FromSsize_t(__pyx_v_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 437, __pyx_L1_error)
+  __pyx_t_4 = PyLong_FromSsize_t(__pyx_v_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 438, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = 1;
   {
@@ -25981,13 +25983,13 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 438, __pyx_L1_error)
     __Pyx_GOTREF((PyObject *)__pyx_t_1);
   }
   __pyx_v_region_buffer = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_RegionBuffer *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":439
+  /* "ip2region/backends/cython/_xdb.pyx":440
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26001,7 +26003,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":440
+        /* "ip2region/backends/cython/_xdb.pyx":441
  *         cdef int err
  *         with nogil:
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region_buffer.buffer)             # <<<<<<<<<<<<<<
@@ -26012,7 +26014,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
         __pyx_v_err = xdb_search((&__pyx_v_self->searcher), ((unsigned char const *)(&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_ip.data) + __pyx_t_6)) ))))), ((int)(__pyx_v_ip.shape[0])), (&__pyx_v_region_buffer->buffer));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":439
+      /* "ip2region/backends/cython/_xdb.pyx":440
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26029,7 +26031,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":441
+  /* "ip2region/backends/cython/_xdb.pyx":442
  *         with nogil:
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region_buffer.buffer)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -26039,7 +26041,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_7 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_7)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":442
+    /* "ip2region/backends/cython/_xdb.pyx":443
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region_buffer.buffer)
  *         if err != 0:
  *             raise RuntimeError(f"failed search {ip} with errno={err}")             # <<<<<<<<<<<<<<
@@ -26049,19 +26051,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_4 = __pyx_builtin_RuntimeError; 
-    __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_ip, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn_uint8_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_ip, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn_uint8_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 443, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyObject_FormatSimple(__pyx_t_2, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_FormatSimple(__pyx_t_2, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 443, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 443, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_9[0] = __pyx_mstate_global->__pyx_kp_u_failed_search;
     __pyx_t_9[1] = __pyx_t_8;
     __pyx_t_9[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_9[3] = __pyx_t_2;
     __pyx_t_10 = __Pyx_PyUnicode_Join(__pyx_t_9, 4, 14 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_8) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_8));
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 442, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 443, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -26072,14 +26074,14 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 442, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 443, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
     }
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 442, __pyx_L1_error)
+    __PYX_ERR(0, 443, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":441
+    /* "ip2region/backends/cython/_xdb.pyx":442
  *         with nogil:
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region_buffer.buffer)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -26088,7 +26090,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":443
+  /* "ip2region/backends/cython/_xdb.pyx":444
  *         if err != 0:
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)             # <<<<<<<<<<<<<<
@@ -26096,13 +26098,13 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
  *     cpdef inline search_into(self, const uint8_t[::1] ip, uint8_t[::1] region_buffer):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyUnicode_FromString(((char const *)__pyx_v_region_buffer->buffer.value)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 443, __pyx_L1_error)
+  __pyx_t_1 = PyUnicode_FromString(((char const *)__pyx_v_region_buffer->buffer.value)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 444, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":436
+  /* "ip2region/backends/cython/_xdb.pyx":437
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline str search(self, const uint8_t[::1] ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
@@ -26168,48 +26170,48 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip,&__pyx_mstate_global->__pyx_n_u_size,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 436, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 437, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 436, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 437, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 436, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 437, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search", 0) < 0) __PYX_ERR(0, 436, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search", 0) < 0) __PYX_ERR(0, 437, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search", 0, 1, 2, i); __PYX_ERR(0, 436, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search", 0, 1, 2, i); __PYX_ERR(0, 437, __pyx_L3_error) }
       }
     } else {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 436, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 437, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 436, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 437, __pyx_L3_error)
         break;
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_ip = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_ip.memview)) __PYX_ERR(0, 436, __pyx_L3_error)
+    __pyx_v_ip = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_ip.memview)) __PYX_ERR(0, 437, __pyx_L3_error)
     if (values[1]) {
-      __pyx_v_size = __Pyx_PyIndex_AsSsize_t(values[1]); if (unlikely((__pyx_v_size == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 436, __pyx_L3_error)
+      __pyx_v_size = __Pyx_PyIndex_AsSsize_t(values[1]); if (unlikely((__pyx_v_size == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 437, __pyx_L3_error)
     } else {
       __pyx_v_size = ((Py_ssize_t)0x3E8);
     }
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("search", 0, 1, 2, __pyx_nargs); __PYX_ERR(0, 436, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("search", 0, 1, 2, __pyx_nargs); __PYX_ERR(0, 437, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -26242,10 +26244,10 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_10search(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("search", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_ip.memview)) { __Pyx_RaiseUnboundLocalError("ip"); __PYX_ERR(0, 436, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_ip.memview)) { __Pyx_RaiseUnboundLocalError("ip"); __PYX_ERR(0, 437, __pyx_L1_error) }
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.size = __pyx_v_size;
-  __pyx_t_1 = __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher->search(__pyx_v_self, __pyx_v_ip, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 436, __pyx_L1_error)
+  __pyx_t_1 = __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher->search(__pyx_v_self, __pyx_v_ip, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -26262,7 +26264,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_10search(
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":445
+/* "ip2region/backends/cython/_xdb.pyx":446
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)
  * 
  *     cpdef inline search_into(self, const uint8_t[::1] ip, uint8_t[::1] region_buffer):             # <<<<<<<<<<<<<<
@@ -26297,7 +26299,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("search_into", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":447
+  /* "ip2region/backends/cython/_xdb.pyx":448
  *     cpdef inline search_into(self, const uint8_t[::1] ip, uint8_t[::1] region_buffer):
  *         cdef xdb.xdb_region_buffer_t region
  *         xdb.xdb_region_buffer_init(&region, <char *> &region_buffer[0], <size_t> region_buffer.shape[0])             # <<<<<<<<<<<<<<
@@ -26307,7 +26309,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_1 = 0;
   (void)(xdb_region_buffer_init((&__pyx_v_region), ((char *)(&(*((uint8_t *) ( /* dim=0 */ ((char *) (((uint8_t *) __pyx_v_region_buffer.data) + __pyx_t_1)) ))))), ((size_t)(__pyx_v_region_buffer.shape[0]))));
 
-  /* "ip2region/backends/cython/_xdb.pyx":449
+  /* "ip2region/backends/cython/_xdb.pyx":450
  *         xdb.xdb_region_buffer_init(&region, <char *> &region_buffer[0], <size_t> region_buffer.shape[0])
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26321,7 +26323,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":450
+        /* "ip2region/backends/cython/_xdb.pyx":451
  *         cdef int err
  *         with nogil:
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region)             # <<<<<<<<<<<<<<
@@ -26332,7 +26334,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
         __pyx_v_err = xdb_search((&__pyx_v_self->searcher), ((unsigned char const *)(&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_ip.data) + __pyx_t_1)) ))))), ((int)(__pyx_v_ip.shape[0])), (&__pyx_v_region));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":449
+      /* "ip2region/backends/cython/_xdb.pyx":450
  *         xdb.xdb_region_buffer_init(&region, <char *> &region_buffer[0], <size_t> region_buffer.shape[0])
  *         cdef int err
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26349,7 +26351,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":451
+  /* "ip2region/backends/cython/_xdb.pyx":452
  *         with nogil:
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -26359,7 +26361,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
   __pyx_t_2 = (__pyx_v_err != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":452
+    /* "ip2region/backends/cython/_xdb.pyx":453
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region)
  *         if err != 0:
  *             raise RuntimeError(f"failed search {ip} with errno={err}")             # <<<<<<<<<<<<<<
@@ -26369,19 +26371,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
     __pyx_t_4 = NULL;
     __Pyx_INCREF(__pyx_builtin_RuntimeError);
     __pyx_t_5 = __pyx_builtin_RuntimeError; 
-    __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_ip, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn_uint8_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 452, __pyx_L1_error)
+    __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_ip, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn_uint8_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 453, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyObject_FormatSimple(__pyx_t_6, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 452, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_FormatSimple(__pyx_t_6, __pyx_mstate_global->__pyx_empty_unicode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 453, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 452, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyUnicode_From_int(__pyx_v_err, 0, ' ', 'd'); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 453, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8[0] = __pyx_mstate_global->__pyx_kp_u_failed_search;
     __pyx_t_8[1] = __pyx_t_7;
     __pyx_t_8[2] = __pyx_mstate_global->__pyx_kp_u_with_errno;
     __pyx_t_8[3] = __pyx_t_6;
     __pyx_t_9 = __Pyx_PyUnicode_Join(__pyx_t_8, 4, 14 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_7) + 12 + __Pyx_PyUnicode_GET_LENGTH(__pyx_t_6), 127 | __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_7));
-    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 452, __pyx_L1_error)
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 453, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -26392,14 +26394,14 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 452, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 453, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
     }
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 452, __pyx_L1_error)
+    __PYX_ERR(0, 453, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":451
+    /* "ip2region/backends/cython/_xdb.pyx":452
  *         with nogil:
  *             err = xdb.xdb_search(&self.searcher, <const unsigned char *>&ip[0], <int>ip.shape[0], &region)
  *         if err != 0:             # <<<<<<<<<<<<<<
@@ -26408,7 +26410,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searc
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":445
+  /* "ip2region/backends/cython/_xdb.pyx":446
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)
  * 
  *     cpdef inline search_into(self, const uint8_t[::1] ip, uint8_t[::1] region_buffer):             # <<<<<<<<<<<<<<
@@ -26475,39 +26477,39 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_ip,&__pyx_mstate_global->__pyx_n_u_region_buffer,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 445, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 446, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  2:
         values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 445, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 446, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 445, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 446, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search_into", 0) < 0) __PYX_ERR(0, 445, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "search_into", 0) < 0) __PYX_ERR(0, 446, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 2; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search_into", 1, 2, 2, i); __PYX_ERR(0, 445, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("search_into", 1, 2, 2, i); __PYX_ERR(0, 446, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 445, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 446, __pyx_L3_error)
       values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 445, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 446, __pyx_L3_error)
     }
-    __pyx_v_ip = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_ip.memview)) __PYX_ERR(0, 445, __pyx_L3_error)
-    __pyx_v_region_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_region_buffer.memview)) __PYX_ERR(0, 445, __pyx_L3_error)
+    __pyx_v_ip = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_ip.memview)) __PYX_ERR(0, 446, __pyx_L3_error)
+    __pyx_v_region_buffer = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_region_buffer.memview)) __PYX_ERR(0, 446, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("search_into", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 445, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("search_into", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 446, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -26541,9 +26543,9 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_12search_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("search_into", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_ip.memview)) { __Pyx_RaiseUnboundLocalError("ip"); __PYX_ERR(0, 445, __pyx_L1_error) }
-  if (unlikely(!__pyx_v_region_buffer.memview)) { __Pyx_RaiseUnboundLocalError("region_buffer"); __PYX_ERR(0, 445, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_search_into(__pyx_v_self, __pyx_v_ip, __pyx_v_region_buffer, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 445, __pyx_L1_error)
+  if (unlikely(!__pyx_v_ip.memview)) { __Pyx_RaiseUnboundLocalError("ip"); __PYX_ERR(0, 446, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_region_buffer.memview)) { __Pyx_RaiseUnboundLocalError("region_buffer"); __PYX_ERR(0, 446, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_search_into(__pyx_v_self, __pyx_v_ip, __pyx_v_region_buffer, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 446, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -26560,7 +26562,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_12search_
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":454
+/* "ip2region/backends/cython/_xdb.pyx":455
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline int get_io_count(self):             # <<<<<<<<<<<<<<
@@ -26578,7 +26580,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_io_count(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *__pyx_v_self, CYTHON_UNUSED int __pyx_skip_dispatch) {
   int __pyx_r;
 
-  /* "ip2region/backends/cython/_xdb.pyx":455
+  /* "ip2region/backends/cython/_xdb.pyx":456
  * 
  *     cpdef inline int get_io_count(self):
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26592,7 +26594,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_ge
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":456
+        /* "ip2region/backends/cython/_xdb.pyx":457
  *     cpdef inline int get_io_count(self):
  *         with nogil:
  *             return xdb.xdb_get_io_count(&self.searcher)             # <<<<<<<<<<<<<<
@@ -26603,7 +26605,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_ge
         goto __pyx_L3_return;
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":455
+      /* "ip2region/backends/cython/_xdb.pyx":456
  * 
  *     cpdef inline int get_io_count(self):
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26619,7 +26621,7 @@ static CYTHON_INLINE int __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_ge
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":454
+  /* "ip2region/backends/cython/_xdb.pyx":455
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline int get_io_count(self):             # <<<<<<<<<<<<<<
@@ -26685,8 +26687,8 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_14get_io_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_io_count", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_io_count(__pyx_v_self, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 454, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_io_count(__pyx_v_self, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 455, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyLong_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -26703,7 +26705,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_14get_io_
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":458
+/* "ip2region/backends/cython/_xdb.pyx":459
  *             return xdb.xdb_get_io_count(&self.searcher)
  * 
  *     cpdef inline Version get_version(self):             # <<<<<<<<<<<<<<
@@ -26732,7 +26734,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_version", 0);
 
-  /* "ip2region/backends/cython/_xdb.pyx":460
+  /* "ip2region/backends/cython/_xdb.pyx":461
  *     cpdef inline Version get_version(self):
  *         cdef xdb.xdb_version_t* version
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26746,7 +26748,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "ip2region/backends/cython/_xdb.pyx":461
+        /* "ip2region/backends/cython/_xdb.pyx":462
  *         cdef xdb.xdb_version_t* version
  *         with nogil:
  *             version = xdb.xdb_get_version(&self.searcher)             # <<<<<<<<<<<<<<
@@ -26756,7 +26758,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
         __pyx_v_version = xdb_get_version((&__pyx_v_self->searcher));
       }
 
-      /* "ip2region/backends/cython/_xdb.pyx":460
+      /* "ip2region/backends/cython/_xdb.pyx":461
  *     cpdef inline Version get_version(self):
  *         cdef xdb.xdb_version_t* version
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -26773,7 +26775,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
       }
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":462
+  /* "ip2region/backends/cython/_xdb.pyx":463
  *         with nogil:
  *             version = xdb.xdb_get_version(&self.searcher)
  *         if not version:             # <<<<<<<<<<<<<<
@@ -26783,7 +26785,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
   __pyx_t_1 = (!(__pyx_v_version != 0));
   if (unlikely(__pyx_t_1)) {
 
-    /* "ip2region/backends/cython/_xdb.pyx":463
+    /* "ip2region/backends/cython/_xdb.pyx":464
  *             version = xdb.xdb_get_version(&self.searcher)
  *         if not version:
  *             raise RuntimeError("failed to get version from searcher")             # <<<<<<<<<<<<<<
@@ -26799,14 +26801,14 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
       __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 463, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 464, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
     }
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 463, __pyx_L1_error)
+    __PYX_ERR(0, 464, __pyx_L1_error)
 
-    /* "ip2region/backends/cython/_xdb.pyx":462
+    /* "ip2region/backends/cython/_xdb.pyx":463
  *         with nogil:
  *             version = xdb.xdb_get_version(&self.searcher)
  *         if not version:             # <<<<<<<<<<<<<<
@@ -26815,7 +26817,7 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
 */
   }
 
-  /* "ip2region/backends/cython/_xdb.pyx":464
+  /* "ip2region/backends/cython/_xdb.pyx":465
  *         if not version:
  *             raise RuntimeError("failed to get version from searcher")
  *         return Version.from_ptr(version)             # <<<<<<<<<<<<<<
@@ -26823,13 +26825,13 @@ static CYTHON_INLINE struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version
  *     def __dealloc__(self):
 */
   __Pyx_XDECREF((PyObject *)__pyx_r);
-  __pyx_t_2 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr(__pyx_v_version)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 464, __pyx_L1_error)
+  __pyx_t_2 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr(__pyx_v_version)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = ((struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":458
+  /* "ip2region/backends/cython/_xdb.pyx":459
  *             return xdb.xdb_get_io_count(&self.searcher)
  * 
  *     cpdef inline Version get_version(self):             # <<<<<<<<<<<<<<
@@ -26902,7 +26904,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_16get_ver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_version", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_version(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 458, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_version(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 459, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -26919,7 +26921,7 @@ static PyObject *__pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_16get_ver
   return __pyx_r;
 }
 
-/* "ip2region/backends/cython/_xdb.pyx":466
+/* "ip2region/backends/cython/_xdb.pyx":467
  *         return Version.from_ptr(version)
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -26941,14 +26943,14 @@ static void __pyx_pw_9ip2region_8backends_6cython_4_xdb_8Searcher_19__dealloc__(
 
 static void __pyx_pf_9ip2region_8backends_6cython_4_xdb_8Searcher_18__dealloc__(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *__pyx_v_self) {
 
-  /* "ip2region/backends/cython/_xdb.pyx":467
+  /* "ip2region/backends/cython/_xdb.pyx":468
  * 
  *     def __dealloc__(self):
  *         xdb.xdb_close(&self.searcher)             # <<<<<<<<<<<<<<
 */
   xdb_close((&__pyx_v_self->searcher));
 
-  /* "ip2region/backends/cython/_xdb.pyx":466
+  /* "ip2region/backends/cython/_xdb.pyx":467
  *         return Version.from_ptr(version)
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -29203,7 +29205,7 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Header_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Header_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header)) __PYX_ERR(0, 41, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_as_buffer = &__pyx_tp_as_buffer_Header;
   if (!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_as_buffer->bf_releasebuffer && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_base->tp_as_buffer && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_base->tp_as_buffer->bf_releasebuffer) {
@@ -29216,24 +29218,24 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   #else
   #warning "The buffer protocol is not supported in the Limited C-API < 3.11."
   #endif
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Header_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Header_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   #else
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header = &__pyx_type_9ip2region_8backends_6cython_4_xdb_Header;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_dictoffset && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Header, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Header, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_VectorIndex_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_VectorIndex_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex)) __PYX_ERR(0, 132, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_as_buffer = &__pyx_tp_as_buffer_VectorIndex;
   if (!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_as_buffer->bf_releasebuffer && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_base->tp_as_buffer && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_base->tp_as_buffer->bf_releasebuffer) {
@@ -29246,24 +29248,24 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   #else
   #warning "The buffer protocol is not supported in the Limited C-API < 3.11."
   #endif
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_VectorIndex_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_VectorIndex_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
   #else
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex = &__pyx_type_9ip2region_8backends_6cython_4_xdb_VectorIndex;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_dictoffset && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_VectorIndex, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_VectorIndex, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Content_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Content_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content)) __PYX_ERR(0, 171, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_as_buffer = &__pyx_tp_as_buffer_Content;
   if (!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_as_buffer->bf_releasebuffer && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_base->tp_as_buffer && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_base->tp_as_buffer->bf_releasebuffer) {
@@ -29276,64 +29278,64 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   #else
   #warning "The buffer protocol is not supported in the Limited C-API < 3.11."
   #endif
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Content_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Content_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   #else
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content = &__pyx_type_9ip2region_8backends_6cython_4_xdb_Content;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_dictoffset && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Content, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Content, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Version = &__pyx_vtable_9ip2region_8backends_6cython_4_xdb_Version;
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Version.from_ptr = (struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *(*)(xdb_version_t *))__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_from_ptr;
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Version.is_ipv4 = (int (*)(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *, int __pyx_skip_dispatch))__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv4;
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Version.is_ipv6 = (int (*)(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *, int __pyx_skip_dispatch))__pyx_f_9ip2region_8backends_6cython_4_xdb_7Version_is_ipv6;
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Version_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version)) __PYX_ERR(0, 237, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Version_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Version_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version)) __PYX_ERR(0, 238, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Version_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
   #else
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version = &__pyx_type_9ip2region_8backends_6cython_4_xdb_Version;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version->tp_dictoffset && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version->tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
-  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Version, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
+  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Version, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_RegionBuffer_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer)) __PYX_ERR(0, 341, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_RegionBuffer_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_RegionBuffer_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer)) __PYX_ERR(0, 342, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_RegionBuffer_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 342, __pyx_L1_error)
   #else
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer = &__pyx_type_9ip2region_8backends_6cython_4_xdb_RegionBuffer;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 342, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer->tp_dictoffset && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer->tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_RegionBuffer, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_RegionBuffer, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 342, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_RegionBuffer) < 0) __PYX_ERR(0, 342, __pyx_L1_error)
   __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher = &__pyx_vtable_9ip2region_8backends_6cython_4_xdb_Searcher;
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Searcher.search_by_string = (PyObject *(*)(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *, PyObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_string *__pyx_optional_args))__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_string;
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Searcher.search_by_string_into = (PyObject *(*)(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *, PyObject *, __Pyx_memviewslice, int __pyx_skip_dispatch))__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_search_by_string_into;
@@ -29342,25 +29344,25 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Searcher.get_io_count = (int (*)(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *, int __pyx_skip_dispatch))__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_io_count;
   __pyx_vtable_9ip2region_8backends_6cython_4_xdb_Searcher.get_version = (struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Version *(*)(struct __pyx_obj_9ip2region_8backends_6cython_4_xdb_Searcher *, int __pyx_skip_dispatch))__pyx_f_9ip2region_8backends_6cython_4_xdb_8Searcher_get_version;
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Searcher_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher)) __PYX_ERR(0, 366, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Searcher_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_9ip2region_8backends_6cython_4_xdb_Searcher_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher)) __PYX_ERR(0, 367, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_9ip2region_8backends_6cython_4_xdb_Searcher_spec, __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
   #else
   __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher = &__pyx_type_9ip2region_8backends_6cython_4_xdb_Searcher;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher->tp_dictoffset && __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher->tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
-  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Searcher, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_vtabptr_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
+  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Searcher, (PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   #if CYTHON_USE_TYPE_SPECS
@@ -30405,7 +30407,7 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
  * xdb_vector_index_rows      = xdb.xdb_vector_index_rows
  * xdb_vector_index_cols      = xdb.xdb_vector_index_cols             # <<<<<<<<<<<<<<
  * xdb_vector_index_size      = xdb.xdb_vector_index_size
- * xdb_segment_index_size     = xdb.xdb_segment_index_size
+ * xdb_v4_index_size     = xdb.xdb_v4_index_size
 */
   __pyx_t_5 = __Pyx_PyLong_From_int(xdb_vector_index_cols); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -30416,8 +30418,8 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
  * xdb_vector_index_rows      = xdb.xdb_vector_index_rows
  * xdb_vector_index_cols      = xdb.xdb_vector_index_cols
  * xdb_vector_index_size      = xdb.xdb_vector_index_size             # <<<<<<<<<<<<<<
- * xdb_segment_index_size     = xdb.xdb_segment_index_size
- * xdb_ipv4_id                = xdb.xdb_ipv4_id
+ * xdb_v4_index_size     = xdb.xdb_v4_index_size
+ * xdb_v6_index_size     = xdb.xdb_v6_index_size
 */
   __pyx_t_5 = __Pyx_PyLong_From_int(xdb_vector_index_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -30427,132 +30429,144 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
   /* "ip2region/backends/cython/_xdb.pyx":19
  * xdb_vector_index_cols      = xdb.xdb_vector_index_cols
  * xdb_vector_index_size      = xdb.xdb_vector_index_size
- * xdb_segment_index_size     = xdb.xdb_segment_index_size             # <<<<<<<<<<<<<<
+ * xdb_v4_index_size     = xdb.xdb_v4_index_size             # <<<<<<<<<<<<<<
+ * xdb_v6_index_size     = xdb.xdb_v6_index_size
  * xdb_ipv4_id                = xdb.xdb_ipv4_id
- * xdb_ipv6_id                = xdb.xdb_ipv6_id
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_segment_index_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_v4_index_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_segment_index_size, __pyx_t_5) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_v4_index_size, __pyx_t_5) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "ip2region/backends/cython/_xdb.pyx":20
  * xdb_vector_index_size      = xdb.xdb_vector_index_size
- * xdb_segment_index_size     = xdb.xdb_segment_index_size
+ * xdb_v4_index_size     = xdb.xdb_v4_index_size
+ * xdb_v6_index_size     = xdb.xdb_v6_index_size             # <<<<<<<<<<<<<<
+ * xdb_ipv4_id                = xdb.xdb_ipv4_id
+ * xdb_ipv6_id                = xdb.xdb_ipv6_id
+*/
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_v6_index_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_v6_index_size, __pyx_t_5) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "ip2region/backends/cython/_xdb.pyx":21
+ * xdb_v4_index_size     = xdb.xdb_v4_index_size
+ * xdb_v6_index_size     = xdb.xdb_v6_index_size
  * xdb_ipv4_id                = xdb.xdb_ipv4_id             # <<<<<<<<<<<<<<
  * xdb_ipv6_id                = xdb.xdb_ipv6_id
  * xdb_ipv4_bytes             = xdb.xdb_ipv4_bytes
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv4_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv4_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv4_id, __pyx_t_5) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv4_id, __pyx_t_5) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":21
- * xdb_segment_index_size     = xdb.xdb_segment_index_size
+  /* "ip2region/backends/cython/_xdb.pyx":22
+ * xdb_v6_index_size     = xdb.xdb_v6_index_size
  * xdb_ipv4_id                = xdb.xdb_ipv4_id
  * xdb_ipv6_id                = xdb.xdb_ipv6_id             # <<<<<<<<<<<<<<
  * xdb_ipv4_bytes             = xdb.xdb_ipv4_bytes
  * xdb_ipv6_bytes             = xdb.xdb_ipv6_bytes
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv6_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv6_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv6_id, __pyx_t_5) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv6_id, __pyx_t_5) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":22
+  /* "ip2region/backends/cython/_xdb.pyx":23
  * xdb_ipv4_id                = xdb.xdb_ipv4_id
  * xdb_ipv6_id                = xdb.xdb_ipv6_id
  * xdb_ipv4_bytes             = xdb.xdb_ipv4_bytes             # <<<<<<<<<<<<<<
  * xdb_ipv6_bytes             = xdb.xdb_ipv6_bytes
  * xdb_vector_index_length    = xdb.xdb_vector_index_length
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv4_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv4_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv4_bytes, __pyx_t_5) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv4_bytes, __pyx_t_5) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":23
+  /* "ip2region/backends/cython/_xdb.pyx":24
  * xdb_ipv6_id                = xdb.xdb_ipv6_id
  * xdb_ipv4_bytes             = xdb.xdb_ipv4_bytes
  * xdb_ipv6_bytes             = xdb.xdb_ipv6_bytes             # <<<<<<<<<<<<<<
  * xdb_vector_index_length    = xdb.xdb_vector_index_length
  * xdb_region_buffer_wrapper  = xdb.xdb_region_buffer_wrapper
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv6_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_ipv6_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv6_bytes, __pyx_t_5) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_ipv6_bytes, __pyx_t_5) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":24
+  /* "ip2region/backends/cython/_xdb.pyx":25
  * xdb_ipv4_bytes             = xdb.xdb_ipv4_bytes
  * xdb_ipv6_bytes             = xdb.xdb_ipv6_bytes
  * xdb_vector_index_length    = xdb.xdb_vector_index_length             # <<<<<<<<<<<<<<
  * xdb_region_buffer_wrapper  = xdb.xdb_region_buffer_wrapper
  * xdb_region_buffer_auto     = xdb.xdb_region_buffer_auto
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_vector_index_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_vector_index_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_vector_index_length, __pyx_t_5) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_vector_index_length, __pyx_t_5) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":25
+  /* "ip2region/backends/cython/_xdb.pyx":26
  * xdb_ipv6_bytes             = xdb.xdb_ipv6_bytes
  * xdb_vector_index_length    = xdb.xdb_vector_index_length
  * xdb_region_buffer_wrapper  = xdb.xdb_region_buffer_wrapper             # <<<<<<<<<<<<<<
  * xdb_region_buffer_auto     = xdb.xdb_region_buffer_auto
  * 
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_region_buffer_wrapper); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_region_buffer_wrapper); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_region_buffer_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_region_buffer_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":26
+  /* "ip2region/backends/cython/_xdb.pyx":27
  * xdb_vector_index_length    = xdb.xdb_vector_index_length
  * xdb_region_buffer_wrapper  = xdb.xdb_region_buffer_wrapper
  * xdb_region_buffer_auto     = xdb.xdb_region_buffer_auto             # <<<<<<<<<<<<<<
  * 
  * from pathlib import Path
 */
-  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_region_buffer_auto); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyLong_From_int(xdb_region_buffer_auto); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_region_buffer_auto, __pyx_t_5) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_xdb_region_buffer_auto, __pyx_t_5) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":28
+  /* "ip2region/backends/cython/_xdb.pyx":29
  * xdb_region_buffer_auto     = xdb.xdb_region_buffer_auto
  * 
  * from pathlib import Path             # <<<<<<<<<<<<<<
  * 
  * cdef inline bytes ensure_bytes(object inp):
 */
-  __pyx_t_5 = __Pyx_PyList_Pack(1, __pyx_mstate_global->__pyx_n_u_Path); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyList_Pack(1, __pyx_mstate_global->__pyx_n_u_Path); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_Import(__pyx_mstate_global->__pyx_n_u_pathlib, __pyx_t_5, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Import(__pyx_mstate_global->__pyx_n_u_pathlib, __pyx_t_5, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_ImportFrom(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_Path); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_ImportFrom(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_Path); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_Path, __pyx_t_5) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_Path, __pyx_t_5) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":49
+  /* "ip2region/backends/cython/_xdb.pyx":50
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_file(object db_path):
  *         cdef Header self = Header.__new__(Header)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_6Header_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Header_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[0])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_6Header_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Header_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[0])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_5 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_6 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_10, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_10, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_7 = 1;
   {
@@ -30561,10 +30575,10 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Header, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "(tree fragment)":1
@@ -30588,21 +30602,21 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_4) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":140
+  /* "ip2region/backends/cython/_xdb.pyx":141
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_file(object db_path):
  *         cdef VectorIndex  self = VectorIndex.__new__(VectorIndex)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_11VectorIndex_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_VectorIndex_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_11VectorIndex_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_VectorIndex_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_6 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_10 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_5, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_5, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = 1;
   {
@@ -30611,10 +30625,10 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_VectorIndex, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "(tree fragment)":1
@@ -30638,21 +30652,21 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_4) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":179
+  /* "ip2region/backends/cython/_xdb.pyx":180
  *         Py_ssize_t[1] strides
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_file(object db_path):
  *         cdef Content self = Content.__new__(Content)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Content_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Content_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[6])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Content_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Content_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[6])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_10 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_5 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_6, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_6, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = 1;
   {
@@ -30661,10 +30675,10 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Content, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "(tree fragment)":1
@@ -30688,45 +30702,45 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_4) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":210
+  /* "ip2region/backends/cython/_xdb.pyx":211
  * 
  * 
  * cpdef inline int verify(object db_path) except -1:             # <<<<<<<<<<<<<<
  *     cdef bytes db_path_b = ensure_bytes(db_path)
  *     cdef const char* db_path_ptr = <const char*>db_path_b
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_1verify, 0, __pyx_mstate_global->__pyx_n_u_verify, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[9])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_1verify, 0, __pyx_mstate_global->__pyx_n_u_verify, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[9])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_verify, __pyx_t_4) < 0) __PYX_ERR(0, 210, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_verify, __pyx_t_4) < 0) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":221
+  /* "ip2region/backends/cython/_xdb.pyx":222
  * 
  * 
  * cpdef inline int verify_from_header(object db_path, Header header) except -1:             # <<<<<<<<<<<<<<
  *     cdef bytes db_path_b = ensure_bytes(db_path)
  *     cdef const char * db_path_ptr = <const char *> db_path_b
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_3verify_from_header, 0, __pyx_mstate_global->__pyx_n_u_verify_from_header, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[10])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_3verify_from_header, 0, __pyx_mstate_global->__pyx_n_u_verify_from_header, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[10])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_verify_from_header, __pyx_t_4) < 0) __PYX_ERR(0, 221, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_verify_from_header, __pyx_t_4) < 0) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":251
+  /* "ip2region/backends/cython/_xdb.pyx":252
  * 
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def ipv4():
  *         cdef Version self = Version.__new__(Version)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_1ipv4, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_ipv4, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[11])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 251, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_1ipv4, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_ipv4, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[11])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 252, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv4, __pyx_t_4) < 0) __PYX_ERR(0, 251, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv4, __pyx_t_4) < 0) __PYX_ERR(0, 252, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_5 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_6 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_10, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 251, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_10, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 252, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_7 = 1;
   {
@@ -30735,27 +30749,27 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 251, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 252, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv4, __pyx_t_4) < 0) __PYX_ERR(0, 251, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv4, __pyx_t_4) < 0) __PYX_ERR(0, 252, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":259
+  /* "ip2region/backends/cython/_xdb.pyx":260
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def ipv6():
  *         cdef Version self = Version.__new__(Version)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_3ipv6, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_ipv6, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[12])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 259, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_3ipv6, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_ipv6, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[12])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv6, __pyx_t_4) < 0) __PYX_ERR(0, 259, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv6, __pyx_t_4) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_6 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_10 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_5, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 259, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_5, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = 1;
   {
@@ -30764,27 +30778,27 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 259, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv6, __pyx_t_4) < 0) __PYX_ERR(0, 259, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_ipv6, __pyx_t_4) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":267
+  /* "ip2region/backends/cython/_xdb.pyx":268
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_header(Header header):
  *         cdef Version self = Version.__new__(Version)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_5from_header, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_from_header, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[13])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 267, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_5from_header, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_from_header, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[13])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 268, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_from_header, __pyx_t_4) < 0) __PYX_ERR(0, 267, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_from_header, __pyx_t_4) < 0) __PYX_ERR(0, 268, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_10 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_5 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_6, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_from_header); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 267, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_6, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_from_header); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 268, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = 1;
   {
@@ -30793,34 +30807,34 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 267, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 268, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_from_header, __pyx_t_4) < 0) __PYX_ERR(0, 267, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_from_header, __pyx_t_4) < 0) __PYX_ERR(0, 268, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":279
+  /* "ip2region/backends/cython/_xdb.pyx":280
  *         return self.version.segment_index_size
  * 
  *     cpdef inline bint is_ipv4(self):             # <<<<<<<<<<<<<<
  *         cdef bint ret
  *         with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_7is_ipv4, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_is_ipv4, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[14])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 279, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_7is_ipv4, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_is_ipv4, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[14])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_is_ipv4, __pyx_t_4) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_is_ipv4, __pyx_t_4) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":285
+  /* "ip2region/backends/cython/_xdb.pyx":286
  *         return ret
  * 
  *     cpdef inline bint is_ipv6(self):             # <<<<<<<<<<<<<<
  *         cdef bint ret
  *         with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_9is_ipv6, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_is_ipv6, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[15])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7Version_9is_ipv6, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Version_is_ipv6, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[15])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_is_ipv6, __pyx_t_4) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Version, __pyx_mstate_global->__pyx_n_u_is_ipv6, __pyx_t_4) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "(tree fragment)":1
@@ -30844,88 +30858,88 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_4) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":291
+  /* "ip2region/backends/cython/_xdb.pyx":292
  *         return ret
  * 
  * cpdef inline int init_winsock() noexcept:             # <<<<<<<<<<<<<<
  *     cdef int ret
  *     with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_5init_winsock, 0, __pyx_mstate_global->__pyx_n_u_init_winsock, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[18])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_5init_winsock, 0, __pyx_mstate_global->__pyx_n_u_init_winsock, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[18])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_init_winsock, __pyx_t_4) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_init_winsock, __pyx_t_4) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":298
+  /* "ip2region/backends/cython/_xdb.pyx":299
  * 
  * 
  * cpdef inline clean_winsock() noexcept:             # <<<<<<<<<<<<<<
  *     with nogil:
  *         xdb.xdb_clean_winsock()
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7clean_winsock, 0, __pyx_mstate_global->__pyx_n_u_clean_winsock, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[19])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 298, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_7clean_winsock, 0, __pyx_mstate_global->__pyx_n_u_clean_winsock, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[19])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_clean_winsock, __pyx_t_4) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_clean_winsock, __pyx_t_4) < 0) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":302
+  /* "ip2region/backends/cython/_xdb.pyx":303
  *         xdb.xdb_clean_winsock()
  * 
  * cpdef inline long now() noexcept:             # <<<<<<<<<<<<<<
  *     cdef long ret
  *     with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_9now, 0, __pyx_mstate_global->__pyx_n_u_now, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[20])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 302, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_9now, 0, __pyx_mstate_global->__pyx_n_u_now, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[20])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_now, __pyx_t_4) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_now, __pyx_t_4) < 0) __PYX_ERR(0, 303, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":308
+  /* "ip2region/backends/cython/_xdb.pyx":309
  *     return ret
  * 
  * cpdef inline tuple parse_ip(str ip_string):             # <<<<<<<<<<<<<<
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_11parse_ip, 0, __pyx_mstate_global->__pyx_n_u_parse_ip, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[21])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 308, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_11parse_ip, 0, __pyx_mstate_global->__pyx_n_u_parse_ip, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[21])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_parse_ip, __pyx_t_4) < 0) __PYX_ERR(0, 308, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_parse_ip, __pyx_t_4) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":320
+  /* "ip2region/backends/cython/_xdb.pyx":321
  * 
  * 
  * cpdef inline Version parse_ip_into(str ip_string, uint8_t[::1] buffer):             # <<<<<<<<<<<<<<
  *     cdef const char* str_p = PyUnicode_AsUTF8(ip_string)
  *     cdef xdb.xdb_version_t *version = NULL
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_13parse_ip_into, 0, __pyx_mstate_global->__pyx_n_u_parse_ip_into, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[22])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 320, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_13parse_ip_into, 0, __pyx_mstate_global->__pyx_n_u_parse_ip_into, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[22])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_parse_ip_into, __pyx_t_4) < 0) __PYX_ERR(0, 320, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_parse_ip_into, __pyx_t_4) < 0) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":329
+  /* "ip2region/backends/cython/_xdb.pyx":330
  *     return Version.from_ptr(version)
  * 
  * cpdef inline str ip_to_string(const uint8_t[::1] buffer):             # <<<<<<<<<<<<<<
  *     cdef char ret[100]
  *     with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_15ip_to_string, 0, __pyx_mstate_global->__pyx_n_u_ip_to_string, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[23])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 329, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_15ip_to_string, 0, __pyx_mstate_global->__pyx_n_u_ip_to_string, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[23])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 330, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_ip_to_string, __pyx_t_4) < 0) __PYX_ERR(0, 329, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_ip_to_string, __pyx_t_4) < 0) __PYX_ERR(0, 330, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":335
+  /* "ip2region/backends/cython/_xdb.pyx":336
  *     return PyUnicode_FromString(<const char*>ret)
  * 
  * cpdef inline int ip_sub_compare(const uint8_t[::1] ip1, const uint8_t[::1] ip2, int offset):             # <<<<<<<<<<<<<<
  *     cdef int ret
  *     with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_17ip_sub_compare, 0, __pyx_mstate_global->__pyx_n_u_ip_sub_compare, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[24])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 335, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_17ip_sub_compare, 0, __pyx_mstate_global->__pyx_n_u_ip_sub_compare, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[24])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_ip_sub_compare, __pyx_t_4) < 0) __PYX_ERR(0, 335, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_ip_sub_compare, __pyx_t_4) < 0) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "(tree fragment)":1
@@ -30949,21 +30963,21 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_4) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":375
+  /* "ip2region/backends/cython/_xdb.pyx":376
  *         VectorIndex index
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_file(Version version, object db_path):
  *         cdef Searcher self = Searcher.__new__(Searcher)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[27])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_1from_file, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_from_file, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[27])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 376, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 375, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 376, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_5 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_6 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_10, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 375, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_10, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_file); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 376, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_7 = 1;
   {
@@ -30972,27 +30986,27 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 376, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 375, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_file, __pyx_t_4) < 0) __PYX_ERR(0, 376, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":387
+  /* "ip2region/backends/cython/_xdb.pyx":388
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_index(Version version, object db_path, VectorIndex index):
  *         cdef Searcher self = Searcher.__new__(Searcher)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_3from_index, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_from_index, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[28])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 387, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_3from_index, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_from_index, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[28])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_index, __pyx_t_4) < 0) __PYX_ERR(0, 387, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_index, __pyx_t_4) < 0) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_6 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_10 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_5, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_index); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 387, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_5, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_index); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = 1;
   {
@@ -31001,27 +31015,27 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 387, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_index, __pyx_t_4) < 0) __PYX_ERR(0, 387, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_index, __pyx_t_4) < 0) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":400
+  /* "ip2region/backends/cython/_xdb.pyx":401
  *         return self
  * 
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_buffer(Version version, const uint8_t[::1] buffer):
  *         cdef Searcher self = Searcher.__new__(Searcher)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_5from_buffer, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_from_buffer, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[29])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_5from_buffer, __Pyx_CYFUNCTION_STATICMETHOD | __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_from_buffer, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[29])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_buffer, __pyx_t_4) < 0) __PYX_ERR(0, 400, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_buffer, __pyx_t_4) < 0) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_10 = NULL;
   __Pyx_INCREF(__pyx_builtin_staticmethod);
   __pyx_t_5 = __pyx_builtin_staticmethod; 
-  __Pyx_GetNameInClass(__pyx_t_6, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_buffer); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_6, (PyObject*)__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_buffer); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = 1;
   {
@@ -31030,84 +31044,84 @@ __Pyx_RefNannySetupContext("PyInit__xdb", 0);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 400, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 401, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
   }
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_buffer, __pyx_t_4) < 0) __PYX_ERR(0, 400, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_from_buffer, __pyx_t_4) < 0) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":413
+  /* "ip2region/backends/cython/_xdb.pyx":414
  *         return self
  * 
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)
  *         cdef bytes ip_b = ensure_bytes(ip)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_7search_by_string, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search_by_string, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[30])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 413, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_7search_by_string, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search_by_string, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[30])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_mstate_global->__pyx_tuple[2]);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search_by_string, __pyx_t_4) < 0) __PYX_ERR(0, 413, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search_by_string, __pyx_t_4) < 0) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":424
+  /* "ip2region/backends/cython/_xdb.pyx":425
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)
  * 
  *     cpdef inline search_by_string_into(self, object ip, uint8_t[::1] region_buffer):             # <<<<<<<<<<<<<<
  *         cdef xdb.xdb_region_buffer_t region
  *         xdb.xdb_region_buffer_init(&region, <char*>&region_buffer[0], <size_t>region_buffer.shape[0])
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_9search_by_string_into, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search_by_string_into, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[31])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_9search_by_string_into, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search_by_string_into, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[31])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 425, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search_by_string_into, __pyx_t_4) < 0) __PYX_ERR(0, 424, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search_by_string_into, __pyx_t_4) < 0) __PYX_ERR(0, 425, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":436
+  /* "ip2region/backends/cython/_xdb.pyx":437
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline str search(self, const uint8_t[::1] ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)
  *         cdef int err
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_11search, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[32])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 436, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_11search, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[32])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_mstate_global->__pyx_tuple[2]);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search, __pyx_t_4) < 0) __PYX_ERR(0, 436, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search, __pyx_t_4) < 0) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":445
+  /* "ip2region/backends/cython/_xdb.pyx":446
  *         return PyUnicode_FromString(<const char*>region_buffer.buffer.value)
  * 
  *     cpdef inline search_into(self, const uint8_t[::1] ip, uint8_t[::1] region_buffer):             # <<<<<<<<<<<<<<
  *         cdef xdb.xdb_region_buffer_t region
  *         xdb.xdb_region_buffer_init(&region, <char *> &region_buffer[0], <size_t> region_buffer.shape[0])
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_13search_into, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search_into, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[33])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 445, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_13search_into, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_search_into, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[33])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 446, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search_into, __pyx_t_4) < 0) __PYX_ERR(0, 445, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_search_into, __pyx_t_4) < 0) __PYX_ERR(0, 446, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":454
+  /* "ip2region/backends/cython/_xdb.pyx":455
  *             raise RuntimeError(f"failed search {ip} with errno={err}")
  * 
  *     cpdef inline int get_io_count(self):             # <<<<<<<<<<<<<<
  *         with nogil:
  *             return xdb.xdb_get_io_count(&self.searcher)
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_15get_io_count, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_get_io_count, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[34])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_15get_io_count, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_get_io_count, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[34])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_get_io_count, __pyx_t_4) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_get_io_count, __pyx_t_4) < 0) __PYX_ERR(0, 455, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ip2region/backends/cython/_xdb.pyx":458
+  /* "ip2region/backends/cython/_xdb.pyx":459
  *             return xdb.xdb_get_io_count(&self.searcher)
  * 
  *     cpdef inline Version get_version(self):             # <<<<<<<<<<<<<<
  *         cdef xdb.xdb_version_t* version
  *         with nogil:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_17get_version, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_get_version, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[35])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 458, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_9ip2region_8backends_6cython_4_xdb_8Searcher_17get_version, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Searcher_get_version, NULL, __pyx_mstate_global->__pyx_n_u_ip2region_backends_cython__xdb, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[35])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 459, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_get_version, __pyx_t_4) < 0) __PYX_ERR(0, 458, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_9ip2region_8backends_6cython_4_xdb_Searcher, __pyx_mstate_global->__pyx_n_u_get_version, __pyx_t_4) < 0) __PYX_ERR(0, 459, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "(tree fragment)":1
@@ -31427,9 +31441,10 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_xdb_ipv6_id, sizeof(__pyx_k_xdb_ipv6_id), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_ipv6_id */
   {__pyx_k_xdb_region_buffer_auto, sizeof(__pyx_k_xdb_region_buffer_auto), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_region_buffer_auto */
   {__pyx_k_xdb_region_buffer_wrapper, sizeof(__pyx_k_xdb_region_buffer_wrapper), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_region_buffer_wrapper */
-  {__pyx_k_xdb_segment_index_size, sizeof(__pyx_k_xdb_segment_index_size), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_segment_index_size */
   {__pyx_k_xdb_structure_20, sizeof(__pyx_k_xdb_structure_20), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_structure_20 */
   {__pyx_k_xdb_structure_30, sizeof(__pyx_k_xdb_structure_30), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_structure_30 */
+  {__pyx_k_xdb_v4_index_size, sizeof(__pyx_k_xdb_v4_index_size), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_v4_index_size */
+  {__pyx_k_xdb_v6_index_size, sizeof(__pyx_k_xdb_v6_index_size), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_v6_index_size */
   {__pyx_k_xdb_vector_index_cols, sizeof(__pyx_k_xdb_vector_index_cols), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_vector_index_cols */
   {__pyx_k_xdb_vector_index_length, sizeof(__pyx_k_xdb_vector_index_length), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_vector_index_length */
   {__pyx_k_xdb_vector_index_rows, sizeof(__pyx_k_xdb_vector_index_rows), 0, 1, 1}, /* PyObject cname: __pyx_n_u_xdb_vector_index_rows */
@@ -31443,10 +31458,10 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry const *t, PyObject **target, c
 
 static int __Pyx_InitCachedBuiltins(__pyx_mstatetype *__pyx_mstate) {
   CYTHON_UNUSED_VAR(__pyx_mstate);
-  __pyx_builtin_staticmethod = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_staticmethod); if (!__pyx_builtin_staticmethod) __PYX_ERR(0, 49, __pyx_L1_error)
-  __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_builtin_staticmethod = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_staticmethod); if (!__pyx_builtin_staticmethod) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(0, 56, __pyx_L1_error)
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(1, 2, __pyx_L1_error)
-  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 352, __pyx_L1_error)
+  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 353, __pyx_L1_error)
   __pyx_builtin___import__ = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_import); if (!__pyx_builtin___import__) __PYX_ERR(1, 101, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 139, __pyx_L1_error)
   __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_mstate->__pyx_n_u_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(1, 157, __pyx_L1_error)
@@ -31502,14 +31517,14 @@ static int __Pyx_InitCachedConstants(__pyx_mstatetype *__pyx_mstate) {
   __Pyx_GOTREF(__pyx_mstate_global->__pyx_tuple[1]);
   __Pyx_GIVEREF(__pyx_mstate_global->__pyx_tuple[1]);
 
-  /* "ip2region/backends/cython/_xdb.pyx":413
+  /* "ip2region/backends/cython/_xdb.pyx":414
  *         return self
  * 
  *     cpdef inline str search_by_string(self, object ip, Py_ssize_t size = 1000):             # <<<<<<<<<<<<<<
  *         cdef RegionBuffer region_buffer = RegionBuffer(size)
  *         cdef bytes ip_b = ensure_bytes(ip)
 */
-  __pyx_mstate_global->__pyx_tuple[2] = PyTuple_Pack(1, __pyx_mstate_global->__pyx_int_1000); if (unlikely(!__pyx_mstate_global->__pyx_tuple[2])) __PYX_ERR(0, 413, __pyx_L1_error)
+  __pyx_mstate_global->__pyx_tuple[2] = PyTuple_Pack(1, __pyx_mstate_global->__pyx_int_1000); if (unlikely(!__pyx_mstate_global->__pyx_tuple[2])) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_mstate_global->__pyx_tuple[2]);
   __Pyx_GIVEREF(__pyx_mstate_global->__pyx_tuple[2]);
   __Pyx_RefNannyFinishContext();
@@ -31561,7 +31576,7 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
   PyObject* tuple_dedup_map = PyDict_New();
   if (unlikely(!tuple_dedup_map)) return -1;
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 49, 64};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 50, 64};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_db_path, __pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_db_path_b};
     __pyx_mstate_global->__pyx_codeobj_tab[0] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_file, __pyx_k_A_6_1A_M_31M_4t1_ar_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[0])) goto bad;
   }
@@ -31576,7 +31591,7 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_stringsource, __pyx_mstate->__pyx_n_u_setstate_cython, __pyx_k_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 140, 64};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 141, 64};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_db_path, __pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_db_path_b};
     __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_file, __pyx_k_A_HAQ_1A_L_8_a_4t1_ar_Fa_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
   }
@@ -31591,7 +31606,7 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[5] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_stringsource, __pyx_mstate->__pyx_n_u_setstate_cython, __pyx_k_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[5])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 179, 64};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 180, 64};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_db_path, __pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_db_path_b};
     __pyx_mstate_global->__pyx_codeobj_tab[6] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_file, __pyx_k_A_G81A_1A_N_5Qm1_4t1_ar_EQ_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[6])) goto bad;
   }
@@ -31606,37 +31621,37 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[8] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_stringsource, __pyx_mstate->__pyx_n_u_setstate_cython, __pyx_k_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[8])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 210, 66};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 211, 66};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_db_path};
     __pyx_mstate_global->__pyx_codeobj_tab[9] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_verify, __pyx_k_0_q_aq_t3a_l_2_PPQ_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[9])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 221, 117};
+    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 222, 117};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_db_path, __pyx_mstate->__pyx_n_u_header};
     __pyx_mstate_global->__pyx_codeobj_tab[10] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_verify_from_header, __pyx_k_K1_q_O1_a_A_4q_l_2_8_q_aq_t3a_l, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[10])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 251, 45};
+    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 252, 45};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[11] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_ipv4, __pyx_k_A_G81A_N_4t1_c_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[11])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 259, 45};
+    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 260, 45};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[12] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_ipv6, __pyx_k_A_G81A_N_4t1_c_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[12])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 267, 50};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 268, 50};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_header, __pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[13] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_header, __pyx_k_A_G81A_N_2_6_4t1_c_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[13])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 279, 22};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 280, 22};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[14] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_is_ipv4, __pyx_k_A_q_A_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[14])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 285, 22};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 286, 22};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[15] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_is_ipv6, __pyx_k_A_q_A_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[15])) goto bad;
   }
@@ -31651,37 +31666,37 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[17] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_stringsource, __pyx_mstate->__pyx_n_u_setstate_cython, __pyx_k_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[17])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 0, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 291, 18};
+    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 0, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 292, 18};
     PyObject* const varnames[] = {0};
     __pyx_mstate_global->__pyx_codeobj_tab[18] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_init_winsock, __pyx_k_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[18])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 0, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 298, 10};
+    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 0, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 299, 10};
     PyObject* const varnames[] = {0};
     __pyx_mstate_global->__pyx_codeobj_tab[19] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_clean_winsock, __pyx_k_Q_2, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[19])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 0, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 302, 17};
+    const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 0, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 303, 17};
     PyObject* const varnames[] = {0};
     __pyx_mstate_global->__pyx_codeobj_tab[20] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_now, __pyx_k_1_2, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[20])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 308, 92};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 309, 92};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_ip_string};
     __pyx_mstate_global->__pyx_codeobj_tab[21] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_parse_ip, __pyx_k_Qa_a_1_q_7_q_xs_l_Q_7_1JfBgQ, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[21])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 320, 80};
+    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 321, 80};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_ip_string, __pyx_mstate->__pyx_n_u_buffer};
     __pyx_mstate_global->__pyx_codeobj_tab[22] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_parse_ip_into, __pyx_k_Qa_a_7_1F_4xvU_xs_l_Q_1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[22])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 329, 51};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 330, 51};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_buffer};
     __pyx_mstate_global->__pyx_codeobj_tab[23] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_ip_to_string, __pyx_k_A_4AV1D_V6QRRVV_q_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[23])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 335, 62};
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 336, 62};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_ip1, __pyx_mstate->__pyx_n_u_ip2, __pyx_mstate->__pyx_n_u_offset};
     __pyx_mstate_global->__pyx_codeobj_tab[24] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_ip_sub_compare, __pyx_k_q_A_AS_U_VSTTXXffggjjkkoop_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[24])) goto bad;
   }
@@ -31696,47 +31711,47 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[26] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_stringsource, __pyx_mstate->__pyx_n_u_setstate_cython, __pyx_k_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[26])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 6, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 375, 84};
+    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 6, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 376, 84};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_version, __pyx_mstate->__pyx_n_u_db_path, __pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_db_path_b, __pyx_mstate->__pyx_n_u_err, __pyx_mstate->__pyx_n_u_db_path_ptr};
     __pyx_mstate_global->__pyx_codeobj_tab[27] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_file, __pyx_k_A_XXQa_1A_a_AWJat_a_4s_ar_HH_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[27])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 7, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 387, 96};
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 7, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 388, 96};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_version, __pyx_mstate->__pyx_n_u_db_path, __pyx_mstate->__pyx_n_u_index, __pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_db_path_b, __pyx_mstate->__pyx_n_u_err, __pyx_mstate->__pyx_n_u_db_path_ptr};
     __pyx_mstate_global->__pyx_codeobj_tab[28] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_index, __pyx_k_A_XXQa_1A_a_IQ_q_z_kQ_ccd_4s_a_k, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[28])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 400, 105};
+    const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 401, 105};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_version, __pyx_mstate->__pyx_n_u_buffer, __pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_err};
     __pyx_mstate_global->__pyx_codeobj_tab[29] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_from_buffer, __pyx_k_A_XXQa_L_D_vQa_D_7_AT_ATQR_4s_aq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[29])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 413, 98};
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 414, 98};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_ip, __pyx_mstate->__pyx_n_u_size};
     __pyx_mstate_global->__pyx_codeobj_tab[30] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_search_by_string, __pyx_k_I_aq_aq_q_1D_9A_RS_4s_ar_33C1_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[30])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 424, 99};
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 425, 99};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_ip, __pyx_mstate->__pyx_n_u_region_buffer};
     __pyx_mstate_global->__pyx_codeobj_tab[31] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_search_by_string_into, __pyx_k_A_1HG1M_hm_aabbc_aq_1D_81A_4s_ar, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[31])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 436, 107};
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 437, 107};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_ip, __pyx_mstate->__pyx_n_u_size};
     __pyx_mstate_global->__pyx_codeobj_tab[32] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_search, __pyx_k_K1_aq_k1H_1DPUUWW_bbccppq_4s_ar, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[32])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 445, 109};
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 446, 109};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_ip, __pyx_mstate->__pyx_n_u_region_buffer};
     __pyx_mstate_global->__pyx_codeobj_tab[33] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_search_into, __pyx_k_A_1HIQm1D_Q_ddeef_k1H_1DPUUWW_bb, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[33])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 454, 19};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 455, 19};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[34] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_get_io_count, __pyx_k_A_q_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[34])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 458, 44};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 459, 44};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
     __pyx_mstate_global->__pyx_codeobj_tab[35] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_ip2region_backends_cython__xdb_p, __pyx_mstate->__pyx_n_u_get_version, __pyx_k_A_4q_4q_aq_iq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[35])) goto bad;
   }

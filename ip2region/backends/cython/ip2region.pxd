@@ -9,7 +9,8 @@ cdef extern from "xdb_api.h" nogil:
     int xdb_vector_index_rows
     int xdb_vector_index_cols
     int xdb_vector_index_size
-    int xdb_segment_index_size
+    int xdb_v4_index_size
+    int xdb_v6_index_size
 
     # --- ip version info
     int xdb_ipv4_id
