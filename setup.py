@@ -113,9 +113,9 @@ def main():
     setup(
         name="ip2region",
         version=version,
-        url="https://github.com/synodriver/ip2region",
+        url="https://github.com/synodriver/pyip2region",
         packages=packages,
-        keywords=["encode", "decode", "base16384"],
+        keywords=["ip2region", "ip", "region", "geolocation", "geolite", "cython", "cffi"],
         description="fast base16384 encode and decode",
         long_description_content_type="text/markdown",
         long_description=dis,

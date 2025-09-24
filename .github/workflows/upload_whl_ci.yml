@@ -19,6 +19,7 @@ jobs:
       CIBW_ENVIRONMENT: USE-CYTHON="1"
       CIBW_PROJECT_REQUIRES_PYTHON: ">=3.8"
       CIBW_ENABLE: "cpython-freethreading"
+      GIT_LFS_SKIP_SMUDGE: "1"
     steps:
     - uses: actions/checkout@v4
     - name: Check out recursively
