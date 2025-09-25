@@ -1,4 +1,4 @@
-name: build wheel with ci
+name: build wheel with ci normal
 
 on:
   workflow_dispatch:

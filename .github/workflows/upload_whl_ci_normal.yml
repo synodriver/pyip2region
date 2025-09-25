@@ -1,4 +1,4 @@
-name: upload wheel with ci
+name: upload wheel with ci normal
 
 on:
   workflow_dispatch:
