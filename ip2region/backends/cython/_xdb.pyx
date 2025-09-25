@@ -4,10 +4,11 @@ import cython
 
 from cpython.bytes cimport (PyBytes_AS_STRING, PyBytes_FromString,
                             PyBytes_FromStringAndSize)
-from cpython.unicode cimport PyUnicode_AsUTF8, PyUnicode_FromString
 from cpython.mem cimport PyMem_Free, PyMem_Malloc
+from cpython.unicode cimport PyUnicode_AsUTF8, PyUnicode_FromString
 from libc.stdint cimport uint8_t
-from libc.stdio cimport fopen, fclose, FILE
+from libc.stdio cimport FILE, fclose, fopen
+
 from ip2region.backends.cython cimport ip2region as xdb
 
 xdb_structure_20           = xdb.xdb_structure_20
@@ -27,6 +28,7 @@ xdb_region_buffer_wrapper  = xdb.xdb_region_buffer_wrapper
 xdb_region_buffer_auto     = xdb.xdb_region_buffer_auto
 
 from pathlib import Path
+
 
 cdef inline bytes ensure_bytes(object inp):
     if isinstance(inp, unicode):

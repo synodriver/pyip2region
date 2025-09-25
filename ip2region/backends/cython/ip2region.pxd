@@ -2,6 +2,7 @@
 # cython: cdivision=True
 from libc.stdio cimport FILE
 
+
 cdef extern from "xdb_api.h" nogil:
     int xdb_structure_20
     int xdb_structure_30
