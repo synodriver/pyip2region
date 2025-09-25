@@ -116,7 +116,7 @@ def main():
         url="https://github.com/synodriver/pyip2region",
         packages=packages,
         keywords=["ip2region", "ip", "region", "geolocation", "geolite", "cython", "cffi"],
-        description="fast base16384 encode and decode",
+        description="python binding for ip2region, support cython and cffi",
         long_description_content_type="text/markdown",
         long_description=dis,
         author="synodriver",
