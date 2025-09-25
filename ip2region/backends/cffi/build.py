@@ -7,22 +7,22 @@ ffibuilder = FFI()
 ffibuilder.cdef(
     """
 // public constants define
-#define xdb_structure_20 2
-#define xdb_structure_30 3
-#define xdb_header_info_length 256
-#define xdb_vector_index_rows  256
-#define xdb_vector_index_cols  256
-#define xdb_vector_index_size  8
-#define xdb_v4_index_size 14    // 4 + 4 + 2 + 4
-#define xdb_v6_index_size 38    // 16 + 16 + 2 + 4
+int xdb_structure_20;
+int xdb_structure_30;
+int xdb_header_info_length;
+int xdb_vector_index_rows;
+int xdb_vector_index_cols;
+int xdb_vector_index_size;
+int xdb_v4_index_size;    // 4 + 4 + 2 + 4
+int xdb_v6_index_size;    // 16 + 16 + 2 + 4
 
 // --- ip version info
-#define xdb_ipv4_id 4
-#define xdb_ipv6_id 6
-#define xdb_ipv4_bytes 4
-#define xdb_ipv6_bytes 16
+int xdb_ipv4_id;
+int xdb_ipv6_id;
+int xdb_ipv4_bytes;
+int xdb_ipv6_bytes;
 // cache of vector_index_row × vector_index_rows × vector_index_size
-#define xdb_vector_index_length 524288
+int xdb_vector_index_length;
 
 // --- xdb buffer functions
 
@@ -101,8 +101,6 @@ typedef char string_ip_t;
 typedef unsigned char bytes_ip_t;
 
 // --- ip version
-#define XDB_IPv4 (xdb_version_v4())
-#define XDB_IPv6 (xdb_version_v6())
 typedef int (* ip_compare_fn_t) (const bytes_ip_t *, int, const char *, int);
 struct xdb_ip_version_entry {
     int id;                 // version id
@@ -176,8 +174,8 @@ int xdb_ip_sub_compare(const bytes_ip_t *, int, const char *, int);
 // --- xdb searcher api
 
 // xdb region info structure
-#define xdb_region_buffer_wrapper 1
-#define xdb_region_buffer_auto    2
+int xdb_region_buffer_wrapper;
+int xdb_region_buffer_auto;
 struct xdb_region_buffer_entry {
     int type;           // buffer type
     char *value;        // region value
