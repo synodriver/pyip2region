@@ -7,22 +7,22 @@ ffibuilder = FFI()
 ffibuilder.cdef(
     """
 // public constants define
-int xdb_structure_20;
-int xdb_structure_30;
-int xdb_header_info_length;
-int xdb_vector_index_rows;
-int xdb_vector_index_cols;
-int xdb_vector_index_size;
-int xdb_v4_index_size;    // 4 + 4 + 2 + 4
-int xdb_v6_index_size;    // 16 + 16 + 2 + 4
+// extern int xdb_structure_20;
+// extern int xdb_structure_30;
+// extern int xdb_header_info_length;
+// extern int xdb_vector_index_rows;
+// extern int xdb_vector_index_cols;
+// extern int xdb_vector_index_size;
+// extern int xdb_v4_index_size;    // 4 + 4 + 2 + 4
+// extern int xdb_v6_index_size;    // 16 + 16 + 2 + 4
 
 // --- ip version info
-int xdb_ipv4_id;
-int xdb_ipv6_id;
-int xdb_ipv4_bytes;
-int xdb_ipv6_bytes;
+// extern int xdb_ipv4_id;
+// extern int xdb_ipv6_id;
+// extern int xdb_ipv4_bytes;
+// extern int xdb_ipv6_bytes;
 // cache of vector_index_row × vector_index_rows × vector_index_size
-int xdb_vector_index_length;
+// extern int xdb_vector_index_length;
 
 // --- xdb buffer functions
 
@@ -41,7 +41,7 @@ struct xdb_header {
 
     // the original buffer
     unsigned int length;
-    char buffer[xdb_header_info_length];
+    char buffer[256];
 };
 typedef struct xdb_header xdb_header_t;
 
@@ -55,7 +55,7 @@ void xdb_free_header(void *);
 // --- vector index buffer
 struct xdb_vector_index {
     unsigned int length;
-    char buffer[xdb_vector_index_length];
+    char buffer[524288];
 };
 typedef struct xdb_vector_index xdb_vector_index_t;
 
@@ -174,8 +174,8 @@ int xdb_ip_sub_compare(const bytes_ip_t *, int, const char *, int);
 // --- xdb searcher api
 
 // xdb region info structure
-int xdb_region_buffer_wrapper;
-int xdb_region_buffer_auto;
+// extern int xdb_region_buffer_wrapper;
+// extern int xdb_region_buffer_auto;
 struct xdb_region_buffer_entry {
     int type;           // buffer type
     char *value;        // region value
@@ -245,6 +245,7 @@ ffibuilder.set_source(
     source,
     sources=["./dep/binding/c/xdb_searcher.c", "./dep/binding/c/xdb_util.c"],
     include_dirs=["./dep/binding/c"],
+    define_macros=[("WIN32_LEAN_AND_MEAN", None)],
 )
 
 if __name__ == "__main__":

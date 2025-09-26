@@ -7,21 +7,22 @@ from pathlib import Path
 
 from ip2region.backends.cffi._xdb import ffi, lib
 
-xdb_structure_20 = lib.xdb_structure_20
-xdb_structure_30 = lib.xdb_structure_30
-xdb_header_info_length = lib.xdb_header_info_length
-xdb_vector_index_rows = lib.xdb_vector_index_rows
-xdb_vector_index_cols = lib.xdb_vector_index_cols
-xdb_vector_index_size = lib.xdb_vector_index_size
-xdb_v4_index_size = lib.xdb_v4_index_size
-xdb_v6_index_size = lib.xdb_v6_index_size
-xdb_ipv4_id = lib.xdb_ipv4_id
-xdb_ipv6_id = lib.xdb_ipv6_id
-xdb_ipv4_bytes = lib.xdb_ipv4_bytes
-xdb_ipv6_bytes = lib.xdb_ipv6_bytes
-xdb_vector_index_length = lib.xdb_vector_index_length
-xdb_region_buffer_wrapper = lib.xdb_region_buffer_wrapper
-xdb_region_buffer_auto = lib.xdb_region_buffer_auto
+xdb_structure_20 = 2                               
+xdb_structure_30 =3                               
+xdb_header_info_length =256                       
+xdb_vector_index_rows  =256                       
+xdb_vector_index_cols  =256                       
+xdb_vector_index_size  =8                         
+xdb_v4_index_size =14     
+xdb_v6_index_size =38   
+
+xdb_ipv4_id = 4
+xdb_ipv6_id = 6
+xdb_ipv4_bytes = 4
+xdb_ipv6_bytes = 16
+xdb_vector_index_length = 524288
+xdb_region_buffer_wrapper = 1
+xdb_region_buffer_auto = 2
 
 
 def ensure_bytes(inp: object) -> bytes:
@@ -45,7 +46,7 @@ class Header:
     def from_file(db_path: object) -> "Header":
         self = Header.__new__(Header)
         db_path_b = ensure_bytes(db_path)
-        self.header = lib.xdb_load_header_from_file(ffi.cast("const char*", db_path_b))
+        self.header = lib.xdb_load_header_from_file(ffi.cast("const char*", ffi.from_buffer(db_path_b)))
         if self.header == ffi.NULL:
             raise RuntimeError(f"failed to load header from {db_path}")
         return self
@@ -145,7 +146,7 @@ class VectorIndex:
         self = VectorIndex.__new__(VectorIndex)
         db_path_b = ensure_bytes(db_path)
         self.index = lib.xdb_load_vector_index_from_file(
-            ffi.cast("const char*", db_path_b)
+            ffi.cast("const char*", ffi.from_buffer(db_path_b))
         )
         if self.index == ffi.NULL:
             raise RuntimeError(f"failed to load vector index from {db_path}")
@@ -187,7 +188,7 @@ class Content:
         self = Content.__new__(Content)
         db_path_b = ensure_bytes(db_path)
         self.content = lib.xdb_load_content_from_file(
-            ffi.cast("const char*", db_path_b)
+            ffi.cast("const char*", ffi.from_buffer(db_path_b))
         )
         if self.content == ffi.NULL:
             raise RuntimeError(f"failed to load xdb content from {db_path}")
@@ -220,7 +221,7 @@ class Content:
 
 def verify(db_path: object) -> int:
     db_path_b = ensure_bytes(db_path)
-    db_path_ptr = ffi.case("const char*", db_path_b)
+    db_path_ptr = ffi.cast("const char*", ffi.from_buffer(db_path_b))
     ret = lib.xdb_verify_from_file(db_path_ptr)
     if ret != 0:
         raise RuntimeError(f"failed to verify xdb file {db_path} with errno={ret}")
@@ -229,7 +230,7 @@ def verify(db_path: object) -> int:
 
 def verify_from_header(db_path: object, header: Header) -> int:
     db_path_b = ensure_bytes(db_path)
-    db_path_ptr = ffi.case("const char*", db_path_b)
+    db_path_ptr = ffi.cast("const char*", ffi.from_buffer(db_path_b))
     handle = lib.fopen(db_path_ptr, "rb")
     if handle == ffi.NULL:
         raise RuntimeError(f"failed to open {db_path}")
@@ -305,9 +306,9 @@ def parse_ip(ip_string: str) -> tuple:
     str_p = ip_string.encode("utf-8")
     version = ffi.NULL
     buffer = bytes(16)
-    buffer_ptr = ffi.case("const char*", buffer)
+    buffer_ptr = ffi.cast("const char*", ffi.from_buffer(buffer))
     version = lib.xdb_parse_ip(
-        ffi.case("const char*", str_p), ffi.cast("unsigned char *", buffer_ptr), 16
+        ffi.cast("const char*", ffi.from_buffer(str_p)), ffi.cast("unsigned char *", buffer_ptr), 16
     )
     if version == ffi.NULL:
         raise RuntimeError(f"failed to parse version")
@@ -318,7 +319,7 @@ def parse_ip_into(ip_string: str, buffer: bytearray) -> Version:
     str_p = ip_string.encode("utf-8")
     version = ffi.NULL
     version = lib.xdb_parse_ip(
-        ffi.case("const char*", str_p),
+        ffi.cast("const char*", str_p),
         ffi.cast("unsigned char *", ffi.from_buffer(buffer)),
         len(buffer),
     )
@@ -356,7 +357,7 @@ class RegionBuffer:
     def __init__(self, size: int):
         self.buffer = ffi.new("xdb_region_buffer_t *")
         self.region_buffer = ffi.new(f"char[{size+1}]")  # +1 for NULL-end
-        self.region_buffer[size] = "\0"  # NULL-end
+        self.region_buffer[size] = b"\0"  # NULL-end
         err = lib.xdb_region_buffer_init(
             self.buffer, ffi.cast("char*", self.region_buffer), size
         )
@@ -381,7 +382,7 @@ class Searcher:
         self = Searcher.__new__(Searcher)
         self.searcher = ffi.new("xdb_searcher_t *")
         db_path_b = ensure_bytes(db_path)
-        db_path_ptr = ffi.cast("const char *", db_path_b)
+        db_path_ptr = ffi.cast("const char *", ffi.from_buffer(db_path_b))
         err = lib.xdb_new_with_file_only(version.version, self.searcher, db_path_ptr)
         if err != 0:
             raise RuntimeError(
@@ -394,7 +395,7 @@ class Searcher:
         self = Searcher.__new__(Searcher)
         self.searcher = ffi.new("xdb_searcher_t *")
         db_path_b = ensure_bytes(db_path)
-        db_path_ptr = ffi.cast("const char *", db_path_b)
+        db_path_ptr = ffi.cast("const char *", ffi.from_buffer(db_path_b))
         self.index = index  # hold a ref
         err = lib.xdb_new_with_vector_index(
             version.version, self.searcher, db_path_ptr, index.index
@@ -413,7 +414,7 @@ class Searcher:
         self.pybuffer = buffer  # hold a ref
         self.buf = ffi.new("xdb_content_t *")
         self.buf.length = len(buffer)
-        self.buf.buffer = ffi.cast("char*", buffer)
+        self.buf.buffer = ffi.cast("char*", ffi.from_buffer(buffer))
         err = lib.xdb_new_with_buffer(version.version, self.searcher, self.buf)
         if err != 0:
             raise RuntimeError("failed to create xdb searcher from buffer")
@@ -422,7 +423,7 @@ class Searcher:
     def search_by_string(self, ip: object, size: int = 1000) -> str:
         region_buffer = RegionBuffer(size)
         ip_b = ensure_bytes(ip)
-        ip_ptr = ffi.cast("const char*", ip_b)
+        ip_ptr = ffi.cast("const char*", ffi.from_buffer(ip_b))
         err = lib.xdb_search_by_string(self.searcher, ip_ptr, region_buffer.buffer)
         if err != 0:
             raise RuntimeError(f"failed search {ip} with errno={err}")
@@ -440,7 +441,7 @@ class Searcher:
         )
 
         ip_b = ensure_bytes(ip)
-        ip_ptr = ffi.cast("const char*", ip_b)
+        ip_ptr = ffi.cast("const char*", ffi.from_buffer(ip_b))
         err = lib.xdb_search_by_string(self.searcher, ip_ptr, region)
         if err != 0:
             raise RuntimeError(f"failed search {ip} with errno={err}")
